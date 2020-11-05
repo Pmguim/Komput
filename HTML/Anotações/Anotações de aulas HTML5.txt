@@ -1,0 +1,143 @@
+		Anotações aulas HTML5
+
+*Sempre que fechar uma linha de código, deve-se haver uma barra anterior ao nome do código. Ex:
+<html>
+</html>
+					________
+					|<HTML>|
+					 ------
+_____________________________________________________________________________________
+|				|ELEMENTOS-PRINCIPAIS|				     |		  
+|------------------------------------------------------------------------------------|						
+|<!DOCTYPE html> -"!DOCTYPE", serve para que o navegador reconheça que o código faz  |
+|parte de um documento html.							     |
+|										     |
+|<html> - Indica onde começa o código em html.					     |
+|										     |
+|<head> - Representa o conjunto de metadados do documento.			     |
+|										     |
+|<meta charset="utf-8"> - Padrão brasileiro, que faz o código html aceitar acentos.  |
+|										     |
+|<title> - Altera o nome da aba na página.					     |
+|</title>									     |
+|										     |
+|<link rel="stylesheet" type="text/css" href=""> - "Linka" o documento em html, para |
+|que possa ser estilizado pelo CSS3. O caminho em que o CSS3 está sendo usado e      |
+|desenvovido, deve ser colocado entre as aspas de  "href".			     |
+|</head> - Todos os códigos acima devem estar dentro do elemento "head".	     |
+|										     |
+|<body> - Representa a estrutura/corpo do documento.				     |
+|</body>									     |
+|____________________________________________________________________________________|
+
+____________________________________________________________________________________
+|				|HEADER/FOOTER|					    |
+|-----------------------------------------------------------------------------------|
+|<header> - Cria uma espécie de cabeçalho na página.				    |
+|</header>									    |
+|										    |
+|<footer> - cria um grupo de informações que serão introduzidas no ródape da página.|
+|</footer>									    |
+|___________________________________________________________________________________|
+
+ ___________________________________________________________________________________________
+|					|TEXTO|						    |
+|-------------------------------------------------------------------------------------------|
+|<h1>/2/3 etc..> - Muda o tamanho das letras da página.					    |
+|</h1>											    |
+|											    |
+|<p> - Cria um parágrafo na página, e geralmente se usa para escrever textos depois do "p". |
+|</p>											    |
+|___________________________________________________________________________________________|
+
+ ___________________________________________________________________________________________
+|					|MENU|						    |
+|-------------------------------------------------------------------------------------------|
+|<nav> - Cria um "menu" de navegação na página.						    |
+|</nav>											    |
+|											    |
+|<ul> - Cria uma lista de elementos, palavras etc.					    |
+|</ul>											    |
+|											    |
+|<ol> - Cria uma lista onde os elementos são organizados ordenadamente.			    |
+|											    |
+|exemplo:	    									    |						
+|<ol>											    |
+|1 - item #1										    |
+|2 - item #2										    |
+|</ol>											    |
+|											    |
+|<li> - Organiza os elementos em uma lista, não importa a sua ordem.			    |
+|</li>											    |
+|___________________________________________________________________________________________|
+
+ ___________________________________________________________________ 
+|			|SECTION/ARTICLE/DIV/|			    |
+|-------------------------------------------------------------------|
+|<section> - Organiza itens em uma determinada parte/grupo no site. |
+|</section>							    |
+|								    |
+|<article> -Representa um conteúdo independente e de maior	    |
+|relevância dentro de uma página.                                   |
+|</article>							    |		
+|					    			    |
+|<div> - É usado para dividir elementos na página.		    |
+|</div>							            |
+|___________________________________________________________________|
+
+ ______________________________________________________________________________________
+|				|IMG|							|
+|---------------------------------------------------------------------------------------|
+|<img src=""> - Usado para inserir imagens na página. A localização da imagem deve	|
+|ser inserida no meio das aspas.							|
+|											|
+|<img src="" alt=""> - Adiciona uma descrição para uma determinada imagem. A localização|
+|da imagem deve ser inserida no meio das aspas.						|
+|											|
+|
+|_______________________________________________________________________________________
+
+ _______________________________________________________________________________________
+|				|LINK|							|
+|---------------------------------------------------------------------------------------|
+|<a href=""> - Cria um hiperlink, (cujo deve ser inserido dentro das aspas), dentro de  |
+|algum elemento.									|
+|</a>											|
+|											|
+|<a href=""><img src="imagem.png"> - Adiciona um link áuma determinada imagem.		|
+|</a>											|
+|											|
+|<a href="mailto:"> - Cria um hyperlink, cujo te leva á seu e-mail, para que possa	|
+|mandar uma mensagem para o endereço de e-mail que automáticamente será escrito.	|
+|</a>											|
+|											|
+|<a href="tel:"> - Cria um hyperlink, cujo abre algum aplicativo que gerencie chamadas	|
+| telefônicas.										|
+|</a>											|
+|											|
+|<a href="" target="_blank"> - Serve para que ao clicar no hyperlink, seja		|
+|criada uma nova aba de navegação, mas usando o mesmo endereço do hiperlink.		|
+|</a>											|
+|_______________________________________________________________________________________|
+
+ _______________________________________________________________________________________
+|											|
+|					|Button|					|
+|_______________________________________________________________________________________|
+|											|
+|<button type="button"> - Cria um botão que pode ser clicado, e pode levar á um deter-	|
+|minado endereço. Exemplo:								|
+|											|
+|<button type="button"><a href="htps://www.instagram.com">Clique aki!</a></button>	|										|
+|											|
+|Caso seja necessário ligar o botão com um alert, ou algum outro elemento de outra lin-	|
+|guagem, deve-se adicionar o elemento "oneclick + nome da string".			|											|
+|</button>										|
+|_______________________________________________________________________________________|
+
+<id=""> - É usado para dar um nome á um certo código, para melhorar a localização.
+
+
+</body> - Todos os elementos acima, devem estar dentro do elemento "body".
+
+</html> - Todos os códigos acima, devem estar dentro do elemento "html".

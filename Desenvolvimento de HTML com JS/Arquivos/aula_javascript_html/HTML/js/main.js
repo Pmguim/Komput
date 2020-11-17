@@ -7,8 +7,18 @@ function botao(){
 
 console.log (botao);
 
+function botao2(){
+    document.getElementById("mousepass").innerHTML = "Obrigado por passar o mouse!"
+   //alert("trocar texto"); 
+}
+
+function voltar(){
+    document.getElementById("mousepass").innerHTML = "Passe o mouse para uma surpresa!";
+}
+
 function redirecionar(){
     window.open("https://youtube.com");
+    //window.location.href="https://youtube.com";
 }
 
 /* Idade exemplo

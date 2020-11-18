@@ -135,8 +135,32 @@ ________________________________________________________________________________
 |</button>										|
 |_______________________________________________________________________________________|
 
-<id=""> - É usado para dar um nome á um certo código, para melhorar a localização.
+ _______________________________________________________________________________________________________
+|													|
+|					|select|							|
+|_______________________________________________________________________________________________________|
+|													|
+| O elemento HTML select (<select>) representa um controle que apresenta um menu de opções. As opções
+|dentro do menu são representadas pelo elemento <option>. 
+|-------------------------------------------------------------------------------------------------------|
+ _______________________________________________________________________________________________________
+|													|
+|					|option|							|
+|_______________________________________________________________________________________________________|
+|													|
+| Os elementos do menu de opções podem ser exibidos por "value= 1,2,3 etc.", representando assim a	|
+|ordem em que os elementos são apresentados na lista.
+|	
+| Ainda em option, também é possível dar nome aos elementos:
+|
+| <select>
+|	<option value="1">Angra</option>
+|	<option value="2">Deiceide</option>
+| </select>
+|
+|------------------------------------------------------------------------------------------------------|
 
+<id=""> - É usado para dar um nome á um certo código, para melhorar a localização.
 
 </body> - Todos os elementos acima, devem estar dentro do elemento "body".
 

@@ -7,19 +7,36 @@ function botao(){
 
 console.log (botao);
 
-function botao2(){
-    document.getElementById("mousepass").innerHTML = "Obrigado por passar o mouse!"
+function botao2(elemento){
+    //document.getElementById("mousepass").innerHTML = "Obrigado por passar o mouse!"
+    elemento.innerHTML = "Obrigado por passar o mouse!";
    //alert("trocar texto"); 
 }
 
-function voltar(){
-    document.getElementById("mousepass").innerHTML = "Passe o mouse para uma surpresa!";
+function voltar(elemento){
+    //document.getElementById("mousepass").innerHTML = "Passe o mouse para uma surpresa!";]
+    elemento.innerHTML = "Passe o mouse aqui!!";
 }
 
-function redirecionar(){
+function redirecionar(elemento){
     window.open("https://youtube.com");
     //window.location.href="https://youtube.com";
 }
+
+function Load(){
+    alert("Página carregada!");
+}
+
+function FuncaoChange(elemento){
+    console.log(elemento.value);
+    
+}
+
+console.log(botao2);
+console.log(voltar);
+console.log(redirecionar);
+console.log(Load);
+console.log(FuncaoChange);
 
 /* Idade exemplo
 function soma (n1, n2){

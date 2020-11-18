@@ -578,58 +578,76 @@ ________________________________________________________________________________
 |
 |onmouseout:
 |
-| Desfaz a tarefa realizada pelo elemento onmouseout.
+| Desfaz a tarefa realizada pelo elemento onmouseover.
 |
 |Então:
 |
-|<h3 id="exemplo" onmouseover="exemplofunc()" onmouseouer="exemplostr()">Texto aqui</h3>
+|<h3 id="exemplo" onmouseover="exemplofunc()" onmouseout="exemplostr()">Texto aqui</h3>
 |
 |-------------------------------------------------------------------------------------------------------|
 
  _______________________________________________________________________________________________________
 |													|
-|					||								|
+|					|this|								|
 |_______________________________________________________________________________________________________|
 |													|
-|													|
+| Este elemento é utilizado geralmente entre os dois parêntesis que acompanham o nome de uma function.													|
+| Serve principalmente para "diferenciar" elementos para facilitar o processo de criação de elementos,
+|e para evitar a constante criação de novas functions em JS para tarefas simples.
 |
+|Quando em HTML:
 |
+|<h3 id="exemplo" onmouseover="exemplofunc(this)" onmouseout="exemplostr(this)">Texto aqui</h3>
+|<h3 id="exemplo" onmouseover="exemplofunc(this)" onmouseout="exemplostr(this)">Texto aqui</h3>
 |
+|Em JS:
+|
+|function exemplofunc(elemento){
+|	elemento.InnerHTML = "Texto aqui";
+|}
+|
+|function exemplostr(elemento){
+|	elemento.InnerHTML = "Texto aqui denovo!";
+|}
 |
 |-------------------------------------------------------------------------------------------------------|
 
  _______________________________________________________________________________________________________
 |													|
-|					||								|
+|					|Onload|							|
 |_______________________________________________________________________________________________________|
 |													|
-|													|
+| Responsável por realizar uma tarefa ao carregar a página da web.													|
 |
+|Em HTML:
 |
+|<body onload = "exemplofunc()">
 |
+|Em JS:
 |
+|function exemplofunc(){
+|	alert("Página carregada!);
+|}
 |-------------------------------------------------------------------------------------------------------|
 
  _______________________________________________________________________________________________________
 |													|
-|					||								|
+|					|Onchange|							|
 |_______________________________________________________________________________________________________|
 |													|
-|													|
+| Responsável por gravar o resultado de um determinado elemento que o usuário interaja.			|										|
 |
+|Em HTML:
 |
+| <select onchange="FuncaoChange(this)">
+|	<option value="1">Valor 1</option>
+|	<option value="2">Valor 2</option>
+|	<option value="3">Valor 3</option>
+| </select>
 |
+|Em JS:
 |
-|-------------------------------------------------------------------------------------------------------|
-
- _______________________________________________________________________________________________________
-|													|
-|					||								|
-|_______________________________________________________________________________________________________|
-|													|
-|													|
-|
-|
-|
-|
+|Function FuncaoChange(elemento){
+|	console.log/alert/outro
+|}
 |-------------------------------------------------------------------------------------------------------|

@@ -1,0 +1,118 @@
+|Python|
+
+IMPORTANTE
+
+Antes de começar a desenvolver qualquer programa/aplicação em
+python, por favor, realize o Download da linguagem em python.org.
+
+O Download só é obrigatório para usuários do Microsoft Windows, já que
+no MacOS, Linux e outros, a linguagem já é imbutida no sistema do SO¹,
+mas caso você seja um usuário de MacOS, e queira atualizar ou reinstalar
+o python, apenas repita os mesmos passos.
+
+Já para os usuários Linux, abra o cmd, e digite "sudo apt-get install python3.9²".
+
+Em alguns casos, pode ser que seja necessário um "apt-get" para a instalação do IDLE,
+mas isso varia de cada versão de Linux.
+
+¹Sistema operacional
+²A versão 3.9, é considerada a mais atual até o registro deste commit. Caso ela
+não seja a mais atual no seu caso, apenas mude o número da versão depois de "python".
+
+-------------------------------------------------------------------------
+  	  ______
+	 |Python|
+		 _______
+		|CONSOLE|
+---------------------------------------------------------------------------
+Executar o python em cmd:
+
+Abra o cmd/Prompt do seu SO, e digite "python".
+
+Pronto, você já pode codificar em python.
+____________________________________________________________________________  
+Python Zen -
+
+A linguagem Python foi escrita com base em certos fundamentos que podem ser
+acessados no cmd ou no prórpio prompt do seu SO.
+
+Basta digitar "import this", e será exibida a seguinte lista:
+
+>>>import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly. - Bonito é melhor que feio.
+
+Explicit is better than implicit. - Explícito é melhor que implícito.
+
+Simple is better than complex. - Simples é melhor que complexo.
+
+Complex is better than complicated. - Complexo é melhor que complicado.
+
+Flat is better than nested. - Plano é melhor do que aninhado.
+
+Sparse is better than dense. - Disperso é melhor do que denso.
+
+Readability counts. - Contagens de legibilidade
+
+Special cases aren't special enough to break the rules. - Casos especiais não são
+especiais o suficiente para quebrar as regras.
+
+Although practicality beats purity. - De qualquer forma, praticidade "derrota" a pureza.
+
+Errors should never pass silently. - Erros nunca devem passar silenciosamente./Erros nunca devem
+passar despercebidos.
+
+Unless explicitly silenced. - Ao menos explicitamente silenciados (Referente à linha anterior).
+
+In the face of ambiguity, refuse the temptation to guess. - Diante da ambigüidade, recuse a tentação
+de adivinhar
+
+There should be one-- and preferably only one --obvious way to do it. - Deve haver apenas um(a) --
+e de preferência apenas um(a)--forma óbio(a) de fazer/realizar.
+
+Although that way may not be obvious at first unless you're Dutch. - De qualquer forma, aquele jeito
+pode não parecer o mais óbvio de primeira, a menos que você seja Holandês.
+
+Now is better than never. - Agora é melhor do que nunca.
+
+Although never is often better than *right* now. - De qualquer forma, "nunca" é muito melhor do que
+"agora mesmo"/"de imediato".
+
+If the implementation is hard to explain, it's a bad idea. - Se sua implementação é difícil de
+explicar, então é uma má ideia.
+
+If the implementation is easy to explain, it may be a good idea. - Se a implementação é fácil de explicar,
+então é uma boa ideia.
+
+Namespaces are one honking great idea -- let's do more of those! - Os namespaces* são uma ótima ideia.
+vamos fazer mais disso!
+
+*Um namespace é uma parte que é possível armazenar nomes, termos técnicos e muitas outras coisas.
+
+--------------------------------------------------------------------------------------------------------
+
+>>>print
+
+O comando print, é responsável por fazer com que o console "imprima" uma determinada mensagem:
+
+print("Mensagem aqui")
+Mensagem aqui
+--------------------------------------------------------------------------------------------------------
+
+Operações matemáticas
+
+Também é possível realizar operações matemáticas com o python. É só digitar os valores, e o sinal da operação,
+que será imprimido pelo console o resultado.
+
+CONSOLE:
+5+7
+12
+
+Também pode-se usar o print para realizar a mesma tarefa:
+
+CONSOLE:
+print("5+7")
+12
+_________________________________________________________________________________________________________
+

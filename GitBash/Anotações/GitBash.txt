@@ -55,7 +55,7 @@ também, o comando "CTRL + L", pois será realizada a mesma função.
 
 *(Make Directory) mkdir _____ - Cria um diretório (pasta) novo.
 
-*(remove) rm -rf ______ - Deleta a pasta escrita dentro do sublinhado, além de deletar
+*(remove)git rm -rf ______ - Deleta a pasta escrita dentro do sublinhado, além de deletar
 todas as pastas dentro da mesma.
 
 *openssl sha1 _____.____ - Encripta o arquivo na linguagem "sha1". O processo deve ser repetido todas

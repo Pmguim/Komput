@@ -1,18 +1,20 @@
 |Python|
 
-IMPORTANTE
+#######################
+!!!!!IMPORTANTE!!!!!!!!
+#######################
 
-Antes de começar a desenvolver qualquer programa/aplicação em
+ Antes de começar a desenvolver qualquer programa/aplicação em
 python, por favor, realize o Download da linguagem em python.org.
 
-O Download só é obrigatório para usuários do Microsoft Windows, já que
+ O Download só é obrigatório para usuários do Microsoft Windows, já que
 no MacOS, Linux e outros, a linguagem já é imbutida no sistema do SO¹,
 mas caso você seja um usuário de MacOS, e queira atualizar ou reinstalar
 o python, apenas repita os mesmos passos.
 
-Já para os usuários Linux, abra o cmd, e digite "sudo apt-get install python3.9²".
+ Já para os usuários Linux, abra o cmd, e digite "sudo apt-get install python3.9²".
 
-Em alguns casos, pode ser que seja necessário um "apt-get" para a instalação do IDLE,
+ Em alguns casos, pode ser que seja necessário um "apt-get" para a instalação do IDLE,
 mas isso varia de cada versão de Linux.
 
 ¹Sistema operacional
@@ -25,18 +27,32 @@ não seja a mais atual no seu caso, apenas mude o número da versão depois de "
 		 _______
 		|CONSOLE|
 ---------------------------------------------------------------------------
-Executar o python em cmd:
+	 	 	  _________________________
+			 |			   |
+			 |Executar o python em cmd:|
+			 |_________________________|
 
-Abra o cmd/Prompt do seu SO, e digite "python".
+ Abra o cmd/Prompt do seu SO, e digite "python".
 
-Pronto, você já pode codificar em python.
+ Pronto, você já pode codificar em python.
+
+ Caso você queira usar um programa que tem um visual melhor para a codificação de python,
+é recomendado que você use o IDLE, um programa que já é instalado junto ao python quando
+feito o download pela internet.
+
+ Para utilizar o IDLE, apenas pesquise por "IDLE" no menu iniciar.
+
+ Há outros editores de python que também podem ser baixados, mas eu recomendo o uso do
+Pycharm, devido à sua praticidade e design, apesar de ser um pouco mais pesado.
+
+ Caso seu computador não seja tão potente, recomendo prosseguir com o uso do IDLE.
 ____________________________________________________________________________  
 Python Zen -
 
-A linguagem Python foi escrita com base em certos fundamentos que podem ser
+ A linguagem Python foi escrita com base em certos fundamentos que podem ser
 acessados no cmd ou no prórpio prompt do seu SO.
 
-Basta digitar "import this", e será exibida a seguinte lista:
+ Basta digitar "import this", e será exibida a seguinte lista:
 
 >>>import this
 The Zen of Python, by Tim Peters
@@ -69,7 +85,7 @@ In the face of ambiguity, refuse the temptation to guess. - Diante da ambigüida
 de adivinhar
 
 There should be one-- and preferably only one --obvious way to do it. - Deve haver apenas um(a) --
-e de preferência apenas um(a)--forma óbio(a) de fazer/realizar.
+e de preferência apenas um(a)--forma óbvio(a) de fazer/realizar isso.
 
 Although that way may not be obvious at first unless you're Dutch. - De qualquer forma, aquele jeito
 pode não parecer o mais óbvio de primeira, a menos que você seja Holandês.
@@ -91,28 +107,125 @@ vamos fazer mais disso!
 *Um namespace é uma parte que é possível armazenar nomes, termos técnicos e muitas outras coisas.
 
 --------------------------------------------------------------------------------------------------------
+					 ___________________
+					|		    |
+					|COMANDOS EM PYTHON!|
+					|___________________|
+_________________________________________________________________________________________________________
 
 >>>print
 
-O comando print, é responsável por fazer com que o console "imprima" uma determinada mensagem:
+ O comando print, é responsável por fazer com que o console "imprima" uma determinada mensagem:
 
+CONSOLE:
 print("Mensagem aqui")
 Mensagem aqui
+
+OU
+
+>>>print('Mensagem aqui')
+Mensagem aqui
 --------------------------------------------------------------------------------------------------------
+ _____________________
+|                     |
+|Operações matemáticas|
+|_____________________|
 
-Operações matemáticas
-
-Também é possível realizar operações matemáticas com o python. É só digitar os valores, e o sinal da operação,
+ Também é possível realizar operações matemáticas com o python. É só digitar os valores, e o sinal da operação,
 que será imprimido pelo console o resultado.
 
 CONSOLE:
 5+7
 12
 
-Também pode-se usar o print para realizar a mesma tarefa:
+ Também pode-se usar o print para realizar a mesma tarefa:
 
 CONSOLE:
-print("5+7")
+print(5+7)
 12
 _________________________________________________________________________________________________________
 
+ _______
+|	|
+|Sinais:|
+|_______|
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	 _
+	|+|
+
+ O caractére "+" (mais), é usado em python como uma ponte entre dois elementos. Ou seja, é ele que realiza a fusão
+entre duas informações digitadas por um usuário.
+
+exemplo:
+
+>>>print('Olá ' + 'humano.')
+Olá humano.
+
+==================================================================================================================
+	 _
+	|=|
+
+ O caráctere "=" (igual), é usado para definir que um determinado dado/varivel recebe um valor ou algo do genero.
+
+Exemplo:
+
+Var1 = Var2
+
+ No caso, a variável1 irá receber o valor introduzido na variável2.
+
+Mais exemplo:
+
+*Nome = Pmguim
+Idade = 577
+Peso = 1g
+
+¹A variável nome receberá o dado inserido pelo usuário, assim como todas as outras.
+
+_______________________________________________________________________________________________________________
+ ________________
+|		 |
+|Uso de variáveis|
+|________________|
+
+ As variáveis podem ser simplesmente escritas como usamos o exemplo de nome, idade e peso. Mas, se escrevermos elas
+daquela forma, elas não serão imprimidas no programa. Para que sejam, devemos escrever:
+
+>>>print (Nome)
+Pmguim
+
+ Para que o programa imprima mais de uma variável, é necessário utilizar a "," (vírgula)! Ela realizara uma espécie
+de separação dos dados, porém ainda sim, juntando eles. Mas lembre-se, a vírgula NÃO É IGUAL AO "+" (mais).
+
+>>>print (Nome, Idade, Peso)
+Pmguim 577 1
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+ _____
+|     |
+|Input|
+|_____|
+
+ O elemento "input", é responsável por receber e mostrar o resultado de uma variável. Pode parecer um pouco confuso, mas é
+bem simples:
+
+>>>Nome = input('Qual é o seu nome? ')
+Qual é o seu nome? Pmguim
+
+ Depois que o usuário inserir seu nome, o input armazenará o dado na variável Nome, e caso seja digitado print, será
+iprimido o  dado anteriormente inserido na variável.
+
+>>>print(Nome)
+Pmguim
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+
+
+
+
+############################################################################################################################
+
+--Para fazer com que alguma informação do código se trone um comentário, é só adicionar o '#' (hash) no início
+da linha do conteúdo.

@@ -21,6 +21,16 @@ mas isso varia de cada versão de Linux.
 ²A versão 3.9, é considerada a mais atual até o registro deste commit. Caso ela
 não seja a mais atual no seu caso, apenas mude o número da versão depois de "python".
 
+========================================================================
+
+				SUMÁRIO:
+
+1 - Executando o python no prompt
+
+2 - Comandos em Python.
+
+3 - Operações numéricas em Python
+
 -------------------------------------------------------------------------
   	  ______
 	 |Python|
@@ -50,7 +60,7 @@ Pycharm, devido à sua praticidade e design, apesar de ser um pouco mais pesado.
 |============================================================================|
 |----------------------------------------------------------------------------|
 
-PYTHON ZEN -
+				PYTHON ZEN -
 
  A linguagem Python foi escrita com base em certos fundamentos que podem ser
 acessados no cmd ou no prórpio prompt do seu SO.
@@ -134,37 +144,6 @@ OU
 Mensagem aqui
 
 --------------------------------------------------------------------------------------------------------
- _______________________________
-|				|
-|	Operações matemáticas	|
-|_______________________________|
-
- Também é possível realizar operações matemáticas com o python. É só digitar os valores, e o sinal da operação,
-que será imprimido pelo console o resultado.
-
-CONSOLE:
-5+7
-12
-
- Também pode-se usar o print para realizar a mesma tarefa:
-
-CONSOLE:
-print(5+7)
-12
-
- Em python os operandos usados e =m operações matemáticas também são diferentes:
-
-+ _ Adição		**_Potência
-		
-- _ Subtração		//_Divisão inteira
-		
-*_Multiplicação		%_Resto
-
-/_Divisão		==_Igual á*
-		
-*Sim, os dois símbolos de '=' (igual), são referentes ao resultado de uma operação.
-_________________________________________________________________________________________________________
-
  _______
 |	|
 |Sinais:|
@@ -192,7 +171,7 @@ Exemplo:
 
 Var1 = Var2
 
- No caso, a variável1 irá receber o valor introduzido na variável2.
+ No caso, a variável 1 irá receber o valor introduzido na variável 2.
 
 Mais exemplo:
 
@@ -200,9 +179,10 @@ Mais exemplo:
 Idade = 577
 Peso = 1g
 
-¹A variável nome receberá o dado inserido pelo usuário, assim como todas as outras.
+*A variável nome receberá o dado inserido pelo usuário, assim como todas as outras.
 
 _______________________________________________________________________________________________________________
+
  _______________________________
 |				|
 |	Uso de variáveis	|
@@ -279,15 +259,18 @@ CONSOLE:
 
 Olá humano!
 
-Insira o primeiro valor: **
-Insira o segundo valor: **
+Insira o primeiro valor: wx
+Insira o segundo valor: xy
 
-A soma dos valores é: ****
+A soma dos valores é: wxxy
 
  Também é possível saber qual o tipo de declaração que a variável recebeu. Basta abrir um parên-
 tesis em 'print', e escrever 'type'. Logo após, escreva a mensagem + a variável.
 
  Pode parecer bem confuso, por isso, é melhor realizar de forma prática esta última.
+
+*Para que o programa realize a soma das variáveis, é necessário fazer com que outra variável receba
+o valor da soma entre eles.
 
 §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
 
@@ -312,12 +295,7 @@ receberá um valor numérico, decimal, ou qualquer outro. No caso então, temos:
 
 print(var.isnumeric)
 -------------------------------------------------------------------------------------------------------------
-__________________________
 
-*Para que o programa realize a soma das variáveis, é necessário fazer com que outra variável receba
-o valor da soma entre eles.
-
-{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
  _______________________
 |			|
 |	.format		|
@@ -338,6 +316,60 @@ print('A soma entre {} e {}, é {}').format(Valor1,Valor2,Quoc)
 
  Caso você não tenha entendido, as chaves escritas na mensagem de print, são referentes às variáveis escritas respectivamente
 no '.format'. Então, Valor1 é referente à primeira chave, Valor2 é referente à segunda, e Quoc é referente à terceira.
+
+______________________________________________________________________________________________________________________________
+
+				 _______________________________________________
+				|						|
+				|		Operações matemáticas		|
+				|_______________________________________________|
+
+ Também é possível realizar operações matemáticas com o python. É só digitar os valores, e o sinal da operação,
+que será imprimido pelo console o resultado.
+
+CONSOLE:
+5+7
+12
+
+ Também pode-se usar o print para realizar a mesma tarefa:
+
+CONSOLE:
+print(5+7)
+12
+
+ Em python os operandos usados em operações matemáticas também são diferentes:
+
++ _ Adição		**_Potência
+		
+- _ Subtração		//_Divisão inteira
+		
+*_Multiplicação		%_Resto
+
+/_Divisão		==_Igual á*
+		
+*Sim, os dois símbolos de '=' (igual), são referentes ao resultado de uma operação.
+
+____________________________________________________________________________________
+
+ _______________________________________
+|					|
+|	Sequência de operações		|
+|_______________________________________|
+
+ Em Python, há uma certa seuquência a ser seguida, caso haja uma expressão numérica.
+
+1 - Os parentesis sempre devem ser resolvidos primeiro. {()}
+
+2 - A potência deve ser resolvida em seguida. {**}
+
+3 - Multiplicações, divisões, divisões inteiras e resto devem ser uma das penúltimas
+coisas a serem resolvidas. {*,/,//,%}
+
+4 - Somas e subtrações são as últimas a serem resolvidas. {+,-}
+_________________________________________________________________________________________________________
+
+
+{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
 
 ############################################################################################################################
 

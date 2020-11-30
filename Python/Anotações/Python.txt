@@ -27,10 +27,10 @@ não seja a mais atual no seu caso, apenas mude o número da versão depois de "
 		 _______
 		|CONSOLE|
 ---------------------------------------------------------------------------
-	 	 	  _________________________
-			 |			   |
-			 |Executar o python em cmd:|
-			 |_________________________|
+	 	 	  ______________________________________
+			 |					|
+			 |	Executar o python em cmd:	|
+			 |______________________________________|
 
  Abra o cmd/Prompt do seu SO, e digite "python".
 
@@ -46,8 +46,11 @@ feito o download pela internet.
 Pycharm, devido à sua praticidade e design, apesar de ser um pouco mais pesado.
 
  Caso seu computador não seja tão potente, recomendo prosseguir com o uso do IDLE.
-____________________________________________________________________________  
-Python Zen -
+|____________________________________________________________________________| 
+|============================================================================|
+|----------------------------------------------------------------------------|
+
+PYTHON ZEN -
 
  A linguagem Python foi escrita com base em certos fundamentos que podem ser
 acessados no cmd ou no prórpio prompt do seu SO.
@@ -106,11 +109,15 @@ vamos fazer mais disso!
 
 *Um namespace é uma parte que é possível armazenar nomes, termos técnicos e muitas outras coisas.
 
---------------------------------------------------------------------------------------------------------
-					 ___________________
-					|		    |
-					|COMANDOS EM PYTHON!|
-					|___________________|
+|--------------------------------------------------------------------------------------------------------|
+|========================================================================================================|
+|________________________________________________________________________________________________________|
+
+					 _______________________________
+					|			   	|
+					|	COMANDOS EM PYTHON!	|
+					|_______________________________|
+
 _________________________________________________________________________________________________________
 
 >>>print
@@ -125,11 +132,12 @@ OU
 
 >>>print('Mensagem aqui')
 Mensagem aqui
+
 --------------------------------------------------------------------------------------------------------
- _____________________
-|                     |
-|Operações matemáticas|
-|_____________________|
+ _______________________________
+|				|
+|	Operações matemáticas	|
+|_______________________________|
 
  Também é possível realizar operações matemáticas com o python. É só digitar os valores, e o sinal da operação,
 que será imprimido pelo console o resultado.
@@ -143,6 +151,18 @@ CONSOLE:
 CONSOLE:
 print(5+7)
 12
+
+ Em python os operandos usados e =m operações matemáticas também são diferentes:
+
++ _ Adição		**_Potência
+		
+- _ Subtração		//_Divisão inteira
+		
+*_Multiplicação		%_Resto
+
+/_Divisão		==_Igual á*
+		
+*Sim, os dois símbolos de '=' (igual), são referentes ao resultado de uma operação.
 _________________________________________________________________________________________________________
 
  _______
@@ -183,49 +203,145 @@ Peso = 1g
 ¹A variável nome receberá o dado inserido pelo usuário, assim como todas as outras.
 
 _______________________________________________________________________________________________________________
- ________________
-|		 |
-|Uso de variáveis|
-|________________|
+ _______________________________
+|				|
+|	Uso de variáveis	|
+|_______________________________|
 
- As variáveis podem ser simplesmente escritas como usamos o exemplo de nome, idade e peso. Mas, se escrevermos elas
-daquela forma, elas não serão imprimidas no programa. Para que sejam, devemos escrever:
+ As variáveis podem ser simplesmente escritas como usamos o exemplo de nome, idade e peso. Mas, se escrevermos
+elas daquela forma, elas não serão imprimidas no programa. Para que sejam, devemos escrever:
 
 >>>print (Nome)
 Pmguim
 
- Para que o programa imprima mais de uma variável, é necessário utilizar a "," (vírgula)! Ela realizara uma espécie
-de separação dos dados, porém ainda sim, juntando eles. Mas lembre-se, a vírgula NÃO É IGUAL AO "+" (mais).
+ Para que o programa imprima mais de uma variável, é necessário utilizar a "," (vírgula)! Ela realizara uma
+espécie de separação dos dados, porém ainda sim, juntando eles. Mas lembre-se, a vírgula NÃO É IGUAL AO "+" (mais).
 
 >>>print (Nome, Idade, Peso)
 Pmguim 577 1
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
- _____
-|     |
-|Input|
-|_____|
+ _______
+|	|
+|Input	|
+|_______|
 
- O elemento "input", é responsável por receber e mostrar o resultado de uma variável. Pode parecer um pouco confuso, mas é
-bem simples:
+ O elemento "input", é responsável por receber e mostrar o resultado de uma variável. Pode parecer um pouco
+confuso, mas é bem simples:
 
 >>>Nome = input('Qual é o seu nome? ')
 Qual é o seu nome? Pmguim
 
- Depois que o usuário inserir seu nome, o input armazenará o dado na variável Nome, e caso seja digitado print, será
-iprimido o  dado anteriormente inserido na variável.
+ Depois que o usuário inserir seu nome, o input armazenará o dado na variável Nome, e caso seja digitado
+print, será imprimido o dado anteriormente inserido na variável.
 
 >>>print(Nome)
 Pmguim
 
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+ _______________________________
+|				|
+|	Tipos Primitivos	|
+|_______________________________|
 
+ Os tipos primitivos são declarações de variáveis, que são usadas para determinar o valor das mesmas.
+Usando eles, podemos somar dois valores inseridos por um usuário e fazer muito mais.
 
+Existem 4 tipos de Tipos Primitivos, são eles:
 
+int - se refere à um número inteiro (sem vírgula ou ponto)
 
+float - Referente à valores reais (com vírgula ou ponto)
+
+bool - Referente á valores lógicos (True ou False(Verdadeiro ou falso))
+
+str - Referente á qualquer caractére (letras, símbolos e etc.)
+
+===============================================================
+
+ Para usar os valores, devemos inseri-los entre o '=' (igual) e o dado recebido pela string.
+
+ Suponhamos que estejamos fazendo um programa que realize a soma de duas variáveis. Devemos então:
+
+DOCUMENTO PY:
+
+print('Olá humano!')
+
+Valor1 = int(input('Insira o primeiro valor: '))
+Valor2 = int(input('Insira o segundo valor: '))
+
+Quoc* = Valor1 + Valor2
+
+print('A soma dos valores é:' + Quoc)
+
+CONSOLE:
+
+Olá humano!
+
+Insira o primeiro valor: **
+Insira o segundo valor: **
+
+A soma dos valores é: ****
+
+ Também é possível saber qual o tipo de declaração que a variável recebeu. Basta abrir um parên-
+tesis em 'print', e escrever 'type'. Logo após, escreva a mensagem + a variável.
+
+ Pode parecer bem confuso, por isso, é melhor realizar de forma prática esta última.
+
+§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+
+ _______________________
+|			|
+|	.is		|
+|_______________________|
+
+ Esta ramificação, é usada quando a variável recebe a declaração 'bool'. 'bool', que no caso só recebe
+os valores 'True' ou 'False'. A ramificação '.is', é usada para determinar ao programa se a variável
+receberá um valor numérico, decimal, ou qualquer outro. No caso então, temos:
+
+.isnumeric
+.isdecimal
+.isdigit
+.isprintable
+.istitle
+
+ Entre outros.
+
+ '.is', deve ser adicionado dentro do elemento 'print', e deve acompanhar o nome de uma determinada variável.
+
+print(var.isnumeric)
+-------------------------------------------------------------------------------------------------------------
+__________________________
+
+*Para que o programa realize a soma das variáveis, é necessário fazer com que outra variável receba
+o valor da soma entre eles.
+
+{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+ _______________________
+|			|
+|	.format		|
+|_______________________|
+
+ Também há uma adição que pode ser feita ao comando print, para que não tenha que usar
+tantas aspas, e tantos sinais de adição. O elemento '.format', deve ser adicionado depois da mensagem escrita em 'print'.
+
+ Antes, vamos falar sobre o print. Para utilizar o .format, não é necessário utilizar ',' ou '+' dentro de print.
+ Primeiro, precisamos, óbviamente escrever a mensagem.
+
+Valor1 = int(input('Insira o primeiro valor: ')
+Valor2 = int(input('Insira o segundo valor: ')
+
+Quoc = Valor1 + Valor2
+
+print('A soma entre {} e {}, é {}').format(Valor1,Valor2,Quoc)
+
+ Caso você não tenha entendido, as chaves escritas na mensagem de print, são referentes às variáveis escritas respectivamente
+no '.format'. Então, Valor1 é referente à primeira chave, Valor2 é referente à segunda, e Quoc é referente à terceira.
 
 ############################################################################################################################
 
 --Para fazer com que alguma informação do código se trone um comentário, é só adicionar o '#' (hash) no início
 da linha do conteúdo.
+
+--

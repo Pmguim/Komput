@@ -317,6 +317,95 @@ print('A soma entre {} e {}, é {}').format(Valor1,Valor2,Quoc)
  Caso você não tenha entendido, as chaves escritas na mensagem de print, são referentes às variáveis escritas respectivamente
 no '.format'. Então, Valor1 é referente à primeira chave, Valor2 é referente à segunda, e Quoc é referente à terceira.
 
+(((Operações)))
+
+ Também é possível realizar operações numéricas em .format, MAS, SÓ SE, E APENAS SE, o objetivo do programa for
+imprimir o resultado/valor de uma variável.
+
+ Suponhamos que eu queira fazer um programa que mostre o sucessor e o antecessor de um determinado valor. Fariamos então:
+
+print('Olá humano!')
+
+Valor1 = int(input('Insira um valor: '))
+Ant = Valor1 - 1
+Suc = Valor1 + 1
+print('Baseado no valor {}, o antecessor é {} e o sucessor é {}'.format(Valor1, Ant, Suc))
+====================================================================================================
+
+Porém, podemos eliminar as variáveis 'Ant', e 'Suc', e substituí-las por duas operações de subtração:
+
+print('Olá humano!')
+Valor1 = int(input('Insira um valor: '))
+print('Baseado no valor {}, o antecessor é {} e o sucessor é {}'.format(Valor1, (Valor1-1), (Valor1+1)))
+
+____________________________________________________________________________________________________________________________
+ _______________________________
+|				|
+|	Uso das chaves		|
+|_______________________________|
+
+ Também há mais elementos que podem ser usados dentro das chaves. Ainda é necessário o uso do '.format' para que sejam
+identificados os elementos que compõem as chaves.
+
+ Alguns elementos são:
+
+> - Alinha o conteúdo da variável à direita.¹				:Número - No caso, inserimos algum número. Isso
+									indicará quantos espaços serão dados entre o valor
+< - Alinha o conteúdo da variável à esquerda.²				da variável e a mensagem em 'print'.*
+
+^ - Centraliza o conteúdo da variável.³					Caractere - Adiciona algum caractere entre
+									o valor da variável e a mensagem de print.#
+
+						:.Númerof -
+				Caso a vaiável seja um valor float, será mostrado
+				apenas um determinado número de casas decimais do
+				valor.--
+
+============================================================================================================================
+
+						LEGENDA:
+
+¹									²
+Nome = input('Qual é o seu nome?')					Nome = input('Qual é o seu nome?')
+print('Seu nome é {:>5}!'.format(Nome)					print('Seu nome é {:<10}!'.format(Nome)
+
+CONSOLE:								CONSOLE:
+Qual é o seu nome? Pmguim						Qual é o seu nome? Pmguim
+Seu nome é     Pmguim!							Seu nome é Pmguim          !
+___________________________________
+									*
+³									Nome = input('Qual é o seu nome?')
+Nome = input('Qual é o seu nome?')					print('Seu nome é {:20}!'.format(Nome)				
+print('Seu nome é {^:10}!'.format(Nome)
+									CONSOLE:
+CONSOLE:								Qual é o seu nome? Pmguim
+Qual é o seu nome? Pmguim						Seu nome é                    Pmguim!
+Seu nome é     Pmguim     !
+____________________________________					_______________________________________
+
+#									--
+Nome = input('Qual é o seu nome?')					Valor1 = float(input('Digite um número: '))
+print('Seu nome é {:=20}'.format(Nome)					print('O valor digitado é: {:.2f}'.format(Valor1)
+									
+CONSOLE:								CONSOLE:
+Qual é o seu nome? Pmguim						Digite um número: 3,141592654
+Seu nome é ==========Pmguim==========					O valor digitado é 3,14
+______________________________________________________________________________________________________________________________
+
+ _______________
+|		|
+|	End	|
+|_______________|
+
+ O elemento end='', deve se,pre ser adicionado no fim de 'print'. Ele tem como objetivo, evitar a quebra de linha entre
+o prórpio print e outro elemento.
+
+print('Olá Humano!', end ' ')
+Nome = input('Qual é o seu nome?')
+
+CONSOLE:
+
+Olá Humano! Qual é o seu nome?
 ______________________________________________________________________________________________________________________________
 
 				 _______________________________________________

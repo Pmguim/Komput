@@ -1,14 +1,16 @@
 				Curso Git Bash.
-_______________________________________________________________________________
+ _______________________________________________________________________________
 |			Outros -						|
 |										|
-| SHA - Security Hash Algorithym - É um conjunto de3 funções hash criptográ-	|
+| SHA - Security Hash Algorithym - É um conjunto de 3 funções hash criptográ-	|
 | ficas, projetadas pela NSA (Agência de Segurança Nacional dos EUA). A encri-	|
 | ptação, gera um conjunto de caracteres identificador de 40 digitos.		|
 |_______________________________________________________________________________|
-
-
-Windows -cmd
+				
+				 _______________________
+				|			|
+				|	Windows - cmd	|
+				|_______________________|
 
 *dir - Lista todas as pastas, dentro do diretório selecionado.
 
@@ -36,10 +38,13 @@ arquivo.
 *(Remove Directory) rmdir ____ /S /Q - Deleta o diretório digitado dentro do sublinhado.
 
 *start *nome da aplicação* - Abre um determinado aplicativo.
-__________________
 
-Linux (Git Bash)
-__________________
+===============================================================================================
+###############################################################################################	
+	 _______________________________
+	|				|
+	|	Linux (Git Bash)	|
+	|_______________________________|
 
 *ls - Lista todas as pastas, dentro do diretório selecionado.
 
@@ -62,24 +67,30 @@ todas as pastas dentro da mesma.
 as vezes em que o arquivo sofrer alguma alteração ou atualização.
 
 *ls -a - Mostra pastas ocultas dentro do Git
-____________________________________________________
-|INSERIR REPOSITÓRIOS EM UMA PASTA/DIRETÓRIO PELO GIT|_________________________
-|                                                                              |
-|Passo 1 - *git init - inicia um repositório git                               |
-|Passo 2 - digitar "git add "nome do arquivo e, caso localizado em outro diretó|
-|rio, digitar o nome do arquivo, e o nome do diretório em seguida." no terminal|
-|Passo 3 - git commit -m "*mensagem*" - commita todos os arquivoss dentro do   |
-|determinado repositório.                                                      |
-|                                                                              |
-| Caso um arquivo seja movido para outra pasta, digite:                        |
-|									       |
-|*git add + nome do arquivo + nome do diretório atual do arquivo               |
-|*git commit -m + msg							       |
-|*git push origin master						       |
-|______________________________________________________________________________|
-
-*git remote rm origin -*Para remover o "origin master" do repositório atualmente registrado no seu
-diretório local, deve-se utilizar este comando.
+ 				____________________
+				|GIT COMMIT E PUSH:|
+________________________________|------------------|_________________________________________________________
+|1º - Primeiramente é necessário iniciar um repositório git no repositório local, que no caso, é a pasta que|___
+|vamos comitar. Abra o git, caminhe até a pasta, e digite 'git init'.						|
+|														|
+|2º - Agora, precisamos adicionar os arquivos da pasta ao commit. Digite então 'git add .' ou 'git add *',	|
+|lembrando que não há nenhuma diferença entre os dois.								|
+|														|
+|3º - Agora, iremos commitar os arquivos. Digite 'git commit -m "_______" e digite uma mensagem dentro do	|
+|espaço sublinhado.												|
+|														|
+|4º - Agora, caso você já tenha um repositóro externo cadastrado, apenas digite 'git push origin master'.	|
+| 														|
+| Caso contrário, siga estes passos:										|
+|########################___________________________###################################################		|
+|			|CADASTRANDO REPOSITÓRIOS:|								|
+|														|
+|A - Digite git remote add origin https:\\linkdeexemplo e em seguida, pressione enter.				|
+|														|
+|B - Caso você queira visualizar os repositórios externos salvos na pasta, digite git remote -v.		|
+|														|
+|C - Para remover um repositório externo, digite git remote rm origin master.					|
+|_______________________________________________________________________________________________________________|
 
 *git push -u origin master - *Executa a mesma função de "git push", porém com um adicional.
 Também são igualadas as versões de repositório local e remoto.
@@ -95,21 +106,10 @@ Também são igualadas as versões de repositório local e remoto.
 *git checkout -b + nome da branch - Cria uma determinada branch, e, automáticamente já leva o usuário para
 dentro da mesma.
 
-*git push origin + nome da branch - Envia uma determinada branch para o repositório remoto.
-
 *git merge + nome da branch - Realiza a "fusão" entre todas as branches. Ou seja, copia todos os arquivos,
 para dentro de todas as branches criadas.
 
 *git status - Mostra o status do arquivo.
-
-*git add * - "Atualiza" o commit, caso haja alteração em algum arquivo.
-
-*git remote add origin *link de origem* - Adiciona um repositório git remoto, de uma determinada origem.
-
-*git remote -v - Lista todos os repositórios cadastrados neste diretóro.
-
-*git push origin master - "Empurra" os dados, arquivos e etc. do diretório do computador, para o diretório
-citado em "origin" (para entender, leia o tutorial para inserir repositórios pelo git).
 
 *mv *nome do arquivo* ./*mome do diretório*/ - Move aum arquivo para um determinado diretório.
 
@@ -122,28 +122,18 @@ citado em "origin" (para entender, leia o tutorial para inserir repositórios pe
 *git config --global *categoria* - Altera o nome da categoria listada.
  IMPORTANTE: A CONFIGURAÇÃO DEVE SER DELETADA PRIMEIRO, PARA DEPOIS SER RENOMEADA.
 
- _______________________
- |EM CASO DE CONFLITOS:|_____________________________________________________________________________________________												  
-|														   |
-|Conflitos entre dados, acontecerão principalmente durante o processo "git push", o que pode acabar fazendo        |
-|com que nem todos os arquivos atualizados, sejam enviados. Caso isso aconteça:                                    |
-|														   |
-|Passo 1 - *git pull origin master - Puxa todo o conteúdo do repositório git, além de explicar o motivo do confli- |
-|to entre os arquivos.												   |
-|Passo 2 - *													   |
-|__________________________________________________________________________________________________________________|
 ___________________
 
 Typora e Markdown
 ____________________
 
-# - Equivale aos "h's". ou seja, 
+# - Equivale aos "h's" de HTML. Ou seja, 
 
-uma hashtag = h1
+Uma hash = h1
 duas = h2
 
-_ *palavra*_ - deixa a sentença, frase, texto etc em itálico.
+_ *palavra*_ - Transforma a sentença, frase, texto etc em itálico.
 
-**palavra** - deixa a sentença, frase, texto etc em negrito.
+**palavra** - Transforma a sentença, frase, texto etc em negrito.
 
-- *cria uma lista de itens que sejam digitados de pois do "menos".
+- *cria uma lista de itens que sejam digitados depois do "menos".

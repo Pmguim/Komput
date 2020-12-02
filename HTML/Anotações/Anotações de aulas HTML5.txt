@@ -36,7 +36,7 @@ ________________________________________________________________________________
 |<header> - Cria uma espécie de cabeçalho na página.				    |
 |</header>									    |
 |										    |
-|<footer> - cria um grupo de informações que serão introduzidas no ródape da página.|
+|<footer> - Cria um grupo de informações que serão introduzidas no ródape da página.|
 |</footer>									    |
 |___________________________________________________________________________________|
 

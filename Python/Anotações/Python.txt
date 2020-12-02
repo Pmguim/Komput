@@ -1,8 +1,13 @@
-|Python| 
+							|Python| 
 
-#######################
-!!!!!IMPORTANTE!!!!!!!!
-#######################
+	#######################
+	!!!!!!IMPORTANTE!!!!!!!
+	#######################
+		 	 _______________________________________________
+			|						|
+			|	TUTORIAL PARA INSTALAÇÃO DE PYTHON	|
+			|_______________________________________________|
+
 
  Antes de começar a desenvolver qualquer programa/aplicação em
 python, por favor, realize o Download da linguagem em python.org.
@@ -37,10 +42,10 @@ não seja a mais atual no seu caso, apenas mude o número da versão depois de "
 		 _______
 		|CONSOLE|
 ---------------------------------------------------------------------------
-	 	 	  ______________________________________
-			 |					|
-			 |	Executar o python em cmd:	|
-			 |______________________________________|
+	 	 	  	 _______________________________________
+			 	|					|
+			 	|	Executar o python em cmd:	|
+			 	|_______________________________________|
 
  Abra o cmd/Prompt do seu SO, e digite "python".
 
@@ -127,8 +132,6 @@ vamos fazer mais disso!
 					|			   	|
 					|	COMANDOS EM PYTHON!	|
 					|_______________________________|
-
-_________________________________________________________________________________________________________
 
 >>>print
 

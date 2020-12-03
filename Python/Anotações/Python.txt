@@ -409,6 +409,28 @@ Nome = input('Qual é o seu nome?')
 CONSOLE:
 
 Olá Humano! Qual é o seu nome?
+------------------------------------------------------------------------------------------------------------------------------
+
+					 _______________________________________
+					|					|
+					|		import e from		|
+					|_______________________________________|
+
+ O comando import, é usado para importar elementos de um determinado módulo ou biblioteca. É sempre acompanhado pelo nome
+da biblioteca/módulo.
+
+import math* - Importa todos os elementos da biblioteca math.
+
+ Caso digitados no programa apenas o import e o nome da biblioteca, todo o conteúdo desta determinada biblioteca será impor-
+tado. Para importar apenas um determinado elemento, é necessário o sar o from.
+
+from math import sqrt - Importa apenas o elemento sqrt da biblioteca math.
+
+ Geralmente são esscritos ambos no topo do código.
+
+*Veja a sessão 'Biblioteca math' em 'Operações matemáticas'. para encontrar mais rapidamente a sessão, pressione Ctrl + F,
+e digite o nome do elemento que deseja encontrar.
+
 ______________________________________________________________________________________________________________________________
 
 				 _______________________________________________
@@ -441,8 +463,62 @@ print(5+7)
 		
 *Sim, os dois símbolos de '=' (igual), são referentes ao resultado de uma operação.
 
-____________________________________________________________________________________
+____________________________________________________________________________________________________________________________________|
 
+				 _______________________________________________
+				|						|
+				|		Biblioteca math			|
+				|_______________________________________________|
+
+
+ A biblioteca math, consiste em guardar elementos que realizam operações matemáticas. Para utilizarmos ela,
+devemos usar o elemento import para importar uma das strings que realizam as operações.
+
+As strings são:
+
+ __________________________________________________________		 _________________________________________
+|ceil - Arredonda um valor para um número exato "pra cima",|		|floor - Arredonda um valor para um número|________________
+|ou seja, arredonda um valor para mais.|				|exato "pra baixo", ou seja, arredonda um valor para menos.|
+
+ _________________________________________________________		 _______________________________________________
+|trunc - Elimina qualquer valor da vírgula pra frente, sem|		|pow - Funciona de forma semelhante aos dois **.|
+|realizar nenhum arredondamento.|						
+									 ________________________________________________________
+___________________________________________				|factorial - Realiza a fatoração de um determinado valor.|
+sqrt - Calcula a raíz quadrada de um valor.|								
+
+						|-|-|-|-|-|-|-|-|-|-|-|-|
+
+ Como dito no comando import, o nome da biblioteca geralmente fica no topo do código junto de import. Depois que a biblioteca for
+importada, insira o nome da biblioteca + . + o nome do conteúdo que será usado dessa biblioeca.
+
+EXEMPLO - Import:
+
+import math
+Valor1 = int(input('digite um valor: '))
+raiz = math.sqrt(Valor1)
+print('A raiz de {} é {}.'.format(Valor1, raiz))
+
+CONSOLE:
+
+digite um valor: 81
+A raíz de 81 é 9.
+
+-----------------------
+
+EXEMPLO - From:
+
+from math impot sqrt
+Valor = int(input('Insira um valor: ))
+raiz sqrt(Valor)
+print('A raiz de {} é {:.2f}.'.format(Valor, raiz)
+
+CONSOLE:
+
+Insira um valor: 25
+A raiz de 25 é 5.
+
+=====================================================================================================================================
  _______________________________________
 |					|
 |	Sequência de operações		|

@@ -6,101 +6,102 @@
 					________
 					|<HTML>|
 					 ------
-_____________________________________________________________________________________
-|				|ELEMENTOS-PRINCIPAIS|				     |		  
-|------------------------------------------------------------------------------------|						
-|<!DOCTYPE html> -"!DOCTYPE", serve para que o navegador reconheça que o código faz  |
-|parte de um documento html.							     |
-|										     |
-|<html> - Indica onde começa o código em html.					     |
-|										     |
-|<head> - Representa o conjunto de metadados do documento.			     |
-|										     |
-|<meta charset="utf-8"> - Padrão brasileiro, que faz o código html aceitar acentos.  |
-|										     |
-|<title> - Altera o nome da aba na página.					     |
-|</title>									     |
-|										     |
-|<link rel="stylesheet" type="text/css" href=""> - "Linka" o documento em html, para |
-|que possa ser estilizado pelo CSS3. O caminho em que o CSS3 está sendo usado e      |
-|desenvovido, deve ser colocado entre as aspas de  "href".			     |
-|</head> - Todos os códigos acima devem estar dentro do elemento "head".	     |
-|										     |
-|<body> - Representa a estrutura/corpo do documento.				     |
-|</body>									     |
-|____________________________________________________________________________________|
+________________________________________________________________________________________
+|					|ELEMENTOS-PRINCIPAIS|				|	  
+|---------------------------------------------------------------------------------------|						
+| <!DOCTYPE html> -"!DOCTYPE", serve para que o navegador reconheça que o código faz  	|
+|parte de um documento html.								|
+|											|
+|<html> - Indica onde começa o código em html.						|
+|</html>										|
+|											|
+|<head> - Representa o conjunto de metadados do documento.				|
+|</head>										|
+|											|
+|<meta charset="utf-8"> - Padrão brasileiro, que faz o código html aceitar acentos.  	|
+|											|
+|<title> - Altera o nome da aba na página.						|
+|</title>										|
+|											|
+|<link rel="stylesheet" type="text/css" href=""> - "Linka" o documento em html, para 	|
+|que possa ser estilizado pelo CSS3. O caminho em que o CSS3 está sendo usado e		|
+|desenvovido, deve ser colocado entre as aspas de  "href".				|
+|</head> - Todos os códigos acima devem estar dentro do elemento "head".		|
+|											|
+|<body> - Representa a estrutura/corpo do documento.					|
+|</body>										|
+|_______________________________________________________________________________________|
 
-____________________________________________________________________________________
-|				|HEADER/FOOTER|					    |
-|-----------------------------------------------------------------------------------|
-|<header> - Cria uma espécie de cabeçalho na página.				    |
-|</header>									    |
-|										    |
-|<footer> - Cria um grupo de informações que serão introduzidas no ródape da página.|
-|</footer>									    |
-|___________________________________________________________________________________|
+________________________________________________________________________________________
+|					|HEADER/FOOTER|					|
+|---------------------------------------------------------------------------------------|
+|<header> - Cria uma espécie de cabeçalho na página.					|
+|</header>										|
+|											|
+|<footer> - Cria um grupo de informações que serão introduzidas no ródape da página.	|
+|</footer>										|
+|_______________________________________________________________________________________|
 
- ___________________________________________________________________________________________
-|					|TEXTO|						    |
-|-------------------------------------------------------------------------------------------|
-|<h1>/2/3 etc..> - Muda o tamanho das letras da página.					    |
-|</h1>											    |
-|											    |
-|<p> - Cria um parágrafo na página, e geralmente se usa para escrever textos depois do "p". |
-|</p>											    |
-|___________________________________________________________________________________________|
+ _______________________________________________________________________________________________
+|					|TEXTO|						    	|
+|-----------------------------------------------------------------------------------------------|
+|<h1>/2/3 etc..> - Altera o tamanho das letras da página.					|
+|</h1>												|
+|												|
+|<p> - Cria um parágrafo na página, e geralmente se usa para escrever textos depois do "p".	|
+|</p>												|
+|_______________________________________________________________________________________________|
 
- ___________________________________________________________________________________________
-|					|MENU|						    |
-|-------------------------------------------------------------------------------------------|
-|<nav> - Cria um "menu" de navegação na página.						    |
-|</nav>											    |
-|											    |
-|<ul> - Cria uma lista de elementos, palavras etc.					    |
-|</ul>											    |
-|											    |
-|<ol> - Cria uma lista onde os elementos são organizados ordenadamente.			    |
-|											    |
-|exemplo:	    									    |						
-|<ol>											    |
-|1 - item #1										    |
-|2 - item #2										    |
-|</ol>											    |
-|											    |
-|<li> - Organiza os elementos em uma lista, não importa a sua ordem.			    |
-|</li>											    |
-|___________________________________________________________________________________________|
+ _______________________________________________________________________________________________
+|					|MENU|							|
+|-----------------------------------------------------------------------------------------------|
+|<nav> - Cria um "menu" de navegação na página.							|
+|</nav>												|
+|												|
+|<ul> - Cria uma lista de elementos, palavras etc.						|
+|</ul>												|
+|												|
+|<ol> - Cria uma lista onde os elementos são organizados ordenadamente.				|
+|</ol>												|
+|												|
+|exemplo:	    										|						
+|<ol>												|
+|1 - item #1											|
+|2 - item #2											|
+|</ol>												|
+|												|
+|<li> - Organiza os elementos em uma lista, não importa a sua ordem.				|
+|</li>												|
+|_______________________________________________________________________________________________|
 
- ___________________________________________________________________ 
-|			|SECTION/ARTICLE/DIV/|			    |
-|-------------------------------------------------------------------|
-|<section> - Organiza itens em uma determinada parte/grupo no site. |
-|</section>							    |
-|								    |
-|<article> -Representa um conteúdo independente e de maior	    |
-|relevância dentro de uma página.                                   |
-|</article>							    |		
-|					    			    |
-|<div> - É usado para dividir elementos na página.		    |
-|</div>							            |
-|___________________________________________________________________|
+ _______________________________________________________________________
+|			|SECTION/ARTICLE/DIV/|				|
+|-----------------------------------------------------------------------|
+|<section> - Organiza itens em uma determinada parte/grupo no site.	|
+|</section>								|
+|									|
+|<article> -Representa um conteúdo independente e de maior relevância	|
+|dentro de uma página.                                   		|
+|</article>								|		
+|					    				|
+|<div> - É usado para dividir elementos na página.			|
+|</div>									|
+|_______________________________________________________________________|
 
- ______________________________________________________________________________________
-|				|IMG|							|
+ _______________________________________________________________________________________
+|					|IMG|						|
 |---------------------------------------------------------------------------------------|
 |<img src=""> - Usado para inserir imagens na página. A localização da imagem deve	|
 |ser inserida no meio das aspas.							|
 |											|
 |<img src="" alt=""> - Adiciona uma descrição para uma determinada imagem. A localização|
 |da imagem deve ser inserida no meio das aspas.						|
-|											|
-|
-|_______________________________________________________________________________________
+|_______________________________________________________________________________________|
 
  _______________________________________________________________________________________
-|				|LINK|							|
+|					|LINK|						|
 |---------------------------------------------------------------------------------------|
-|<a href=""> - Cria um hiperlink, (cujo deve ser inserido dentro das aspas), dentro de  |
+|<a href=""> - Cria um hiperlink, (cujo deve ser inserido dentro das aspas), dentro de	|
 |algum elemento.									|
 |</a>											|
 |											|
@@ -121,16 +122,14 @@ ________________________________________________________________________________
 |_______________________________________________________________________________________|
 
  _______________________________________________________________________________________
-|											|
 |					|Button|					|
-|_______________________________________________________________________________________|
-|											|
+|---------------------------------------------------------------------------------------|
 |<button type="button"> - Cria um botão que pode ser clicado, e pode levar á um deter-	|
 |minado endereço. Exemplo:								|
 |											|
 |<button type="button"><a href="htps://www.instagram.com">Clique aki!</a></button>	|										|
 |											|
-|Caso seja necessário ligar o botão com um alert, ou algum outro elemento de outra lin-	|
+| Caso seja necessário ligar o botão com um alert, ou algum outro elemento de outra lin-|
 |guagem, deve-se adicionar o elemento "oneclick + nome da string".			|											|
 |</button>										|
 |_______________________________________________________________________________________|
@@ -140,25 +139,26 @@ ________________________________________________________________________________
 |					|select|							|
 |_______________________________________________________________________________________________________|
 |													|
-| O elemento HTML select (<select>) representa um controle que apresenta um menu de opções. As opções
-|dentro do menu são representadas pelo elemento <option>. 
-|-------------------------------------------------------------------------------------------------------|
+| O elemento HTML select (<select>) representa um controle que apresenta um menu de opções. As opções	|
+|dentro do menu são representadas pelo elemento <option>. 						|
+|_______________________________________________________________________________________________________|
+
  _______________________________________________________________________________________________________
 |													|
 |					|option|							|
 |_______________________________________________________________________________________________________|
 |													|
 | Os elementos do menu de opções podem ser exibidos por "value= 1,2,3 etc.", representando assim a	|
-|ordem em que os elementos são apresentados na lista.
-|	
-| Ainda em option, também é possível dar nome aos elementos:
-|
-| <select>
-|	<option value="1">Angra</option>
-|	<option value="2">Deiceide</option>
-| </select>
-|
-|------------------------------------------------------------------------------------------------------|
+|ordem em que os elementos são apresentados na lista.							|
+|													|
+| Ainda em option, também é possível dar nome aos elementos:						|
+|													|
+| <select>												|
+|	<option value="1">Angra</option>								|
+|	<option value="2">Deiceide</option>								|
+| </select>												|
+|													|
+|_______________________________________________________________________________________________________|
 
  _______________________________________________________________________________________________________
 |													|
@@ -166,9 +166,9 @@ ________________________________________________________________________________
 |_______________________________________________________________________________________________________|
 |													|
 | Cria uma seção no documento HTML, que possibilita escrever códigos em CSS.				|
-|													
-|<style></style>
-|------------------------------------------------------------------------------------------------------
+|													|
+|<style></style>											|
+|_______________________________________________________________________________________________________|
 
  _______________________________________________________________________________________________________
 |													|
@@ -176,12 +176,9 @@ ________________________________________________________________________________
 |_______________________________________________________________________________________________________|
 |													|
 | Cria uma seção no documento HTML, que possibilita a escrita de códigos em JS (Java Script).		|
-|
-|<script></script>
-|-------------------------------------------------------------------------------------------------------
+|													|
+|<script>												|
+|</script>												|
+|_______________________________________________________________________________________________________|
 
 <id=""> - É usado para dar um nome á um certo código, para melhorar a localização.
-
-</body> - Todos os elementos acima, devem estar dentro do elemento "body".
-
-</html> - Todos os códigos acima, devem estar dentro do elemento "html".

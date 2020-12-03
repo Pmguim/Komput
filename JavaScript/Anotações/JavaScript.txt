@@ -1,0 +1,679 @@
+			______________
+			||JAVASCRIPT||
+
+|♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦|
+|==========================================================================|
+|--------------------------------------------------------------------------|
+			_______________
+			JAVASCRIPT HTML
+____________________________________________________________________________
+
+O javascript, deve sempre ser inserido dentro da linguagem
+html, mais especificamente, na tag body.
+
+Dentro da tag body, deve ser inserido o elemento "<script>", assim, o 
+navegador reconhecerá que todos os comandos utilizados dentro do elemen-
+to "<script>", faz parte da linguagem Javascript.
+
+Exemplo:
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Exemplo</title>
+	</head>
+
+<body>
+	<script>
+
+	</script>
+</body>
+
+</html>
+_________________________________________________________________________
+|									|
+|				|ALERT|					|
+|_______________________________________________________________________|
+|*alert ("mensagem aqui"); - Faz a página gerar um alerta, que dirá a mesma
+|mensagem escrita dentro do parêntesis.					   
+|									   
+|var "nome" = "mensagem exemplo"; - Cria uma mensagem "variável" no js.	   
+|									   
+|Para realizar a "fusão entre dois elementos js, utilizamos o "+".         
+|Exemplo:								   
+|									   
+|var nome = "Max Cavalera";						   
+|									   
+|alert ("Bem vindo" + nome);						   
+|									   
+|Será exibido na página html, a mensagem "Bem vindo Max Cavalera".	   
+|									   
+|--------------------------------------------------------------------------
+ _______________________________________________________________________________
+|										|
+|				|confirm|					|
+|_______________________________________________________________________________|
+|										|
+| Quase igual ao alert, o comando window.confirm, é responsável por exibir uma 	|
+|mensagem, e pedir uma confirmação para o usuário.
+|
+|window.confirm("mensagem aqui!");
+|-------------------------------------------------------------------------------|
+ _______________________________________________________________________________
+|										|
+|				|prompt|					|
+|_______________________________________________________________________________|
+|										|
+| Responsável por exibir uma caixa que pede para que o usuário informe um	|
+|determinado dado por meio da digitação.
+|
+|window.prompt("Mensagem da caixa");
+|-------------------------------------------------------------------------------|
+ _______________________________________________________________________________
+|										|
+|				|CONTAS|					|
+|_______________________________________________________________________________|
+|
+|também é possível realizar "contas" com o Java Script. exemplo:
+|
+|Soma:
+|
+|var idade = 10;
+|
+|var idade2 = 29;
+|
+|alert (idade + idade2);
+|
+|As idades serão somadas,  e será mostrado uma mensagem na página mostrando o
+|resultado da soma, que no caso, é 39.
+|
+|O mesmo pode se repetir em processos como:
+|--------------------------------------------------------------------------------
+|Multiplicação:
+|
+|var idade = 10;
+|
+|var idade2 = 29;
+|
+|alert (idade * idade2);
+|
+|Resultado = 290
+|------------------------------------------------------------------------------
+|Subtração
+|
+|var idade = 10;
+|
+|var idade2 = 29;
+|
+|alert (idade - idade2);
+|
+|Resultado = -19
+|-----------------------------------------------------------------------------
+|Divisão
+|
+|var idade = 10;
+|
+|var idade2 = 29;
+|
+|alert (idade / idade2);
+|
+|Resultado = 290
+|__________________________________
+|
+|É importante enfatizar que, os números devem estar sem aspas ("") no começo
+|e no fim deles. Caso contrário, a soma não será realizada, mostrando apenas
+|os dois números na mensagem (1029).
+|
+|-----------------------------------------------------------------------------
+
+________________________________________________________________________________
+|										|
+|				|COMENTÁRIOS|					|
+|_______________________________________________________________________________|
+|										|
+|// - É usado como uma string para anotações ou comentários. Ou seja, o Java	|
+|script não reconhecerá aquilo como parte do código, mas sim, como uma mensagem	|
+|para quem está codificando.							|
+|										|
+|-------------------------------------------------------------------------------|
+
+________________________________________________________________________________
+|										|
+|				|CONSOLE.LOG|					|
+|_______________________________________________________________________________|
+|
+|*console.log (nome do elemento) - É usado para que os elementos possam ser visua-
+|lisados no console da página.
+|
+|também é possível "escolher" quais elementos serão mostrados no console. Utilizan-
+|do o comando "[]", nós conseguimos escolher um dos determinados elementos da var.
+|
+|Exemplo:
+|
+|var lista="Fleetwood Mac, Black Sabbath, Cannibal Corpse";
+|
+|console.log (lista[3]);
+|
+|Resultado: Será mostrado apenas o terceiro elemento da lista.
+|__________________________________________________________________________________
+|
+|Também é possível utilizar este comando em alert.
+|
+|var lista="Fleetwood Mac, Black Sabbath, Cannibal Corpse";
+|
+|alert(lista[3]);
+|
+|----------------------------------------------------------------------------------
+
+________________________________________________________________________________
+|										|
+|				|.PUSH E .POP|					|
+|_______________________________________________________________________________|
+|
+|O comando .push, é utilizado para adicionar elementos á var. Ou seja:
+|
+|var lista="Fleetwood Mac, Black Sabbath, Cannibal Corpse";
+|
+|lista.push("Brujeria");
+|_____________________________________________________________________
+|
+|Já o comando .pop, remove os dois elementos do fim da var.
+|
+|var lista="Fleetwood Mac, Black Sabbath, Cannibal Corpse";
+|
+|lista.pop();
+|
+|------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+|										|
+|					|LENGTH|				|
+|_______________________________________________________________________________|
+|
+|.length, é responsável por mostrar o número de elementos presen-
+|tes em uma determinada var.
+|
+|Exemplo:
+|
+|var lista="Fleetwood Mac, Black Sabbath, Cannibal Corpse";
+|
+|console.log (lista.length);
+|
+|Resultado= Mostra o número de itens no console do navegador.
+|-----------------------------------------------------------------------------
+
+ _______________________________________________________________________________________
+|											|
+|					|TO UPPER/LOWERCASE|				|
+|_______________________________________________________________________________________|
+|
+|.toUpperCase()); - Esta string, pode deixar todo o texto de um determinado elemento
+|em caixa alta (maiúscula).
+|
+|Exemplo:
+|
+|var Windows11 = "Microsoft lança o Windows 11";
+|
+|console.log(Windows11.toUpperCase());
+|
+|O resultado, estará em Console, no navegador.
+|
+|MICROSOFT LANÇA O WINDOWS 11
+|________________________________________________
+|
+|O meso vale para .toLowerCase.
+|
+|var Windows11 = "Microsoft lança o Windows 11";
+|
+|console.log(Windows11.toLowerCase());
+|
+|microsoft lança o windows 11
+|
+|-----------------------------------------------------------------------------------
+
+ _______________________________________________________________________________________
+|											|
+|					|REPLACE|					|
+|_______________________________________________________________________________________|
+|
+|O elemento .replace, pode ser usado para substituir algum elemento de uma var, que
+|esteja dentro do console.log. exemplo:
+|
+|var JOJO = "JOJO é um bom anime";
+|
+|console.log(JOJO.replace ("bom","ótimo"));
+|
+|O .replace também pode ser usado em outros elementos como o alert.
+|
+|alert (JOJO.replace("bom","ótimo"));
+|
+|-------------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+|										|
+|				|TOSTRING|					|
+|_______________________________________________________________________________|
+|										|
+|Transforma o elemento em uma string, mas o mantém sendo uma lista/alerta etc.	|
+|
+|------------------------------------------------------------------------------
+
+ ___________________________________________________________
+|							    |
+|			|.REVERSE|			    |
+|___________________________________________________________|
+|							    |
+|Inverte a ordem de um determinado elemento no console.log.|
+|
+|-----------------------------------------------------------
+
+ _______________________________________________________________
+|								|
+|			|.JOIN|					|
+|_______________________________________________________________|
+|
+|Muda a pontuação da separação de itens de uma lista/elemento.
+|Exemplo:
+|
+|var lista = ("Computador", "Tablet", "Caixa de Som");
+|
+|console.log (lista.join ( "-"));
+|
+|Resultado: A lista ainda será visível com as vírgulas, porém,
+|será clonada e criada uma idêntica, mas com traços no lugar das
+|vírgulas.
+|---------------------------------------------------------------
+
+ ____________________________________________________________________________
+|									     |
+|				|Dicionário|				     |
+|____________________________________________________________________________|
+|									     |
+|Também é possível criar um "dicionário" utilizando a linguagem java.	     
+|
+|Para isso, é preciso criar uma var, e dar "nomes" aos elementos desta var.
+|
+|var lista = {nome1:"Max", nome2:"Cavalera"};
+|
+|Agora, para criar o dicionário, precisamos usar o console.log.
+|
+|console.log (lista.nome2);
+|
+|assim, apenas o elemento que foi selecionado no console.log, será mostrado
+|no console da página.
+|
+|Também é possível adicionar mais listas, para a formação de um dicionário maior.
+|
+|No caso, deve ser feito:
+|
+|var listas = [{nome1:"Max", nome2:"Cavalera"}, {nome1:"André", nome2:"Matos"}]
+|
+|Para que o console.log reconheça de qual dos elementos estamos nos referindo,
+|precisamos especificar. Para isso, devemos:
+|
+|console.log(listas);
+|
+|alert(*listas[1].nome);
+|
+|*No caso aqui, ele irá mostrar no console que há duas posições, e indicará qual
+|delas é a número 1, e qual é a número 2, 3, ou até mesmo 0.
+|
+|--------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+|										|
+|					|Prompt|				|
+|_______________________________________________________________________________|
+|										|
+|O comando prompt, é responsável por criar uma pergunta na página em que o java	|
+|está sendo executado. Para a execução correta do comando, é necessário que ele	|
+|seja inserido dentro de uma var.
+|
+|Exemplo:
+|
+|var idade = prompt ("Qual a sua Idade?);
+|
+|Com a var pronta, agora precisamos adicionar o elemento if.
+|
+|var idade = prompt ("Qual a sua Idade?);
+|if (idade *>=18){
+|}
+|
+|Com o if adicionado, precisamos adicionar o else, que significa "outro", se refe-
+|rindo á outro resultado.
+|
+|var idade = prompt ("Qual a sua Idade?);
+|if (idade *>=18){
+|	alert ("Maior de idade");
+|} else{
+|	alert ("Menor de idade");
+|}
+|
+|Com toda esta lista de comandos, a página perguntará ao usuário, qual é a sua idade.
+|Além de ser formada uma caixa de resposta para que seja digitada a idade do usuário.
+|
+|Caso seja digitado um resultado superior, ou igual à 18, Será exibida a mensagem
+|"Maior de Idade". Caso contrário, será exibida uma mensagem dizendo "Menor de Idade".
+|
+|* > - Maior que/maior de.
+|
+|---------------------------------------------------------------------------------------
+					
+ _______________________________________________________________________________________
+|											|
+|					|Count|						|
+|_______________________________________________________________________________________|
+|
+| O count, é respinsável por "contar" até um certo resultado. O valor inicial dele deve ser
+|inserido em uma var.
+|
+|var count = 0;
+|while (count <= 5){
+|	console.log (count);
+|	count = count + 1
+|}
+|
+| No caso aqui, ele irá contar a partir do valor inserido na var, até o número inserido no
+|elemento while. 
+|
+| Caso você insira um 0 no elemento count, no fim da string, ele irá contar
+|infinitamente os números, e a página web, não terminará de carregar.
+|
+|----------------------------------------------------------------------------------------
+
+ _______________________________________________________________________________________
+|											|
+|					|Date|						|
+|_______________________________________________________________________________________|
+|
+|É possível fazer com que a página exiba a data indicada pelo seu sistema.
+|
+| O comando date é simples, e fácil. Primeiro, precisamos criar uma var (nome de sua
+|escolha), e então, adicionar o "new Date()".
+|
+|var d = new Date();
+|
+| Depois caso seja de sua escolha, é possível adicionar um alert, para a página dizer
+|qual a data atual.
+|
+|var d = new Date();
+|alert (d)
+|
+| Assim a data será mostrada em seu navegador.
+|
+| Também é possível adicionar a data ao console. É só usar o console.log + nome da var.
+|
+| Caso você queira que apenas uma parte das datas seja mostrada, tanto no console, quanto no
+|alert, é necessário utilizar o elemento ".get". 
+|
+| Ele possui variações que realizam a funçãode ocultar os outros elementos de uma data, 
+|seja dia, mês ou ano.
+|
+| Para usá-lo, é necessário repetir os processos acima, porém, é necessário colocar o .get
+|na frente do nome da var, e, junto dele, o "Month", "Day", "Year", "Time", "Hour", "Minutes",
+|"Seconds", ou "Miliseconds".
+|
+|Para todos, o processo é o mesmo.
+|
+|Exemplo:
+|
+|var d= new Date();
+|alert (d.getMonth());
+|
+|
+| Caso ocorra alguma diferença na data, é só adicionar um "mais" e um número depois dos parêntesis.
+|
+|var d= new Date();
+|alert (d.getMonth()+1);
+|
+|-------------------------------------------------------------------------------------------------
+
+ _______________________________________________________________________________________________________
+|													|
+|					|Function|							|
+|_______________________________________________________________________________________________________|
+|													|
+| O elemento function, é um conjunto de instruções que executa executa uma tarefa, ou calcula um determi-|
+|nado valor.
+|
+| Primeiro, devemos definir qual a denominação que esta função receberá, quase como uma var.
+|
+|function n sei(){}
+|
+| Depois, adicionamosos argumentos à função:
+|
+|function n sei (n1, n2);{}
+|
+| Agora que já temos os argumentos e o nome da função, devemos agora dar uma ordem à ela. No caso, usaremos
+|o "return", para receber o retorno do resultado da função.
+|
+|function n sei (n1, n2){
+|	return n1 + n2;
+|}
+|
+| Ótimo, você somou os dois argumentos. Mas, mesmo que forem somados, eles não tem nenhum valor definido para
+|uma adição/subtração, ou qualquer operação do gênero ser realizada. Para isso, podemos usar o console.log,
+|ou até mesmo o alert, para que sejam dados os valores para os argumentos.
+|
+|function n sei (n1, n2){
+|	return
+|}
+|
+|console.log (n sei(5, 10));
+|
+|Resultado: O quociente da soma entre os argumentos aparecerá no console da página.
+|
+| Agora, suponhamos que você queira criar uma verificação de idade. Deve-se usar os processos descritos anterior-
+|mente, + alguns elementos como if, e else por exemplo. Vou usar um código pré-escrito para utilizar como
+|demonstração:
+|
+|var validar = 0;
+|function validaIdade(idade){
+|    validar;
+|    if (idade >= 18){
+|        validar = Maior de idade
+|    }else{
+|        validar = menor de idade
+|    }
+|    return validar;
+|}
+|
+|var idade = prompt ("Qual a sua idade?");
+|validaIdade(idade)
+|console.log (validar);
+|
+|----------------------------------------------------
+|
+|Repare que, dentro da function, foi adicionado:
+|
+|idade ao elemento if -
+|
+| Refere-se ao valor 18. Qualquer valor maior ou igual á este, deve ser considerado 
+|"Maior de idade", segundo o elemento "validar =".
+|__________________________________________________
+|else -
+|
+|No caso, else se refere a qualquer valor que difere do número 18, para cima. ou seja,
+|qualquer valor que seja inserido e for menor que 18, é considerado "Menor de idade".
+|
+|Já os elementos prompt e return, já foram descritos anteriormente neste mesmo documento de anotações.
+|
+|-------------------------------------------------------------------------------------------------------
+
+ _______________________________________________________________________________________________________
+|													|
+|						|Onclick|						|
+|_______________________________________________________________________________________________________|
+|													|
+|<nome do elemento em HTML onclick= "nome da função em java"></nome do elemento em HTML>		|
+|													|
+|Onclick é responsável por ligar uma função em javascript com algum elemento de sua escolha no HTML de
+|uma página da web. Por exemplo, se quisermos que uma mensagem seja exibida ao apertarmos um botão, deve-se:
+|
+|Java:
+|
+|function botao(){
+|	alert("Obrigado por clicar");
+|}
+|
+|HTML:
+|
+|<button type=button onclick="botao()">
+|Clique aqui
+|</button>
+|
+|-------------------------------------------------------------------------------------------------------
+
+ _______________________________________________________________________________________________________
+|													|
+|					|GetElement|							|
+|_______________________________________________________________________________________________________|
+|													|
+|.getElementById, é o inverso do elemento onclick. Ou seja, ao invés de trazer um elemento JS para o	|
+|HTML, ele na verdade trás um elemento HTML para o JavaScript pela id fornecida para ele no HTML.	|
+|
+|Ou seja:
+|
+|HTML
+|
+|<button type=button onclick="botao()">
+|Clique aqui
+|</button>
+|
+|<h3 id="Click">Obrigado por clicar!</h3>
+|-------------------------------------------
+|Java:
+|
+|function botao(){
+|	document.getElementById("Click");
+|}
+|
+|-------------------------------------------------------------------------------------------------------|
+|													|
+|				|Ramificações|								|
+|_______________________________________________________________________________________________________|
+|													|
+|.InnerHTML = "Mensagem aqui";										|
+|
+|Responsável por adicionar uma mensagem, que será identificada como um elemento HTML, ao invés de JS.
+|
+|Java:
+|
+|function botao(){
+|	document.getElementById("Click").InnerHTML = "Mensagem aqui";
+|}
+|
+|No caso, será exibida a "Mensagem aqui" ao pressionar o botão. Já que a mensagem é um "elemento HTML",
+|é possível fazer com que sejam adicionados outros elementos que alteram o texto, como <i>,<b> e outros.
+|
+|-------------------------------------------------------------------------------------------------------|
+
+ _______________________________________________________________________________________________________
+|													|
+|					|Window.open|							|
+|_______________________________________________________________________________________________________|
+|													|
+| Elemento responsável por abrir uma nova guia no navegador, atravéz de um determinado link.		|
+|
+|Exemplo:
+|
+| window.open("https://site.exemplo);
+|
+|Tanto ele quanto o elemento window.location.href = "https://site.exemplo"; realizam a mesma tarefa,
+|porém, este último abre o link na mesma aba em que o usuário se encontra.
+|
+|-------------------------------------------------------------------------------------------------------|
+
+
+
+ _______________________________________________________________________________________________________
+|													|
+|					|Onmouse|							|
+|_______________________________________________________________________________________________________|
+|													|
+| Elemento HTML, responsável por realizar uma tarefa ao passar o mouse por um determinado elemento.	|
+|
+|
+|omouseover:
+|
+| É utilizado da mesma forma que o elemento "onclick", ou seja:
+|
+|<h3 id="exemplo" onmouseover="exemplofunc()">Texto aqui</h3>
+|
+|onmouseout:
+|
+| Desfaz a tarefa realizada pelo elemento onmouseover.
+|
+|Então:
+|
+|<h3 id="exemplo" onmouseover="exemplofunc()" onmouseout="exemplostr()">Texto aqui</h3>
+|
+|-------------------------------------------------------------------------------------------------------|
+
+ _______________________________________________________________________________________________________
+|													|
+|					|this|								|
+|_______________________________________________________________________________________________________|
+|													|
+| Este elemento é utilizado geralmente entre os dois parêntesis que acompanham o nome de uma function.													|
+| Serve principalmente para "diferenciar" elementos para facilitar o processo de criação de elementos,
+|e para evitar a constante criação de novas functions em JS para tarefas simples.
+|
+|Quando em HTML:
+|
+|<h3 id="exemplo" onmouseover="exemplofunc(this)" onmouseout="exemplostr(this)">Texto aqui</h3>
+|<h3 id="exemplo" onmouseover="exemplofunc(this)" onmouseout="exemplostr(this)">Texto aqui</h3>
+|
+|Em JS:
+|
+|function exemplofunc(elemento){
+|	elemento.InnerHTML = "Texto aqui";
+|}
+|
+|function exemplostr(elemento){
+|	elemento.InnerHTML = "Texto aqui denovo!";
+|}
+|
+|-------------------------------------------------------------------------------------------------------|
+
+ _______________________________________________________________________________________________________
+|													|
+|					|Onload|							|
+|_______________________________________________________________________________________________________|
+|													|
+| Responsável por realizar uma tarefa ao carregar a página da web.													|
+|
+|Em HTML:
+|
+|<body onload = "exemplofunc()">
+|
+|Em JS:
+|
+|function exemplofunc(){
+|	alert("Página carregada!);
+|}
+|-------------------------------------------------------------------------------------------------------|
+
+ _______________________________________________________________________________________________________
+|													|
+|					|Onchange|							|
+|_______________________________________________________________________________________________________|
+|													|
+| Responsável por gravar o resultado de um determinado elemento que o usuário interaja.			|										|
+|
+|Em HTML:
+|
+| <select onchange="FuncaoChange(this)">
+|	<option value="1">Valor 1</option>
+|	<option value="2">Valor 2</option>
+|	<option value="3">Valor 3</option>
+| </select>
+|
+|Em JS:
+|
+|Function FuncaoChange(elemento){
+|	console.log/alert/outro
+|}
+|-------------------------------------------------------------------------------------------------------|

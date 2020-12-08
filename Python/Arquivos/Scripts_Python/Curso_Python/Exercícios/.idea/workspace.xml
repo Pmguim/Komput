@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf2bcd3-6f3d-44fc-971b-d9339da6d1c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Exercícios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Exercícios.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teste_01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../JavaScript/Anotações/JS HTML.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Anotações/Python.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Anotações/Python.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +49,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.ex_015">
-    <configuration name="ex_011" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ex_0016">
+    <configuration name="ex_0016" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Exercícios" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +64,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex_011.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex_0016.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex_0016" />
         <item itemvalue="Python.ex_015" />
         <item itemvalue="Python.ex_014" />
         <item itemvalue="Python.ex_013" />
         <item itemvalue="Python.ex_012" />
-        <item itemvalue="Python.ex_011" />
       </list>
     </recent_temporary>
   </component>
@@ -191,21 +191,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="171" key="GridCell.Tab.0.bottom" timestamp="1606879209394">
+    <state width="1345" height="171" key="GridCell.Tab.0.bottom" timestamp="1607354772647">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1606879209394" />
-    <state width="1345" height="171" key="GridCell.Tab.0.center" timestamp="1606879209394">
+    <state width="1345" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1607354772647" />
+    <state width="1345" height="171" key="GridCell.Tab.0.center" timestamp="1607354772646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1606879209394" />
-    <state width="1345" height="171" key="GridCell.Tab.0.left" timestamp="1606879209393">
+    <state width="1345" height="171" key="GridCell.Tab.0.center/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1607354772646" />
+    <state width="1345" height="171" key="GridCell.Tab.0.left" timestamp="1607354772646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1606879209393" />
-    <state width="1345" height="171" key="GridCell.Tab.0.right" timestamp="1606879209394">
+    <state width="1345" height="171" key="GridCell.Tab.0.left/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1607354772646" />
+    <state width="1345" height="171" key="GridCell.Tab.0.right" timestamp="1607354772646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1606879209394" />
+    <state width="1345" height="171" key="GridCell.Tab.0.right/0.0.1366.728/1428.0.1378.900/2806.0.1858.1080@0.0.1366.728" timestamp="1607354772646" />
   </component>
 </project>

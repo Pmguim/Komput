@@ -32,12 +32,85 @@ Exemplo:
 </body>
 
 </html>
-_________________________________________________________________________
+
+=========================================================================
+
+		 _______________________________
+		|				|
+		|	Criação de variáveis	|
+ _______________|_______________________________|_______________________________________________________
+|													|
+| A declaração de variáveis em JavaScript deve sempre seguir as seguintes condições:			|
+|ººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº|
+|					CONDIÇÕES:							|
+|													|
+| 1. O nome de toda e qualquer variável			2. O nome de toda e qualquer variável		|
+| pode/deve começar com alguma letra,			não pode começar com números.			|
+| com o símbolo $, ou com o _ (sublinhado).								|
+|							4. As variáveis podem receber acentos		|
+| 3. O nome das variáveis pode conter números,		e símbolos					|
+| desde que não entre em conflito com a condi-								|
+| ção 2.												|
+|							6. As variáveis não podem ser "palavras		|
+| 5. As variáveis não podem conter espaços		reservadas".					|
+|													|
+|+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+|													|
+|-E como se declara uma variável?									|
+|													|
+| Uma variável pode ser declarada adicionando o elemento "var + nome de variável". Pode-se usar o ele-	|
+|mento "let + nome de variável".									|
+|													|
+|aªaªaªaªaªaªaªaªaªaªaªaªaªaaªaªaªaªaªaªaªaªaªaªaªaªaªaaªaªaªaªaªaªaªaªaªaªaªaªaªaaªaªaªaªaªaªaªaªaªaªaª|
+
+				 _______________________________
+				|				|
+				|	Tipos primitivos	|
+ _______________________________|-------------------------------|_______________________________________________
+|														|
+| Tipos primitivos são elementos que denominam quais os tipos de "coisas" inseridas dentro de uma variável.	|
+|														|
+| Alguns dos mais usados são:											|
+|														|
+| 1. string - Usado quando uma variável recebe			2. boolean - Considera qualquer elemento den-	|
+| qualquer letra.						tro de uma variável, um elemento "true" (ver-	|
+|								dadeiro) ou "false" (falso).	 _______________|
+| 3. number - Usado quando uma variável recebe   _______________________________________________|
+| qualquer valor numérico.			|
+|_______________________________________________|
+
+			 _______________________________
+			|				|
+			|	Conversão de valores	|
+ _______________________|_______________________________|_______________________________
+|											|
+| Em alguns momentos, os valores inseridos nas variáveis precisam ser convertidos para	|
+|a realização de alguma operação.							|
+|											|	
+| Para isso, temos o ".parse". É possível convertr valores em:				|
+|											|
+| Int (inteiro):									|
+|											|
+| Number.parseInt(varex) //Converte os elementos em valores inteiros			|
+|========================								|
+| Float* (Flutuante)									|
+|											|
+| Number.parseFloat(varex) //Converte os elementos em valores flutuantes		|
+|+++++++++++++++++++++++++								|
+|											|
+| Number()										|
+|											|
+| Number('123') //Converte um os elementos em números					|
+|-------------------------								|
+| *Qualquer valor 'quebrado' (com vírgula), é referido como "flutuante".		|
+|_______________________________________________________________________________________|
+ _______________________________________________________________________
 |									|
 |				|ALERT|					|
 |_______________________________________________________________________|
-|*alert ("mensagem aqui"); - Faz a página gerar um alerta, que dirá a mesma
-|mensagem escrita dentro do parêntesis.					   
+|
+|*alert ("mensagem aqui"); - Faz a página gerar um alerta, que dirá a
+|mesma mensagem escrita dentro do parêntesis.					   
 |									   
 |var "nome" = "mensagem exemplo"; - Cria uma mensagem "variável" no js.	   
 |									   

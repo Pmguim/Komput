@@ -91,46 +91,153 @@ Exemplo:
 |											|
 | Int (inteiro):									|
 |											|
-| Number.parseInt(varex) //Converte os elementos em valores inteiros			|
+| var Varex = Number.parseInt(varex) //Converte os elementos em valores inteiros	|
 |========================								|
 | Float* (Flutuante)									|
 |											|
-| Number.parseFloat(varex) //Converte os elementos em valores flutuantes		|
+| var Varex = Number.parseFloat(varex) //Converte os elementos em valores flutuantes	|
 |+++++++++++++++++++++++++								|
 |											|
 | Number()										|
 |											|
-| Number('123') //Converte um os elementos em números					|
+| var Varex = Number('123') //Converte um os elementos em números			|
 |-------------------------								|
+|											|
+|.toString()										|
+|											|
+| var.toString() //Converte o valor inserido na variável em String (caractere)		|
+|(O nome da variável deve ser inserido no lugar de "var".)				|
+|											|
+|				OU							|
+|											|
+| Pode ser utilizado dentro de algum elemento JS como alert, confirm etc.		|
+|											|
+| window.alert('Mensagem aqui!' + String(Varex))					|
+|(O nome da variável deve ser inserido no lugar de "Varex".)				|
+|/////////////////////////								|
+|											|
 | *Qualquer valor 'quebrado' (com vírgula), é referido como "flutuante".		|
 |_______________________________________________________________________________________|
+
+				 _______________________________________
+				|					|
+				|		Place Holder		|
+ _______________________________|_______________________________________|_______________________
+|												|
+| Caso você já conheça python você deve conhecer o uso do elemento '.format'. O Place Holder	|
+|é bem parecido com ele.									|
+|												|
+| Place Holder é um elemento usado principalmente para diminuir o número de concatenações	|
+|usadas no código. Ele é representado por um $ (cifrão) e duas {} (chaves), estas que, devem	|
+|receber o nome de uma deterinada variável.							|
+|												|
+| Suponhamos que eu tenha o seguinte código:							|
+|												|
+|var Idade = (window.prompt('Qual é a sua idade?));						|
+|var Nome = (window.prompt('Qual é o seu nome?'))						|
+|												|
+| Podemos imprimir o código de duas formas:							|
+|												|
+|window.prompt('Seu nome é' + Nome + 'e sua idade é de ' + Idade + '.');			|
+|												|
+| Note que háum número consideravelmente alto de concatenações. Podemos evitar isso usando o	|
+|place holder. Ainda levando em conta as variáveis criadas anteriormente, escrevemos então:	|
+|												|
+|window.prompt(´Seu nome é ${Nome} evocê tem ${Idade} anos.´);					|
+|_______________________________________________________________________________________________|
+
+
+		 _______________________________________________
+		|						|
+		|	.toUppercase, toLowercase e .length	|
+ _______________|_______________________________________________|_______________________________
+|												|
+| .toUppercase e .toLowercase são responsáveis por tornar uma determinada frase em CAIXA ALTA,	|
+|ou em caixa baixa. Ambos são usados em elementos que podem recber mensagens de texto.		|
+|												|
+| Já o elemento .length, é responsável por contar o número de caracéres inseridos por um	|
+|usuário dentro de uma determinada string.							|
+|												|
+|(.length)											|
+|	{Place Holder}										|
+|												|
+|var nome = window.prompt('Qual é o seu nome?')							|
+|alert('Seu nome tem ${nome.length} letras.')							|
+|----------------------------------------------							|
+|												|
+|(.length)											|
+|												|
+|var nome = ('Qual é o seu nome?')								|
+|alert('Seu nome tem ' + nome.length + ' letras.')						|
+|___________________________________________________						|
+|												|
+|(.toUpperCase)											|
+|	{Place Holder}										|
+|												|
+|var nome = window.prompt('Qual é o seu nome?')							|
+|Document.write('Seu nome tem ${nome.length}')							|
+|Document.write('Seu nome em maiúsculas é: ${nome.toUpperCase()')				|
+|-------------------------------------------------------------------				|
+|												|
+|(.toUpperCase)											|
+|												|
+|var nome = window.prompt('Qual é o seu nome?')							|
+|Document.write('Seu nome tem ' + nome.length + ' letras.')					|
+|Document.write('Seu nome em maiúsculas é:' + nome.toUpperCase()'.')				|
+|_____________________________________________________________________				|
+|												|
+|(.toLowerCase)											|
+|	{Place Holder}										|
+|												|
+|var nome = window.prompt('Qual é o seu nome?')							|
+|Document.write('Seu nome tem ${nome.length}')							|
+|Document.write('Seu nome em minúsculas é: ${nome.toLowerCase()})				|
+|--------------------------------------------------------------------				|
+|												|
+|(.toLowerCase)											|
+|												|
+|var nome = window.prompt('Qual é o seu nome?')							|
+|Document.write('Seu nome tem ' + nome.length + ' .')						|
+|Document.write('Seu nome em maiúsculas é:' + nome.toUpperCase())				|
+|_______________________________________________________________________________________________|
+
+		 _______________________________
+		|				|
+		|	Document.write		|
+ _______________|_______________________________|_______________________________________
+|											|
+| Insere qualquer mensagem escrita em JS, ou na sessão '<script>', no documento HTML.	|
+|											|
+|var nome = window.prompt('Qual é o seu nome?')						|
+|Document.write('Seu nome tem ${nome.length} letras.')					|
+|_______________________________________________________________________________________|
+
  _______________________________________________________________________
 |									|
 |				|ALERT|					|
 |_______________________________________________________________________|
-|
-|*alert ("mensagem aqui"); - Faz a página gerar um alerta, que dirá a
-|mesma mensagem escrita dentro do parêntesis.					   
-|									   
-|var "nome" = "mensagem exemplo"; - Cria uma mensagem "variável" no js.	   
-|									   
-|Para realizar a "fusão entre dois elementos js, utilizamos o "+".         
-|Exemplo:								   
-|									   
-|var nome = "Max Cavalera";						   
-|									   
-|alert ("Bem vindo" + nome);						   
-|									   
-|Será exibido na página html, a mensagem "Bem vindo Max Cavalera".	   
-|									   
-|--------------------------------------------------------------------------
+|									|
+|*alert ("mensagem aqui"); - Faz a página gerar um alerta, que dirá a	|
+|mesma mensagem escrita dentro do parêntesis.				|	   
+|									|
+|var "nome" = "mensagem exemplo"; - Cria uma mensagem "variável" no js.	| 
+|									|  
+|Para realizar a "fusão entre dois elementos js, utilizamos o "+".      |  
+|Exemplo:								|
+|									|
+|var nome = "Max Cavalera";						|
+|									|
+|alert ("Bem vindo" + nome);						|									   
+|Será exibido na página html, a mensagem "Bem vindo Max Cavalera".	|   
+|									| 
+|-----------------------------------------------------------------------|
  _______________________________________________________________________________
 |										|
 |				|confirm|					|
 |_______________________________________________________________________________|
 |										|
 | Quase igual ao alert, o comando window.confirm, é responsável por exibir uma 	|
-|mensagem, e pedir uma confirmação para o usuário.
+|mensagem, e pedir uma confirmação para o usuário.				|
 |
 |window.confirm("mensagem aqui!");
 |-------------------------------------------------------------------------------|

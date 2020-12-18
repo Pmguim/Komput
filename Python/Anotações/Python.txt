@@ -431,6 +431,30 @@ from math import sqrt - Importa apenas o elemento sqrt da biblioteca math.
 *Veja a sessão 'Biblioteca math' em 'Operações matemáticas'. para encontrar mais rapidamente a sessão, pressione Ctrl + F,
 e digite o nome do elemento que deseja encontrar.
 
+ Para utilizar a biblioteca/o item que foi importado, basta adicionar o nome da biblioteca/do item e em seguida o nome
+da variável. Exemplo:
+
+USANDO FROM:
+
+from math import trunc*
+Valor = float(input('Insira um valor real: '))
+print('O valor inserido foi {}, e sua parte inteira é {}'.format(Valor,trunc(Valor))
+===========================
+
+USANDO IMPORT:
+
+import math
+Valor = float(input('Insira um valor real: '))
+print('O valor inserido foi {}, e sua parte inteira é {}'.format(valor,math.trunc(Valor))
+----------------------------
+
+ Também é possível realizar estes dois exemplos acima SEM IMPORTAR nenhum item ou biblioteca:
+
+Valor = float(input('Insira um valor real: '))
+print('O valor inserido foi {}, e sua parte inteira é {}'.format(Valor,int(Valor))
+
+
+*Para entender o elemento 'trunc', veja a sessão 'Biblioteca math' logo abaixo. 
 ______________________________________________________________________________________________________________________________
 
 				 _______________________________________________

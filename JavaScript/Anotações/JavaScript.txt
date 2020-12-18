@@ -33,6 +33,26 @@ Exemplo:
 
 </html>
 
+ Ou, se preferir, use o próprio elemento <script> dentro da tag <head> para
+criar uma ponte entre o documento HTML e um outro documento JS.
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Exemplo</title>
+		<script type="text/javascript" src="Arquivos/JS/JSexemplo.js"></script>
+	</head>
+
+<body>
+	<script>
+
+	</script>
+</body>
+
+</html>
+
 =========================================================================
 
 		 _______________________________
@@ -367,51 +387,6 @@ ________________________________________________________________________________
 |
 |------------------------------------------------------------------------------
 
- _______________________________________________________________________________
-|										|
-|					|LENGTH|				|
-|_______________________________________________________________________________|
-|
-|.length, é responsável por mostrar o número de elementos presen-
-|tes em uma determinada var.
-|
-|Exemplo:
-|
-|var lista="Fleetwood Mac, Black Sabbath, Cannibal Corpse";
-|
-|console.log (lista.length);
-|
-|Resultado= Mostra o número de itens no console do navegador.
-|-----------------------------------------------------------------------------
-
- _______________________________________________________________________________________
-|											|
-|					|TO UPPER/LOWERCASE|				|
-|_______________________________________________________________________________________|
-|
-|.toUpperCase()); - Esta string, pode deixar todo o texto de um determinado elemento
-|em caixa alta (maiúscula).
-|
-|Exemplo:
-|
-|var Windows11 = "Microsoft lança o Windows 11";
-|
-|console.log(Windows11.toUpperCase());
-|
-|O resultado, estará em Console, no navegador.
-|
-|MICROSOFT LANÇA O WINDOWS 11
-|________________________________________________
-|
-|O meso vale para .toLowerCase.
-|
-|var Windows11 = "Microsoft lança o Windows 11";
-|
-|console.log(Windows11.toLowerCase());
-|
-|microsoft lança o windows 11
-|
-|-----------------------------------------------------------------------------------
 
  _______________________________________________________________________________________
 |											|
@@ -430,15 +405,6 @@ ________________________________________________________________________________
 |alert (JOJO.replace("bom","ótimo"));
 |
 |-------------------------------------------------------------------------------------
-
- _______________________________________________________________________________
-|										|
-|				|TOSTRING|					|
-|_______________________________________________________________________________|
-|										|
-|Transforma o elemento em uma string, mas o mantém sendo uma lista/alerta etc.	|
-|
-|------------------------------------------------------------------------------
 
  ___________________________________________________________
 |							    |

@@ -146,11 +146,43 @@ OU
 >>>print('Mensagem aqui')
 Mensagem aqui
 
+>>>type
+
+ O comando type, é responsável por mostrar qual o tipo de um determinado dado, ou variável. Se é
+uma string, se é um valor booleano, float, int e outros.
+
+Str:
+
+>>>type ('Olá humano!')
+<class 'str'>
+
+Int:
+
+>>>type(10)
+<class 'int'>
+
+Bool:
+
+>>>type(False)
+<class 'bool'>
+
+Float:
+
+>>>type(10.3)
+<class 'float'>
+
+Variável:
+
+>>>x = 10
+>>>type (x)
+<class int>
+
+
 --------------------------------------------------------------------------------------------------------
- _______
-|	|
-|Sinais:|
-|_______|
+							 _______
+							|	|
+							|Sinais:|
+							|_______|
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	 _
@@ -186,10 +218,10 @@ Peso = 1g
 
 _______________________________________________________________________________________________________________
 
- _______________________________
-|				|
-|	Uso de variáveis	|
-|_______________________________|
+					 _______________________________
+					|				|
+					|	Uso de variáveis	|
+					|_______________________________|
 
  As variáveis podem ser simplesmente escritas como usamos o exemplo de nome, idade e peso. Mas, se escrevermos
 elas daquela forma, elas não serão imprimidas no programa. Para que sejam, devemos escrever:
@@ -205,10 +237,10 @@ Pmguim 577 1
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
- _______
-|	|
-|Input	|
-|_______|
+							 _______
+							|	|
+							| Input	|
+							|_______|
 
  O elemento "input", é responsável por receber e mostrar o resultado de uma variável. Pode parecer um pouco
 confuso, mas é bem simples:
@@ -223,10 +255,10 @@ print, será imprimido o dado anteriormente inserido na variável.
 Pmguim
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
- _______________________________
-|				|
-|	Tipos Primitivos	|
-|_______________________________|
+				 _______________________________
+				|				|
+				|	Tipos Primitivos	|
+				|_______________________________|
 
  Os tipos primitivos são declarações de variáveis, que são usadas para determinar o valor das mesmas.
 Usando eles, podemos somar dois valores inseridos por um usuário e fazer muito mais.
@@ -564,6 +596,57 @@ ________________________________________________________________________________
 
 
 {}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+						 _______________________________________________
+						|						|
+						|		Operadores Booleanos		|
+						|_______________________________________________|
+
+ Operadores booleanos, são usados como 'condições' para variáveis e dados. São eles:
+			 _______
+			|AND / E|
+
+ O resultado só será verdadeiro, se ambos os elementos forem verdadeiros. Caso contrário, será falso. Exemplo:
+
+	{TRUE:}
+
+>>>x = 12312
+>>>x > 0 and x ** 2 > 100
+True
+
+	{FALSE:}
+
+>>>x < 0 and x ** 2 == 100
+False
+
+----------------------------------------------------------
+			 _______
+			|OR / OU|
+
+ O resultado será verdadeiro se um dos elementos for verdadeiro. Exemplo:
+
+>>>x = 12312
+>>>x < 0 or x == 12312
+True
+---------------------------------------------------------
+			 _________
+			|NOT / NÃO|
+
+ Responsável por inverter os valores booleanos dos elementos. Exemplo:
+
+>>>x > 0
+True
+>>>not x > 0
+False
+
+>>>not False
+True
+>>>not True
+False
+
+>>>not not True
+True
+>>>not not False
+False
 
 ############################################################################################################################
 

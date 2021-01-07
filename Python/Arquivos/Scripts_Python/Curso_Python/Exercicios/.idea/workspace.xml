@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf2bcd3-6f3d-44fc-971b-d9339da6d1c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../../JavaScript/Anotações/JS HTML.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex_018.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_018.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Coursera_Python/Lista1" />
   </component>
   <component name="RunManager" selected="Python.ex_0016">
     <configuration name="ex_0016" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -190,6 +190,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609986300635">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1429.0.1377.900@0.0.1366.728" timestamp="1609986300635" />
     <state width="1345" height="171" key="GridCell.Tab.0.bottom" timestamp="1607558707125">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -216,6 +216,20 @@ Peso = 1g
 
 *A variável nome receberá o dado inserido pelo usuário, assim como todas as outras.
 
+-----------------------------------------------------------------------------------------------------------------
+			 _______________________________
+			|				|
+			|	Listas em python	|
+			|_______________________________|
+
+ Para criar uma lista de elementos em python, basta adiconar o nome de uma determinada variável á duas chaves,
+que também devem estar dentro de uma variável:
+
+Tomate = 'Preciso comprar tomate.'
+Maçã = 'Preciso comprar maçã.'
+
+Lista = [Tomate, Maçã]
+
 _______________________________________________________________________________________________________________
 
 					 _______________________________
@@ -263,7 +277,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
  Os tipos primitivos são declarações de variáveis, que são usadas para determinar o valor das mesmas.
 Usando eles, podemos somar dois valores inseridos por um usuário e fazer muito mais.
 
-Existem 4 tipos de Tipos Primitivos, são eles:
+			Existem 4 tipos de Tipos Primitivos, são eles:
 
 int - se refere à um número inteiro (sem vírgula ou ponto)
 
@@ -443,6 +457,38 @@ CONSOLE:
 Olá Humano! Qual é o seu nome?
 ------------------------------------------------------------------------------------------------------------------------------
 
+						 _______________________
+						|			|
+						|	Repetições	|
+						|_______________________|
+
+ As estruturas de repetição, são usadas para que o computador repita alguma tarefa, quando alguma condição for verdadeira,
+ou algo do gênero.
+
+ Alguns dos tipos são:
+							 _______________________
+							|			|
+							|	While		|
+							|_______________________|
+
+ O comando 'while', está presente em diversas linguagens de programação. 'while', é uma palavra em inglês, que significa
+'enquanto'.
+
+ Então, no caso, enquanto determinada condição for verdadeira, repita uma determinada informação.
+
+ Um exemplo, escreveremos um programa que fará a potenciação de 2, enquanto um determinado valor for menor ou igual a
+zero. Então:
+
+i = 0
+
+while i <= 10:
+	print(2**i)
+	i = i + 1
+
+ O resultado do programa, será a potenciação de 2, até que a variável 'i', seja 10, o que significa que o número 2, será
+elevado à 10ª potência.
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////////////////////////////////////
 					 _______________________________________
 					|					|
 					|		import e from		|
@@ -653,4 +699,4 @@ False
 --Para fazer com que alguma informação do código se trone um comentário, é só adicionar o '#' (hash) no início
 da linha do conteúdo.
 
---
+--                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

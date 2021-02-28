@@ -576,7 +576,7 @@ ________________________________________________________________________________
  A biblioteca math, consiste em guardar elementos que realizam operações matemáticas. Para utilizarmos ela,
 devemos usar o elemento import para importar uma das strings que realizam as operações.
 
-As strings são:
+Algumas das strings são:
 
  __________________________________________________________		 _________________________________________
 |ceil - Arredonda um valor para um número exato "pra cima",|		|floor - Arredonda um valor para um número|________________

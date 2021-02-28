@@ -50,6 +50,11 @@ ________________________________________________________________________________
 |												|
 |<p> - Cria um parágrafo na página, e geralmente se usa para escrever textos depois do "p".	|
 |</p>												|
+|												|
+|<br> - Cria uma quebra de linha na página. Não é necessário realizar o fechamento da tag.	|
+|												|
+|<hr> - Cria uma linha horizontal que cruza a página inteira, da direita para a esquerda. Assim	|
+|como a tag <br>, não é necessário realizar o fechamento da tag.				|
 |_______________________________________________________________________________________________|
 
  _______________________________________________________________________________________________
@@ -96,6 +101,13 @@ ________________________________________________________________________________
 |											|
 |<img src="" alt=""> - Adiciona uma descrição para uma determinada imagem. A localização|
 |da imagem deve ser inserida no meio das aspas.						|
+|											|
+| Caso a imagem esteja em um nível acima da pasta do documento HTML, é necessário adi-	|
+|cionar ".." (dois pontos finais) antes do endereço do diretório inserido em 'src'.	|
+|											|
+|Exemplo:										|
+|											|
+|<img src="../CachorrosDancando.jpg" alt="Tartarugas dançando em um arco-íris">		|
 |_______________________________________________________________________________________|
 
  _______________________________________________________________________________________

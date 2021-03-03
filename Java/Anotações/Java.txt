@@ -1,0 +1,144 @@
+			###ATENÇÃO.###
+!!!!!!!!!!!!!!!!!!!!!!!###############!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@@@	 É importante que, para os códigos das anotações sejam executadas e forma	@@@@
+@@@	certa pelos compiladores e editoes de código, seja feito o download do JDK	@@@@
+@@@	(Java Development Kit), o download da linguagem JAVA, e o download do JRE	@@@@
+@@@@@@@@(Java Runtime Environment). @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ Recomendo também a instalação do ambiente ECLIPSE, para o desenvolvimento exclusivo da
+linguagem JAVA.
+
+					JAVA
+ __________________________________________
+|Seção 1 - Fundamentos e ortografia em JAVA|____
+|==++**-----------------------------------**++==|
+|	ITEM A: O que é uma variável?		|_______________________________________________
+|												|
+| Uma variável, é um ojeto que armazena um determinado valor apenas enquanto está existindo no	|
+|código.											|
+|												|
+|												|
+|												|
+|	ITEM B: nomeDe_Variáveis								|
+|												|
+| Ainda não entramos no código em si, porém, é importante enfatizar que, não só			|
+|em JAVA, mas na maioria das linguagens de programação, não são aceitos "caracteres		|
+|especiais", isto é, "ç", acentos em letras, traços para realizar uma separação de nomes,	|
+|e nem espaços. No caso dos espaços, a maioria dos programadores utiliza um "_" para dar	|
+|um espaçamento entre algum nome dentro de uma variável. Ou seja:				|
+|												|
+|varEx_Num1											|
+|												|
+| São permitidos nomes de variáveis que começem com um "$" (cifrão) ou um "_" (sublinhado/	|
+|underline).											|
+|												|
+|												|
+|												|
+|	ITEM C: camelCase									|
+|												|
+| O camelCase é um padrão/sugestão ortográfico/a utilizado/a dentro da linguagem		|
+|JAVA, para facilitar a compreensão do nome de variáveis. Como vimos anteriormente no exemplo	|
+|do "ITEM B", a "varEx_Num1" já utiliza o camelCase.						|
+|												|_
+| E lembre-se, letras maiúsculas e minúsculas fazem diferença na nomeação de variáveis. Por exem-|
+|plo, se caso eu crie uma outra variável com o mesmo nome do exemplo do "ITEM B", porém sem o uso|
+|do camelCase (var1ex_num1), o compilador identificará que é uma variável nova, e tratará ela como|
+|algo sem valor atribuído.									 _|
+|===============================================================================================|
+
+ _______________________________________________________________________________________________
+|	ITEM D: $Tipos_Primitivos								|
+|												|__
+| Primitivo, significa "O primeiro" ou "Da primeira origem". E é justamente isso que deve ser feito|__
+|com os tipos primitivos. Assim como em praticamente todas as linguagens de programação existentes, há|_
+|4 tipos primitivos, usados para definir qual o valor armazenado em uma determinada variável.		|
+|-------------------------------------------------------------------------------------------------------|
+|								São eles:				|
+|													|______________________
+|	int: Referente á qualquer valor de número inteiro			bool: Referente aos dois valores, True e False.|
+|																|
+|	float/double: No caso, float e double são usados para			String: Referente á qualquer tipo de letra.	|
+|	armazenar valores decimais, ou seja, números que "tem									|
+|	vírgula".  Ambos funcionam da mesma maneira.				char: Tipo primitico que só consegue armazenar	|
+|										um caractére, devido o seu limite de 1 byte.	|
+|-------------------------------------------------------------------------------------------------------------------------------|
+|						 	________________________________________________________________________|
+|	ITEM E: _Diferenciando_Classe_De_Variável	|
+|							|_______________________________________
+|" Uma classe é um elemento do código Java que utilizamos para representar objetos do mundo real.|____________
+| Dentro dela é comum declararmos atributos e métodos, que representam, respectivamente, as características e |
+|comportamentos desse objeto."									 _____________|
+|											      __|
+|retirado do site https://www.devmedia.com.br/java-declaracao-e-utilizacao-de-classes/38374#:|___________
+|~:text=Uma%20classe%20%C3%A9%20um%20elemento,caracter%C3%ADsticas%20e%20comportamentos%20desse%20objeto.|
+|													 |_____________________			
+| A declaração de uma classe, acontece quando o nome de uma variável, começa com letra maiúscula. A partir deste momento, não é|
+|mais uma variável, mas sim uma classe.												|
+|																|	
+|-------------------------------------------------------------------------------------------------------------------------------|
+|												|
+|	ITEM F: /*Comentários em JAVA*/								|
+|												|_______
+| A linguagem JAVA utiliza um sistema de comentários semelhante ao da linguagem C# (C Sharp), em que, 	|
+|todo e qualquer dado inserido dentro dentro dos sinais "/* */", é considerado um comentário, e não	|
+|será lido no código. Para fazer com que apenas uma linha torne-se um comentário, pode ser adicionado	|
+|apenas as "//".											|
+|													|
+| /*													|
+|													|
+|	Isso é um comentário.										|
+|													|
+| */													|
+|													|
+|//Isso também é um comentário.										|
+|													|
+|-------------------------------------------------------------------------------------------------------|
+|													|
+|	ITEM G: Inicialização de variável = 0;								|
+|													|
+| Após a declaração da variável, o JAVA precisa que ela seja "inicializada", ou seja, a variável	|
+|precisa receber um determinado valor, para que ela possa ser considerada uma variável.			|
+|													|
+| Podemos inserir valores dentro de uma variável em qualquer parte do código, o mais indicado a se	|
+|fazer, é inserir dentro da própria declaração de variáveis. Exemplo:					|
+|													|
+|int var1Ex_ItemG = 10;											|
+|													|
+|	OU												|
+|													|
+|int var1Ex_ItemG;											|
+|													|
+|var1Ex_ItemG = 10;											|
+|													|
+|-------------------------------------------------------------------------------------------------------|
+
+ _______________________________________________
+|		Seção 2 - Comandos JAVA		|
+|==++**-----------------------------------**++==|_______________
+|	ITEM A: System.out.print(Imprimindo algo no console);	|
+|								|__________________________________
+| Podemos imprimir um texto/dado no console utilizando o comando "System.out.print();", que podemos|____________
+|usar para imprimir algum valor de variável no console. E isso vale para todo e qualquer tipo de variável.	|
+|														|
+| String var1_Sec2_ItemA = "Olá humano!";									|
+|														|
+| System.out.print(var1_Sec2_ItemA);										|
+|														|
+| Usando o exemplo acima, teremos como resultado, a frase "Olá humano!" imprimida no console.			|
+|														|
+| É possível fazer com que os elementos sejam divididos linha por linha no console, é necessário inserir um	|
+|"ln" no final de "print"(System.out.println(var1_Sec2_ItemA).							|
+|														|
+|														|_______
+|															|
+|	ITEM B: final String = "Variáveis Constantes";									|
+|															|
+| Variáveis constantes são variáveis que receberão um determinado valor, e se manterão com ele "para sempre".		|
+| Ou seja, o valor destas variáveis não poderá ser mudado. Para declararmos que uma variável é constante, deve-		|
+|mos denominar seu nome inteiro em caixa alta, e adicionar o elemento "final" antes de seu tipo primitivo. Dessa forma:	|
+|															|
+| final float PI = 3.14;													|
+|															|_______
+| Caso haja alguma tentativa de alteração no valor, o programa alertará o usuário de um erro presente na variável constante.	|
+|
+|

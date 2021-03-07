@@ -30,6 +30,10 @@ ________________________________________________________________________________
 |											|
 |<body> - Representa a estrutura/corpo do documento.					|
 |</body>										|
+|											|
+|*Caso esteja utilizando o Editor de Código "Visual Studio Code", apenas digite "html"	|
+|na primeira linha do código, e será sugerido a opção "html:5". Selecione-a, e todos os	|
+|elementos escritos acima serão automáticamente inseridos.
 |_______________________________________________________________________________________|
 
 ________________________________________________________________________________________
@@ -79,6 +83,15 @@ ________________________________________________________________________________
 |</li>												|
 |_______________________________________________________________________________________________|
 
+ _______________________________________________________________________________________
+|				|INPUT|							|
+|---------------------------------------------------------------------------------------|
+| O elemento <input type="" id="" value=""> tem diversas funções dentro da marcação do 	|
+|documento HTML. Entre elas a função de adicionar o horário atual em uma página web, 	|
+|fazer uma check-box, um botão e várias outras funções, que podem ser visualizadas em	|
+|https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input.			|
+|_______________________________________________________________________________________|
+
  _______________________________________________________________________
 |			|SECTION/ARTICLE/DIV/|				|
 |-----------------------------------------------------------------------|
@@ -89,7 +102,9 @@ ________________________________________________________________________________
 |dentro de uma página.                                   		|
 |</article>								|		
 |					    				|
-|<div> - É usado para dividir elementos na página.			|
+|<div> - É usado para dividir elementos na página. Não é tão eficiente	|
+|quanto o elemento <section>, pois a <div> não é capaz de armazenar	|
+|tantos elementos quanto ela.						|
 |</div>									|
 |_______________________________________________________________________|
 
@@ -167,7 +182,7 @@ ________________________________________________________________________________
 |													|
 | <select>												|
 |	<option value="1">Angra</option>								|
-|	<option value="2">Deiceide</option>								|
+|	<option value="2">Deicide</option>								|
 | </select>												|
 |													|
 |_______________________________________________________________________________________________________|

@@ -61,7 +61,7 @@ align-items: center/left/right; - Alinha os itens em horizontal, e em uma certa 
 |			|Class e Section|					|
 |-------------------------------------------------------------------------------|
 | Ambos os elementos class e section podem ser utilizados no CSS. a diferença	|
-|entre eles, é quepara a class, deve-se ser inserido um "."(ponto) antes da	|
+|entre eles, é que para a class, deve-se ser inserido um "."(ponto) antes da	|
 |abertura da string. Já para a section,deve se usar uma "#"(hash) antes da	|
 |string.								    	|
 |									    	|

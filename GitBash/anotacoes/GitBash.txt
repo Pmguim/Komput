@@ -89,7 +89,7 @@ ________________________________|------------------|____________________________
 |														|
 |B - Caso você queira visualizar os repositórios externos salvos na pasta, digite git remote -v.		|
 |														|
-|C - Para remover um repositório externo, digite git remote rm origin master.					|
+|C - Para remover um repositório externo, digite git remote rm origin.						|
 |_______________________________________________________________________________________________________________|
 
 *git push -u origin master - *Executa a mesma função de "git push", porém com um adicional.

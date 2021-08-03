@@ -1,139 +1,137 @@
-				Curso Git Bash.
- _______________________________________________________________________________
-|			Outros -						|
-|										|
-| SHA - Security Hash Algorithym - É um conjunto de 3 funções hash criptográ-	|
-| ficas, projetadas pela NSA (Agência de Segurança Nacional dos EUA). A encri-	|
-| ptação, gera um conjunto de caracteres identificador de 40 digitos.		|
-|_______________________________________________________________________________|
-				
-				 _______________________
-				|			|
-				|	Windows - cmd	|
-				|_______________________|
+				GitBash
 
-*dir - Lista todas as pastas, dentro do diretório selecionado.
-
-*cd (change directory) - Faz com que o programa mude de diretório.
-Exemplo:
-
-C:\Users\arrur> cd
-C: cd \Windows
-C:\Windows>
-
-*cd .. - Retorna ao diretório anterior.
-
-*cls - limpa todo o registro anteriormente "escrito".
-
-*(Make Directory) mkdir - Cria um diretório (pasta) novo.
-
-*echo ___ - cria um texto que será copiado pelo programa, fazendo um "eco".
-
-*echo ___ > ____.___ - Cria um arquivo em que a mensagem escrita no primeiro sublinhado,
-é copiada para dentro do arquivo do 2º sublinhado.É necessário também digitar a extensão do
-arquivo.
-
-*del - deleta todos os arquivos dentro de uma determinada pasta.
-
-*(Remove Directory) rmdir ____ /S /Q - Deleta o diretório digitado dentro do sublinhado.
-
-*start *nome da aplicação* - Abre um determinado aplicativo.
-
+ A grosso modo, o GitBash é um console do sistema Linux que está disponível em outros computadores.
+ Essa é umadescrição bem superficial, já que o GitBash faz várias e várias outraas coisas... Como
+mostramos nos comandos abaixo.
 ===============================================================================================
 ###############################################################################################	
-	 _______________________________
-	|				|
-	|	Linux (Git Bash)	|
-	|_______________________________|
 
-*ls - Lista todas as pastas, dentro do diretório selecionado.
+	 _______________________________________________________
+	|							|
+	|	Criação de arquivos e pastas/navegação		|_______________________________________
+ _______|												|
+|													|
+| Assim como o terminal do Windows, o GitBash, que é um terminal Linux, também consegue fazer alterações|
+|em seu computador... Porém, com comandos diferentes. Se você leu as anotações sobre o CMD do Windows, 	|
+|vai se dar conta de que alguns comandos são iguais, e de fato eles são. Mas alguns são diferentes.	|
+|													|
+|-------------------------------------------------------------------------------------------------------|
+|ls - Lista todas as pastas, dentro do diretório selecionado.						|
+|													|
+|cd - Faz com que o terminal caminhe para um determinado diretório, que deve ter seu nome escrito na	|
+| frente do comando.											|
+|													|
+|cd .. - Retorna ao diretório anterior.									|
+|													|
+|touch + nome do arquivo + extensão - Cria um determinado arquivo com uma determinada extensão. Exemplo:|
+|													|
+| touch teste.txt											|
+|													|
+| O arquivo de texto "teste" será criado na pasta que você selecionou.					|
+|													|
+|clear - Limpa todas as informações registradas na tela. Também é possível utilizar o comando		|
+| "CTRL + L", pois será realizada a mesma função.							|
+|													|
+|mkdir "nome da pasta" - Cria uma nova pasta com um determinado nome (inserido na frente do comando).	|
+|													|
+|git rm -rf "nome da pasta" - Deleta uma determinada pasta, junto de tudo que esteja dentro dela.	|
+| O nome da pasta deve ser inserido na frente do comando.						|
+|													|
+|openssl sha1 "nome"."extensão" - Encripta o arquivo na linguagem "sha1".				|
+|O processo deve ser repetido todas as vezes em que o arquivo sofrer alguma alteração ou atualização.	|
+| O nome do arquivo deve ser inserido na frente do comando						|
+|													|
+|ls -a - Mostra pastas ocultas do sistema que não aparecem normalmente com o comando "ls".		|
+|													|
+|-------------------------------------------------------------------------------------------------------|
+ 		 _______________________________
+		|				|
+		|	GIT COMMIT E PUSH:	|
+________________|-------------------------------|_______________________________________________________________________
+|															|
+| Um commit é uma forma de registrar todas as mudanças que foram feitas em arquivos/pastas. Isso inclui nomes, dados de |
+|arquivos, literalmente QUALQUER mudança. Por isso que toda e qualquer mudança deve ser registrada no Git por meio de	|
+|um commit.														|
+|															|
+|			PASSO 1:											|
+|															|
+| Primeiramente é necessário iniciar um repositório git no repositório local, que no caso, é a pasta que vamos 		|
+|registrar. 														|
+|															|
+|Abra o git, caminhe até a pasta, e digite 'git init'. Uma pasta oculta no sistema chamada ".git" será			|
+| criada, sinalizando que  os dados dali serão registrados.								|
+|															|
+|			PASSO 2:											|
+|															|
+| Agora, precisamos adicionar os arquivos da pasta ao commit. 								|
+|Digite então 'git add .' ou 'git add *'. Não há nenhuma diferença entre os dois.					|
+|															|
+|			PASSO 3:											|
+|															|
+|Agora, iremos "commitar" os arquivos. Digite 'git commit -m "_______" e digite uma mensagem dentro do			|
+|espaço sublinhado.													|
+|															|
+|			PASSO 4:											|
+|															|
+| Agora, caso você já tenha um repositóro externo cadastrado, apenas digite 'git push origin master'.			|
+|															|
+| Um repositório externo, é um lugar que o GitBash madará seus arquivos para que fiquem salvos, quase como uma nuvem.	|
+| Em programação, chamamos isso de versionamento de código, pois cria outras versões dos mesmos arquivos.		|
+|															|
+| Há diferentes sites que fazem o versionamento Git, porém, alguns são pagos. O mais usado e mais conhecido, é o GitHub,|
+| que oferece espaço gratuito para a criação de repositórios. Apesar disso, há um limite de armazenamento de arquivos no|
+| repositório.														|
+| 															|
+| Caso não tenha um repositório externo cadastrado, siga os passos abaixo.						|
+|#######################################################################################################################|
+|		 _______________________________________								|
+|		|					|								|
+|		|	CADASTRANDO REPOSITÓRIOS:	|								|
+|		|_______________________________________|								|
+|															|
+|1. Insira o código git remote add origin, e na frente do comando, insira o link do repositório externo.		|
+|															|
+|2 - Caso você queira visualizar os repositórios externos cadastrados na pasta, digite git remote -v.			|
+|															|
+|3 - Para remover um repositório externo, digite git remote rm origin. Caso queira cadastrar outro, repita os passos.	|
+|
+| Para conferir se todos os arquivos foram commitados, insira o comando "git status". Ele exibirá quais arquivos faltam |
+|ser adicionados, ou SE faltam arquivos a serem adicionados.
+|_______________________________________________________________________________________________________________________|
 
-*(change directory) cd / - Faz com que o programa mude de diretório.
+			 _______________________________
+			|				|
+			|	Os tipos de "push"	|
+ _______________________|				|_______________________________________________________________
+|															|
+| Git Push é um comando que manda as informações de um commit para o repositório externo, assim, "empurrando" as infor- |
+|mações.														|
+|															|
+| Há diversos outros tipos de comandos de Git Push, e iremos listar alguns deles:					|
+|															|
+|git push -u origin master - *Executa a mesma função de "git push", porém, são iguala as versões de repositório local	|
+| e remoto.														|
+|															|
+|mv "nome do arquivo" ./"nome do diretório"/ - Move um arquivo para um determinado diretório. O nome do arquivo deve ser|
+| adicionado no lugar das aspas, assim como o nome do diretório.							|
+|															|
+|echo >___.___ - cria um arquivo com o nome que e extensão que devem ser inseridos nas partes sublinhadas.		|
+|															|
+|-----------------------------------------------------------------------------------------------------------------------|
 
-*cd .. - Retorna ao diretório anterior
-
-*touch + nome do arquivo + extensão - Cria um determinado arquivo com uma
-determinada extensão.
-
-*clear - limpa todo o regostro anteriormente "escrito".É possível utilizar
-também, o comando "CTRL + L", pois será realizada a mesma função.
-
-*(Make Directory) mkdir _____ - Cria um diretório (pasta) novo.
-
-*(remove)git rm -rf ______ - Deleta a pasta escrita dentro do sublinhado, além de deletar
-todas as pastas dentro da mesma.
-
-*openssl sha1 _____.____ - Encripta o arquivo na linguagem "sha1". O processo deve ser repetido todas
-as vezes em que o arquivo sofrer alguma alteração ou atualização.
-
-*ls -a - Mostra pastas ocultas dentro do Git
- 				____________________
-				|GIT COMMIT E PUSH:|
-________________________________|------------------|_________________________________________________________
-|1º - Primeiramente é necessário iniciar um repositório git no repositório local, que no caso, é a pasta que|___
-|vamos comitar. Abra o git, caminhe até a pasta, e digite 'git init'.						|
-|														|
-|2º - Agora, precisamos adicionar os arquivos da pasta ao commit. Digite então 'git add .' ou 'git add *',	|
-|lembrando que não há nenhuma diferença entre os dois.								|
-|														|
-|3º - Agora, iremos commitar os arquivos. Digite 'git commit -m "_______" e digite uma mensagem dentro do	|
-|espaço sublinhado.												|
-|														|
-|4º - Agora, caso você já tenha um repositóro externo cadastrado, apenas digite 'git push origin master'.	|
-| 														|
-| Caso contrário, siga estes passos:										|
-|########################___________________________###################################################		|
-|			|CADASTRANDO REPOSITÓRIOS:|								|
-|														|
-|A - Digite git remote add origin https:\\linkdeexemplo e em seguida, pressione enter.				|
-|														|
-|B - Caso você queira visualizar os repositórios externos salvos na pasta, digite git remote -v.		|
-|														|
-|C - Para remover um repositório externo, digite git remote rm origin.						|
-|_______________________________________________________________________________________________________________|
-
-*git push -u origin master - *Executa a mesma função de "git push", porém com um adicional.
-Também são igualadas as versões de repositório local e remoto.
-
-*git branch - Mostrará qual(is) branch(es) temos criada(s) em nosso diretório.
-
-*git checkout + nome da branch - É responsável por trocar a branch.
-
-*git branch -D + nome da branch - Deleta uma determinada branch.
-
-*git branch + nome da branch - Cria uma determinada branch.
-
-*git checkout -b + nome da branch - Cria uma determinada branch, e, automáticamente já leva o usuário para
-dentro da mesma.
-
-*git merge + nome da branch - Realiza a "fusão" entre todas as branches. Ou seja, copia todos os arquivos,
-para dentro de todas as branches criadas.
-
-*git status - Mostra o status do arquivo.
-
-*mv *nome do arquivo* ./*mome do diretório*/ - Move aum arquivo para um determinado diretório.
-
-*echo >___ - cria um arquivo com o nome que deve ser inserido na parte sublinhada.
-
-*git config --list - Mostra a atual lista de configurações dentro do git bash.
-
-*git config --global --unset *categoria* - Deleta a configuração da categoria citada
-
-*git config --global *categoria* - Altera o nome da categoria listada.
- IMPORTANTE: A CONFIGURAÇÃO DEVE SER DELETADA PRIMEIRO, PARA DEPOIS SER RENOMEADA.
-
-___________________
-
-Typora e Markdown
-____________________
-
-# - Equivale aos "h's" de HTML. Ou seja, 
-
-Uma hash = h1
-duas = h2
-
-_ *palavra*_ - Transforma a sentença, frase, texto etc em itálico.
-
-**palavra** - Transforma a sentença, frase, texto etc em negrito.
-
-- *cria uma lista de itens que sejam digitados depois do "menos".
+			 _______________________________
+			|				|
+			|	Configurando o Git	|
+ _______________________|				|_______________________________________________________________
+|															|
+| Também é necessário configurar algumas preferências do sistema do terminal. Isso não é algo tão urgente, mas pode vir	|
+| a ser útil.														|
+|															|
+|git config --list - Mostra a atual lista de configurações dentro do git bash.						|
+|															|
+|git config --global --unset " nome da categoria" - Deleta a configuração da categoria citada				|
+|															|
+|git config --global *categoria* - Altera o nome da categoria listada.							|
+| IMPORTANTE: A CONFIGURAÇÃO DEVE SER DELETADA PRIMEIRO, PARA DEPOIS SER RENOMEADA.					|
+|															|
+|-----------------------------------------------------------------------------------------------------------------------|

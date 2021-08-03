@@ -208,4 +208,6 @@ ________________________________________________________________________________
 |</script>												|
 |_______________________________________________________________________________________________________|
 
-<id=""> - É usado para dar um nome á um certo código, para melhorar a localização.
+<id=""> - É usado para dar um nome á um certo código, para melhorar a localização e poder localizar um
+determinado elemento na folha css.
+

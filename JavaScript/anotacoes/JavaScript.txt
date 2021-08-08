@@ -4,56 +4,7 @@
 |♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦|
 |==========================================================================|
 |--------------------------------------------------------------------------|
-			_______________
-			JAVASCRIPT HTML
-____________________________________________________________________________
 
-O javascript, deve sempre ser inserido dentro da linguagem
-html, mais especificamente, na tag body.
-
-Dentro da tag body, deve ser inserido o elemento "<script>", assim, o 
-navegador reconhecerá que todos os comandos utilizados dentro do elemen-
-to "<script>", faz parte da linguagem Javascript.
-
-Exemplo:
-
-<!DOCTYPE html>
-
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Exemplo</title>
-	</head>
-
-<body>
-	<script>
-
-	</script>
-</body>
-
-</html>
-
- Ou, se preferir, use o próprio elemento <script> dentro da tag <head> para
-criar uma ponte entre o documento HTML e um outro documento JS.
-
-<!DOCTYPE html>
-
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Exemplo</title>
-		<script type="text/javascript" src="Arquivos/JS/JSexemplo.js"></script>
-	</head>
-
-<body>
-	<script>
-
-	</script>
-</body>
-
-</html>
-
-=========================================================================
 
 		 _______________________________
 		|				|

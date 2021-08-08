@@ -1,7 +1,7 @@
 
 <CSS3>
 
-<link rel="stylesheet" href="arquivo css"> - Deve ser adicionado ao elemeto <head> no documento
+<link rel="stylesheet" href="arquivo.css"> - Deve ser adicionado ao elemeto <head> no documento
 HTML, para poder conectar o CSS com a página HTML.
 
  Todas as linhas de códigos devem teminar com um "ponto e vírgula".
@@ -38,12 +38,9 @@ _______________________________|
 
 text-align - Alinha o texto á uma determinada direção. exemplo:
 
-text-align:left;
-text-align:center;
-text-align:right;
-
-text-align - Responsável por alinhar os elementos.
-
+text-align:left; Alinha elementos à esquerda do documento.
+text-align:center; Centraliza os elementos do documento.
+text-align:right; Alinha elementos à direita do documento.
 _________________________________________________________________|
 
 justify-content: center/left/right; - Move todo o conteúdo do elemento para
@@ -91,34 +88,6 @@ align-items: center/left/right; - Alinha os itens em horizontal, e em uma certa 
 |"underline/sublinhado", no lugar do espaço.					|
 |_______________________________________________________________________________|
 
- _______________________________________________________________________________
-|		|"nome da div/class/section":nth-child()|			|
-|-------------------------------------------------------------------------------|
-| Este elemento, é responsável por alterar todos os "filhos", localizado dentro	|
-|da determinada div, section, ou class. Ou seja, deve ser digitado o nome da div|
-|/class/section + :nth-child().							|
-|Caso seja preciso alterar o filho em uma respectiva ordem,  deve-se usar o 	|
-|conceito de numeração dos elementos. Ou seja :					|
-|										|
-|HTML - 									|
-|<div class="imagem e título">							|
-|										|
-|<div class="imagem">								|
-|<img src="IMG/exemplo.png" width="100px">					|
-|</div>										|
-|										|
-|<div class="logout">								|
-|<p><h3>Sair</h3></p>								|
-|<div>										|
-|										|
-|CSS - 										|
-|										|
-|.imagem-e-título:nth-child(							|
-|	width="100px";								|
-|	color:white;								|
-|)										|
-|										|
-|_______________________________________________________________________________|
 _________________________________________________________________________________
 |			|LIST-STYLE-TYPE|					|
 |-------------------------------------------------------------------------------|_

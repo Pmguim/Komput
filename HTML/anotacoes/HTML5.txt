@@ -1,115 +1,177 @@
-		Anotações aulas HTML5
 
-*Sempre que fechar uma linha de código, deve-se haver uma barra anterior ao nome do código. Ex:
-<html>
-</html>
+**Sempre que uma tag em HTML for aberta, deve-se fechá-la logo a seguir. Por exemplo, se temos
+a tag <html>, ela deve ser fechada com </html>.
+
+ Algumas tags não necessitam de serem fechadas, porém, iremos alertar quando isso ocorrer.
 					________
 					|<HTML>|
 					 ------
-________________________________________________________________________________________
-|					|ELEMENTOS-PRINCIPAIS|				|	  
+
+ Não é correto denominar HTML ou CSS como linguagens de programção. O correto é afirmar que são
+linguagens de marcação de páginas. Tanto que, em HTMl, nos referimos como os elementos que alteram
+a página web como "tags", marcações, ao invés de "comandos."
+
+
+
+			 _______________________
+			|			|
+ _______________________|	CÉREBRO		|_______________________________________
+|	  										|
 |---------------------------------------------------------------------------------------|						
-| <!DOCTYPE html> -"!DOCTYPE", serve para que o navegador reconheça que o código faz  	|
-|parte de um documento html.								|
+| Um documento HTML consiste em tags básicas que constituem seu "corpo" e criam a	|
+| estrutura da página. São eles:							|
 |											|
-|<html> - Indica onde começa o código em html.						|
+|<!DOCTYPE html> -"!DOCTYPE" - Alerta o navegador que o texto escrito no documento é 	|
+|referente à tags em HTML, formando assim, uma página na web.				|
+|*Não é necessário fechar esta tag.							|
+|											|
+|<html> - Indica onde começam as marcações (código) em html.				|
 |</html>										|
 |											|
-|<head> - Representa o conjunto de metadados do documento.				|
+|<head> - A cabeça do documento HMTL. Contém dados importantes para a estrutura da 	|
+|página dentro do navegador. Os dados são escritos abaixo.				|
 |</head>										|
 |											|
-|<meta charset="utf-8"> - Padrão brasileiro, que faz o código html aceitar acentos.  	|
+|<meta charset="utf-8"> - Padrão brasileiro, que faz o código html aceitar acentos nas 	|
+|mensagens escritas dentro de aspas.							|
 |											|
-|<title> - Altera o nome da aba na página.						|
+|<title> - Altera o nome da aba na página. O nome em questão, deve ser escrito na frente|
+| da tag.										|
 |</title>										|
 |											|
-|<link rel="stylesheet" type="text/css" href=""> - "Linka" o documento em html, para 	|
-|que possa ser estilizado pelo CSS3. O caminho em que o CSS3 está sendo usado e		|
-|desenvovido, deve ser colocado entre as aspas de  "href".				|
-|</head> - Todos os códigos acima devem estar dentro do elemento "head".		|
+|<link rel="stylesheet" type="text/css" href=""> - Conecta o documento em html, para 	|
+|que possa ser estilizado por uma folha CSS3.						|
 |											|
-|<body> - Representa a estrutura/corpo do documento.					|
+| O caminho em que o CSS3 está sendo usado e desenvovido, deve ser colocado entre as	|
+| aspas de  "href".									|
+|											|
+|</head> - Todos as tags acima devem estar dentro da tag "head".			|
+|											|
+| Depois de completar a estrutura do cérebro da página, devemos seguir para a formação	|
+|do corpo do documento, que começa com a tag "body".					|
+|---------------------------------------------------------------------------------------|
+
+			 _______________________
+			|			|
+			|	CORPO HTML	|
+ _______________________|			|_______________________________________
+|											|
+|<body> - Cria o corpo da página HTML. A partir daqui, serão inseridas as tags que irão |
+|alterar o estilo e conteúdo da página. Ou seja, todo texto/informação deve ser inserido|
+| dentro desta tag.									|
 |</body>										|
 |											|
-|*Caso esteja utilizando o Editor de Código "Visual Studio Code", apenas digite "html"	|
-|na primeira linha do código, e será sugerido a opção "html:5". Selecione-a, e todos os	|
-|elementos escritos acima serão automáticamente inseridos.
-|_______________________________________________________________________________________|
+|---------------------------------------------------------------------------------------|
 
-________________________________________________________________________________________
+ _______________________________________________________________________________________
 |					|HEADER/FOOTER|					|
 |---------------------------------------------------------------------------------------|
-|<header> - Cria uma espécie de cabeçalho na página.					|
+|<header> - Cria uma espécie de cabeçalho na página, que ficará no topo dela no		|
+| navegador da web.									|
 |</header>										|
 |											|
-|<footer> - Cria um grupo de informações que serão introduzidas no ródape da página.	|
+|<footer> - Cria um grupo de informações que serão introduzidas no ródape da página, lo-|
+|calizado no final da página.								|
 |</footer>										|
 |_______________________________________________________________________________________|
 
  _______________________________________________________________________________________________
-|					|TEXTO|						    	|
+|					|Alterando o TEXTO|				    	|
 |-----------------------------------------------------------------------------------------------|
-|<h1>/2/3 etc..> - Altera o tamanho das letras da página.					|
+|<h1>/2/3 etc..> - Altera o tamanho do texto inserido na página.				|
 |</h1>												|
 |												|
-|<p> - Cria um parágrafo na página, e geralmente se usa para escrever textos depois do "p".	|
+|<p> - Todo e qualquer texto deve ser inserido dentro desta tag. O "p" sinaliza para "parágrafo"|
+|e pode receber outras tags que também alteram o texto como "h1", e "b" por exemplo.		|
 |</p>												|
+|												|
+|<b> - Transforma o texto inserido na frente da tag em negrito. É inserido em frente à tag "p".	|
+|</b>												|
+|												|
+|<i> - Segue a mesma regra de "b",porém, transforma o texto em itálico.				|
+|</i>												|
 |												|
 |<br> - Cria uma quebra de linha na página. Não é necessário realizar o fechamento da tag.	|
 |												|
 |<hr> - Cria uma linha horizontal que cruza a página inteira, da direita para a esquerda. Assim	|
 |como a tag <br>, não é necessário realizar o fechamento da tag.				|
-|_______________________________________________________________________________________________|
-
- _______________________________________________________________________________________________
-|					|MENU|							|
-|-----------------------------------------------------------------------------------------------|
-|<nav> - Cria um "menu" de navegação na página.							|
-|</nav>												|
 |												|
-|<ul> - Cria uma lista de elementos, palavras etc.						|
-|</ul>												|
+|<em> - Dá destaque à uma palavra ou trecho de um texto, para sinalizar que ela é mais importan-|
+|te para o entendimento/sentido do texto.							|
+|</em>												|
 |												|
-|<ol> - Cria uma lista onde os elementos são organizados ordenadamente.				|
-|</ol>												|
+|<strong> - Também é utilizado para dar destaque à uma parte do texto. A principal diferença	|
+| ele e a tag "em", é que "em" pode alterar o propósito do elemento destacado no texto.		|
+|</strong>											|
 |												|
-|exemplo:	    										|						
-|<ol>												|
-|1 - item #1											|
-|2 - item #2											|
-|</ol>												|
+|<cite> - Indica que o texto escrito em um determinado local não é de autoria do escritor do	|
+|texto. Ou seja, sinaliza um trecho que é na verdade uma citação. Normalmente é usado junto da	|
+|tag "q".											|
+|</cite>											|
 |												|
-|<li> - Organiza os elementos em uma lista, não importa a sua ordem.				|
-|</li>												|
+|<q> - Usado para sinalizar que o conteúdo foi retirado de outra fonte.				|
+|</q>												|
+|												|
+|<time> - Tag usada para sinalizar que um determinado conjunto de números representa um horário	|
+|ou data.											|
+| Exemplo:											|
+|												|
+|<p>São <time>9:00</time> da noite!</p>								|
+|</time>											|
+|												|
+|<span> - A tag span tem quase omesmo objetivo da tag <p>, porém, é usada para armazenar infor-	|
+|mações menores. Também é usada para formar um container.					|
+|</span>											|
+|												|
+|<!- Comentários! -->										|
+|												|
+| Comentários são formas importantes de se anotar informações em projetos de computação. Toda	|
+|linguagem de programação possui sua forma de comentário. Eles não ficam visíveis para o usuário|
+|do projeto, por serem considerados "anotações" pelo computador.				|
+|												|
+| Em HTML, a forma de escrever comentários é abrindo a tag "<!- -->".				|
+|												|
+| O(s) comentário(s) em questão, deve(m) ser escrito(s) dentro da tag, entre os dois traços.	|
+|												|
+| <!- Isso é um comentário! -->									|
 |_______________________________________________________________________________________________|
 
  _______________________________________________________________________________________
-|				|INPUT|							|
+|				|SECTION/ARTICLE/DIV/|					|
 |---------------------------------------------------------------------------------------|
-| O elemento <input type="" id="" value=""> tem diversas funções dentro da marcação do 	|
-|documento HTML. Entre elas a função de adicionar o horário atual em uma página web, 	|
-|fazer uma check-box, um botão e várias outras funções, que podem ser visualizadas em	|
-|https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input.			|
+|<section> - Define uma seção "genérica" dentro do site, ou seja, divide o bolo em 	|
+|fatias específicas, que terão seus valores colocados durante o desenvolvimento da	|
+| página.										|
+|</section>										|
+|											|
+|<article> - Representa um elemento com maior importância dentro do documento.		|
+|</article>										|		
+|					    						|
+|<div=""> - É usado para dividir elementos na página. É usado principalmente na divisão	|
+| de elemtentos dentro do site, para depois realizar a estilização/alteração em		|
+| elementos.										|
+|											|
+| A div pode ser inserida em toda e qualquer tag, que recebe um determinado nome que é	|
+|inserido dentro das aspas.								|
+|</div>											|
+|											|
+|<main> - É usado para sinalizar qual o elemento principal e mais importante da página.	|
+| Para que seja bem-construída, uma página deve apresentar apenas um elemento main.	|
+|</main>										|
+|											|
+|<fieldset> - Quase igual a <section>, porém, é usado para criar grupos que compartilham|
+|um propósito em comum. É usado junto do elemento <legend>, que cria um rótulo		|
+|explicativo para o fieldset que foi incluido.						|
+|											|
+| <fieldset>										|
+|	<legend>Rótulo genérico</legend>						|
+| </fieldset>										|
+|</fieldset>										|
+|											|
 |_______________________________________________________________________________________|
 
- _______________________________________________________________________
-|			|SECTION/ARTICLE/DIV/|				|
-|-----------------------------------------------------------------------|
-|<section> - Organiza itens em uma determinada parte/grupo no site.	|
-|</section>								|
-|									|
-|<article> -Representa um conteúdo independente e de maior relevância	|
-|dentro de uma página.                                   		|
-|</article>								|		
-|					    				|
-|<div> - É usado para dividir elementos na página. Não é tão eficiente	|
-|quanto o elemento <section>, pois a <div> não é capaz de armazenar	|
-|tantos elementos quanto ela.						|
-|</div>									|
-|_______________________________________________________________________|
-
  _______________________________________________________________________________________
-|					|IMG|						|
+|				|IMG e mídias.|						|
 |---------------------------------------------------------------------------------------|
 |<img src=""> - Usado para inserir imagens na página. A localização da imagem deve	|
 |ser inserida no meio das aspas.							|
@@ -123,41 +185,161 @@ ________________________________________________________________________________
 |Exemplo:										|
 |											|
 |<img src="../CachorrosDancando.jpg" alt="Tartarugas dançando em um arco-íris">		|
+|											|
+|<video> e <audio> - Usadas para sinalizar o uso de videos e áudios na página, as duas	|
+|tags estão sempre acompanhadas de uma "sub-tag", que sinaliza para o usuário se o nave-|
+|gador possui ou não suporte para rodar as mídias.					|
+|											|
+| A tag controls, é inserida na frente do nome da tag, e então podemos inserir o 	|
+|algoritmo que o navegador irá seguir caso não reproduza mídias.			|
+|											|
+| <video controls>									|
+|	<source src="videoExemplo.mp4" type="video/mp4">				|
+|	<source src="videoExemplo1.ogg" type="video/ogg">				|
+|	Seu navegador não possui suporte para vídeos.					|
+| </video>										|
+|											|
+| <audio controls>									|
+|	<source src="musicaGenerica.ogg" type="audio/ogg">				|
+|	<source src="musicaGenerica.mp3" type="audio/mpeg">				|
+|	Seu navegador não possui suporte para áudio.					|
+| </audio>										|
+|											|
+| Como foi possível ver acima, também é usada a tag "source", que requer o tipo de	|
+| arquivo de mídia a ser executado pelo navegador.					|
 |_______________________________________________________________________________________|
 
  _______________________________________________________________________________________
 |					|LINK|						|
 |---------------------------------------------------------------------------------------|
 |<a href=""> - Cria um hiperlink, (cujo deve ser inserido dentro das aspas), dentro de	|
-|algum elemento.									|
+|algum elemento. O link em questão, pode levar á algum espaço dentr da própria página,	|
+| ou à outro site/endereço da web.							|
 |</a>											|
 |											|
-|<a href=""><img src="imagem.png"> - Adiciona um link áuma determinada imagem.		|
+|<a href=""><img src="imagem.png"> - Adiciona um link à uma determinada imagem.		|
 |</a>											|
 |											|
 |<a href="mailto:"> - Cria um hyperlink, cujo te leva á seu e-mail, para que possa	|
 |mandar uma mensagem para o endereço de e-mail que automáticamente será escrito.	|
+|											|
+| O endereço cujo o e-mail será enviado deve ser inserido na frente de "mailto".	|
 |</a>											|
 |											|
-|<a href="tel:"> - Cria um hyperlink, cujo abre algum aplicativo que gerencie chamadas	|
+|<a href="tel:"> - Ao clicar no link, será aberto o aplicativo que realiza chamadas por	|
+|telefone.										|
 | telefônicas.										|
 |</a>											|
 |											|
-|<a href="" target="_blank"> - Serve para que ao clicar no hyperlink, seja		|
-|criada uma nova aba de navegação, mas usando o mesmo endereço do hiperlink.		|
+|<a href="" target="_blank"> - Abre o link em uma nova aba/página.			|
 |</a>											|
 |_______________________________________________________________________________________|
 
+ _______________________________
+|				|
+|	Listas de elementos	|
+|-------------------------------|_______________________________________________________________
+|												|
+| Listas são dados importantes na navegação de um site. Sem elas, não podemos ter um menu de na-|
+|vegação, ou uma organização de tópicos dentro da página.					|
+|												|
+| No caso há tags em HTML que realizam esses trabalhos.						|
+|												|
+|<li> - List item. Identifica que o dado escrito dentro da tag faz parte de uma <ol> ou uma <ul>|
+|</li>												|
+|												|
+|<ol> - Ordened List. Cria uma lista que organiza itens do primeiro até aquele que for determina|
+|do pelo criador da página.									|
+| Exemplo:											|
+|												|
+|	<p>Minha lista:</p>									|
+|	<ol>											|
+|	<li>Item 1</li>										|
+|	<li>Item 2</li>										|
+|	</ol>											|
+|</ol>												|
+|												|
+| No navegador será exibido uma lista do número 1 ao 2, exibindo o "Item 1" e o "Item 2", nos	|
+|mesmos números, respectivamente.								|
+|												|
+|<ul> - Unordened List. Tem a mesma função de <ol>, porém, não enumera os itens da lista. É	|
+|possível alterar qual o item usado para separar a lista com o CSS.				|
+|												|
+|	<p>Minha lista:</p>									|
+|	<ul>											|
+|	<li>Item 1</li>										|
+|	<li>Item 2</li>										|
+|	</ul>											|				
+|</ul>												|
+|-----------------------------------------------------------------------------------------------|
+
+ _______________________________
+|				|
+|	Inserindo dados		|
+|-------------------------------|______________________________________________________________________________________
+|															|
+| Armazenamento de dados é uma das bases da internet. Para isso, precisamos de um banco de dados que			|
+|armazena tudo que for inserido em um site/aplicação/outro. Mas, só há como armazenar dados, se				|
+|eles tiverem sido inseridos em algum lugar.										|
+|															|
+| Por isso, há tags HTML que conseguem receber dados. Nenhuma delas é capaz de armazena-los, pois			|
+| como dito antes, é necessário um banco de dados para isso. Mas, já é um começo.					|
+|															|
+|<form> - Responsável por enviar os dados inseridos em uma parte do site para um banco de dados, este			|
+|que, deve ter seu endereço inserido dentro da tag.									|
+|															|
+|Exemplo:														|
+|															|
+| <form action="bancoPagWeb.php" method="post">										|
+| </form>														|
+|															|
+| Observe que foram inseridas duas "sub-tags".										|
+|															|
+| Action, é responsável por definir o endereço que serão enviados os dados que forem inseridos no form.			|
+| Method define qual o método HTTP usado para enviar os dados.								|
+|															|
+| Para um entendimento melhor, visite https://www.w3schools.com/tags/tag_form.asp					|
+|															|
+|</form>														|
+|															|
+|<input> - O elemento input é algo muito complexo e que possui muitas ramificações¹. 					|
+|Por isso, listei um número pequeno delas aqui. O objetivo do elemento depende do valor inserido no "type".		|
+|Esta tag não tem a necessidade de ser fechada.										|
+|															|
+| <input type="text"> - Cria uma caixa de texto de linha única.								|
+|															|
+| <input type="text" placeholder="Insira algo"> = Placeholder, é o elemento responsável por criar uma mensagem de	|
+| display, que é deletada assim que algum dado é digitado dentro da caixa de texto.					|
+| 															|
+| <input type="radio"> - Cria uma caixa de marcação, que permite que o usuário selecione APENAS UMA das opções 		|
+| apresentadas.														|
+| 															|
+| <input type="checkbox"> - Cria uma caixa de marcação, que permite que o usuário selecione uma ou mais opções.		|
+|															|
+| <input type="submit"> - Cria um botão de envio de dados. Geralmente usado junto da tag <form>.			|
+|															|
+| <input type="button"> - Mesma finalidade da tag <button>.								|
+|															|
+| <input type="date"> - Cria uma caixa de texto que só pode receber dia, mês e ano. Também é disponibilizado um		|
+| calendário para selecionar a data, mas isso depende de qual navegador está sendo usado.				|
+|															|
+| <input type="email"> - Cria uma caixa de texto que só pode receber um endereço de e-mail. O endereço de e-mail pode	|
+| acabar sendo automaticamente validado, mas isso depende de qual navegador está sendo usado.				|
+|															|
+| <input type="file"> - Cria um campo para selecionar um determinado arquivo dentro do computador. Exibe um botão	|
+| para procurar o determinado arquivo, e fazer upload do mesmo.								|
+|															|
+| Para mais ramificações do elemento input, acesse https://www.w3schools.com/tags/tag_input.asp				|
+|-----------------------------------------------------------------------------------------------------------------------|
  _______________________________________________________________________________________
 |					|Button|					|
 |---------------------------------------------------------------------------------------|
-|<button type="button"> - Cria um botão que pode ser clicado, e pode levar á um deter-	|
-|minado endereço. Exemplo:								|
+|<button type="button"> - Cria um botão genérico que pode realizar uma série de funções.|
 |											|
-|<button type="button"><a href="htps://www.instagram.com">Clique aki!</a></button>	|										|
+|Exemplo:										|
 |											|
-| Caso seja necessário ligar o botão com um alert, ou algum outro elemento de outra lin-|
-|guagem, deve-se adicionar o elemento "oneclick + nome da string".			|											|
+|<button type="button"><a href="htps://www.instagram.com">Clique aki!</a></button>	|
+|											|
 |</button>										|
 |_______________________________________________________________________________________|
 

@@ -1,0 +1,32 @@
+	Portugol.
+
+ Como o próprio nome sugere, portugol é uma liguagem de programação baseada na
+língua portuguesa. Infelizmente ela não tem suporte em todos os editores de código,
+porém, alguns softwares específicos permitem utilizá-la.
+
+ Recomendo o uso do VisualG, que apesar de ser uma ferramenta um pouco "ultrapassada"
+em questão de design, ela cumpre muito bem seu papel.
+
+______________________________________________________________________________________________________
+
+	_________________________
+	\	Variáveis	/
+  ______|			|______________________________________________________
+ /										       \
+| A declaração de varáveis em Portugol ocorre quase igual a toda e qualquer linguagem	|
+| de programação.									|
+|											|
+| Primeiro, deve ser definido o tipo primitivo da variável, e, em seguida seu nome, e o	|
+| que ela armazena.									|
+|											|
+| Os tipos primirivos em portugol são:							|
+|											|
+| Inteiro: Recebe apenas números inteiros.	Real: Recebe apenas valores decimais	|
+|											|
+| Caractere: Recebe qualquer valor que 		Lógico: Recebe apenas valores de sim	|
+| envolva letras e/ou caracteres não 		ou não.					|
+| numéricos.										|
+|											|
+ \_____________________________________________________________________________________/
+
+

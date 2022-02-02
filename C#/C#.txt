@@ -1,0 +1,90 @@
+
+C#
+
+ C#, é uma linguagem de programação, criada pela Microsoft.
+É usada principalmente no desenvolvimento de softwares para Deskop,
+e apesar de não ser muito utilizada, entra em diversos conceitos e
+áreas da programaçã, inclusive no desenvolvimento web, como o de ASP.NET.
+
+Setor A: Criando_OProjeto;
+
+ Em C#, e possível desenvolver programas por meio do Console, e por meio
+dos chamados "formulários", que são aplicativos com interfaces que podemos criar em
+praticamente todo editor que suporte a linguagem.
+
+ Antes de começarmos, é necessário que você instale alguma IDE que te auxilie na edição
+dos códigos. É recomendado o uso do Viual Studio, com sua versão mais atualizada. 
+ Porém, devido ao seu alto consumo de Hardware e memória, recomendo que faça a instalação do
+SharpDevelop, uma ferramenta muito parecida com o VisualStudio, porém com menos funções, contendo
+apenas o essencial.
+
+ Agora visto isso, primeiro focaremos no desenvolvimento no Console. Quando criamos algum projeto
+em C#,por padrão recebemos este código:
+
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+	using System.Threading.Tasks;
+
+	namespace nomeDoSeuProjetoAqui
+	{
+    	class Program
+    	{
+        	static void Main(string[] args)
+        	{
+
+        	}
+    	}
+	}
+
+ Não se assuste! Isso são apenas informações básicas que o computador precisa entender para desenvolver o programa!
+ Essas informações são como a base do cérebro do computador.
+	
+	1: using: Seguindo as linhas respectivamente, 			2: namespace: Sinaliza qual programa está
+	vemos primeiro "using". Este comando se refere			aberto no editor. Apesar de não ser tão relevante,
+	às bibliotecas que o computador está utilizando 		NÃO DEVE SER APAGADO.
+	para entender o que está sendo escrito no código. 
+	Quase como um dicionário.
+
+	3: class: Informa qual o tipo do projeto.			3: static void blah blah blah: É onde escrevemos o
+									código em si.
+
+ Observe que cada um desses métodos acima, recebe um par de chaves, qua abrem e fecham. Isso sinaliza onde o código se inicia, e onde
+termina. No caso, para digitarmos qualquer código, devemos escrever dentro das chaves de "static void".
+
+ Agora, com tudo isso em mente, iremos escrever a nossa primeira mensagem no console.
+
+ Usando os comandos:
+
+ "Console.WriteLine("Sua Mensagem aqui");", e "Console.ReadLine();"
+
+ Console.WriteLine - Manda o programa digitar uma mensagem e pular uma linha, caso o usuário deseje inserir outros dados no console.
+
+ Console.ReadLine - Manda o programa não fechar a janela do console automaticamente. Sem isso, não conseguiremos nem ler a mensagem de
+ Console.WriteLine.
+
+ No caso, o código ficaria assim:
+
+using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+	using System.Threading.Tasks;
+
+	namespace nomeDoSeuProjetoAqui
+	{
+    	class Program
+    	{
+        	static void Main(string[] args)
+        	{
+
+			Console.WriteLine("Olá humano!");
+			Console.ReadLine();
+
+        	}
+    	}
+	}
+
+-Repare que os códigos sempre recebem um ";" (ponto e vírgula) no fim. Este é um elemento vital para o programa em C#, por isso, sempre
+confirme se foi inserido ou não.

@@ -6,7 +6,7 @@ C#
 e apesar de não ser muito utilizada, entra em diversos conceitos e
 áreas da programaçã, inclusive no desenvolvimento web, como o de ASP.NET.
 
-Setor A: Criando_OProjeto;
+			Setor A: Criando_OProjeto;
 
  Em C#, e possível desenvolver programas por meio do Console, e por meio
 dos chamados "formulários", que são aplicativos com interfaces que podemos criar em
@@ -51,7 +51,8 @@ em C#,por padrão recebemos este código:
 									código em si.
 
  Observe que cada um desses métodos acima, recebe um par de chaves, qua abrem e fecham. Isso sinaliza onde o código se inicia, e onde
-termina. No caso, para digitarmos qualquer código, devemos escrever dentro das chaves de "static void".
+termina. No caso, para digitarmos qualquer código, devemos escrever dentro das chaves de "static void", isso inclui todo e qualquer
+comando que escrevermos nese documento. Quando não for o caso, sinalizaremos.
 
  Agora, com tudo isso em mente, iremos escrever a nossa primeira mensagem no console.
 
@@ -88,3 +89,66 @@ using System;
 
 -Repare que os códigos sempre recebem um ";" (ponto e vírgula) no fim. Este é um elemento vital para o programa em C#, por isso, sempre
 confirme se foi inserido ou não.
+
+			Seção B: Tipos de dados e visualização deles;
+
+ Já sabemos como exibir algo no console. Agora, precisamos saber como determinar o tipo destes dados. Toda linguagem de programação
+determina o tipo de seus dados inseridos, seja texto, numérico (decimal  e inteiro), ou até valores booleanos, que recebem a resposta
+de Verdadeiro, ou Falso (True, False respectivamente).
+
+ Em C#, os dados são denominados da seguinte forma:
+
+ int = Recebe apenas NÚMEROS INTEIROS.				float/double = Recebe apenas NÚMEROS DECIMAIS, isto é, números "com vírgula".
+								A diferença é que, float armazena menos dados que double.
+
+ 								bool = Recebe apenas dois tipos de valores, True e False, como dito anteriormente.
+ string = Recebe APENAS TEXTO, este que, deve ser		No caso, é muito usado em condições, por exemplo, "Se variável x receber o valor de
+ inserido entre áspas ("").					10, ela será do tipo True, caso contrário, False."
+
+
+ Variáveis devem sempre ser inicializadas, isso significa que, devem receber um valor quando forem declaradas. Declarar uma variável, é
+justamente denominar o tipo dela, e uma variável, é uma ferramenta com um nome dado por nós mesmos, que irá armazenar um determinado dado.
+
+	a)String:
+
+ string nomeGenerico1 = "";
+
+	b)int
+
+ int nomeGenerico2;
+
+	c)float
+
+ float nomeGenerico3 = 20.74; / double nomeGenerico4 = 9.783;
+
+	d)bool
+
+ bool nomeGenericoT = True,nomeGenericoF = False;
+
+ Caso haja a declaração de outras variáveis do mesmo tipo, é só adicionar uma vírgula entre o dado e a nova variável, como vemos acima.
+ O dado da variável não precisa obrigatóriamente ser atribuido na declaração. A variável pode receber o valor no meio do código do programa.
+ Vejamos o exemplo da letra b) (int).
+
+ nomeGenerico = 35;
+
+ Ok, visto que já temos as variáveis, podemos imprimir seus dados no console com o comando que vimos antes, Console.WriteLine. No caso,
+ usaremos nomeGenerico4.
+
+ Console.WriteLine(nomeGenerico4);
+
+ Caso tenha declarado as variáveis da mesma forma, o console deve imprimir o valor da variável (9.783)
+ Podemos também misturar textos aos valores das variáveis:
+
+ Console.WriteLine("O valor de nomeGenerico4, é " + nomeGenerico4);
+
+ Agora, perceba que o sinal de soma (+), não é usado para diretamente somar algo. Isso se deve por que o computador não identificou que
+ o sinal está agregado a uma operação matemática. Caso esteja, será de fato realizada a soma:
+
+ float Quoc;
+ float varEx = 10.10, aux = 20.20;
+
+ Quoc = varEx + aux;
+
+ Console.WriteLine(Quoc);
+
+ No caso, será impresso no console a soma das duas variáveis decimais.

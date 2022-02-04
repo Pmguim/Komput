@@ -90,20 +90,26 @@ using System;
 -Repare que os códigos sempre recebem um ";" (ponto e vírgula) no fim. Este é um elemento vital para o programa em C#, por isso, sempre
 confirme se foi inserido ou não.
 
-			Seção B: Tipos de dados e visualização deles;
+			Seção A.3: Tipos de dados e visualização deles;
 
  Já sabemos como exibir algo no console. Agora, precisamos saber como determinar o tipo destes dados. Toda linguagem de programação
 determina o tipo de seus dados inseridos, seja texto, numérico (decimal  e inteiro), ou até valores booleanos, que recebem a resposta
 de Verdadeiro, ou Falso (True, False respectivamente).
 
  Em C#, os dados são denominados da seguinte forma:
+				     _________________________________________
+ -----------------------------------[_________________________________________]----------------------------------------------------------------------
 
- int = Recebe apenas NÚMEROS INTEIROS.				float/double = Recebe apenas NÚMEROS DECIMAIS, isto é, números "com vírgula".
-								A diferença é que, float armazena menos dados que double.
-
- 								bool = Recebe apenas dois tipos de valores, True e False, como dito anteriormente.
- string = Recebe APENAS TEXTO, este que, deve ser		No caso, é muito usado em condições, por exemplo, "Se variável x receber o valor de
- inserido entre áspas ("").					10, ela será do tipo True, caso contrário, False."
+ int = Recebe apenas NÚMEROS INTEIROS.				   	 float/double/decimal = Recebe apenas NÚMEROS DECIMAIS, isto é, números 
+								   	 "com vírgula". A diferença é que, float armazena menos dados que double,
+ string = Recebe APENAS TEXTO, este que, deve ser inserido	   	 e decimal é muito "mais preciso" com os dados inseridos nas variáveis.
+ entre áspas ("").
+ 								    	bool = Recebe apenas dois tipos de valores, True e False, 
+ char = Também recebe APENAS TEXTO, porém, por exemplo,		    	como dito anteriormente. É muito usado para "validar" dados, por exemplo:
+ "Se variável x receber o valor de 10, ela será capaz de	    	a variável "masculino" é True, se o usuário for feminino, caso contrário,
+ armazenar um caractere, ou seja, apenas uma letra, ou um  	    	false.
+ número. Ao contrário de string, deve receber seus dados
+ em áspas simples ('').
 
 
  Variáveis devem sempre ser inicializadas, isso significa que, devem receber um valor quando forem declaradas. Declarar uma variável, é
@@ -151,4 +157,46 @@ justamente denominar o tipo dela, e uma variável, é uma ferramenta com um nome
 
  Console.WriteLine(Quoc);
 
- No caso, será impresso no console a soma das duas variáveis decimais.
+ No caso, será impresso no console a soma das duas variáveis decimais. Lembre-se, sempre que formos adicionar elementos aos parêntesis,
+precisamos adicionar o sinal de + entre os elementos, que aqui, chamamos de "concatenação".
+
+ Caso mudemos o valor das variáveis em sua declaração, o resultado que obtemos no console também é diferente,  mostrando
+os dados novos ao invés dos antigos. podemos mudar o valor das variáveis assim:
+
+ string suaVarAqui = "Olá eu sou um texto!"
+
+ suaVarAqui = "Eu estou com fome, me alimente humano!"; //Este novo valor atribuído é considerado absoluto, e é o novo valor da variável.
+
+
+
+				Setor A.5 = Comentários
+
+ Já dizia um sábio, "Um código bem comentado é um código bem escrito.".
+ Bem, se realmente foi um sábio eu não sei, mas de fato, é uma frase importante.
+
+ Comentários estão por toda parte, em praticamente todo tipo de código de software. Eles ajudam (e muito) os desenvolvedores a entenderem
+mesmo depois de anos sem alterar o programa, a saberem como funcionam.
+
+ Veja, comentário é uma forma muito... "elegante" de se descrever, pois são uma espécie de anotação que pode ser alterada a qualquer momento.
+
+ Os comentários são diferentes em cada tipo de linguagem de programação, por exemplo em Python, que usamos a '#' para comentar uma linha.
+ Porém aqui em C#, os cometários são da forma que foi escrita antes do início deste setor. Devemos sempre inserir as barras duplas (//),
+para que o programa entenda que aquela linha se trata de uma anotação do desevolvedor, e não uma linha de código. E não, o programa não
+lê a linha comentada. Imagine as barras duplas como uma placa de contra-mão, que diz para onde ir, e onde não ir.
+
+ //Comenta apenas uma linha
+
+ /* Comenta
+ Diversas
+ Linhas
+ Mas
+ deve
+ ser
+ fechado
+ por: */
+
+				Setor B = Atributos;
+
+	ATENÇÃO: ESTE TÓPICO ESTÁ ATUALMENTE INCOMPLETO E PODE SER ATUALIZADO CONSTANTEMENTE.
+
+ 

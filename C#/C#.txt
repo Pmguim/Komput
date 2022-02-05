@@ -58,9 +58,11 @@ comando que escrevermos nese documento. Quando não for o caso, sinalizaremos.
 
  Usando os comandos:
 
- "Console.WriteLine("Sua Mensagem aqui");", e "Console.ReadLine();"
+ "Console.WriteLine("Sua Mensagem aqui");", "Console.Write("Sua Mensagem aqui");",e "Console.ReadLine();"
 
- Console.WriteLine - Manda o programa digitar uma mensagem e pular uma linha, caso o usuário deseje inserir outros dados no console.
+ Console.WriteLine(); - Manda o programa digitar uma mensagem e pular uma linha, caso o usuário deseje inserir outros dados no console.
+ Console.Write(); - A mesma função de WriteLine, porém, não pula linhas.
+ (É possível imprimir números no console sem a utilização de Aspas).
 
  Console.ReadLine - Manda o programa não fechar a janela do console automaticamente. Sem isso, não conseguiremos nem ler a mensagem de
  Console.WriteLine.
@@ -137,6 +139,12 @@ justamente denominar o tipo dela, e uma variável, é uma ferramenta com um nome
 
  nomeGenerico = 35;
 
+	E ATENÇÃO. SEMPRE QUE UM NÚMERO DECIMAL FOR ESCRITO NO CÓDIGO, ELE DEVE SER INSERIDO COM UM "." (ponto) NO LUGAR DE
+	UMA "," (vírgula). ISSO É UM PADRÃO QUE QUASE NENHUMA LINGUAGEM SEGUE, TODAS EXIGEM O PONTO NO LUGAR DA VÍRGULA.
+
+ Lembrando que as mensagens escritas em Console.WriteLine também são consideradas como strings, mas não são armazenadas em nenhuma variável,
+são apenas campos temporários que o coputador preenche para eliminá-los em seguida, ao final da execução do programa.
+
  Ok, visto que já temos as variáveis, podemos imprimir seus dados no console com o comando que vimos antes, Console.WriteLine. No caso,
  usaremos nomeGenerico4.
 
@@ -147,18 +155,15 @@ justamente denominar o tipo dela, e uma variável, é uma ferramenta com um nome
 
  Console.WriteLine("O valor de nomeGenerico4, é " + nomeGenerico4);
 
- Agora, perceba que o sinal de soma (+), não é usado para diretamente somar algo. Isso se deve por que o computador não identificou que
- o sinal está agregado a uma operação matemática. Caso esteja, será de fato realizada a soma:
-
- float Quoc;
- float varEx = 10.10, aux = 20.20;
-
- Quoc = varEx + aux;
-
- Console.WriteLine(Quoc);
-
  No caso, será impresso no console a soma das duas variáveis decimais. Lembre-se, sempre que formos adicionar elementos aos parêntesis,
-precisamos adicionar o sinal de + entre os elementos, que aqui, chamamos de "concatenação".
+ precisamos adicionar o sinal de + entre os elementos, que aqui, chamamos de "concatenação".
+ Agora, perceba que o sinal de soma (+), não é usado para diretamente somar algo. Isso se deve por que o computador não identificou que
+ o sinal está agregado a uma operação matemática.
+
+ Caso esteja, será de fato realizada a soma:
+
+ Console.WriteLine(5+8);
+ Resultado da soma no consle = 13.
 
  Caso mudemos o valor das variáveis em sua declaração, o resultado que obtemos no console também é diferente,  mostrando
 os dados novos ao invés dos antigos. podemos mudar o valor das variáveis assim:
@@ -167,6 +172,7 @@ os dados novos ao invés dos antigos. podemos mudar o valor das variáveis assim
 
  suaVarAqui = "Eu estou com fome, me alimente humano!"; //Este novo valor atribuído é considerado absoluto, e é o novo valor da variável.
 
+ Console.WriteLine(suaVarAqui); //Será exibida a nova mensagem atribuída à variável.
 
 
 				Setor A.5 = Comentários
@@ -195,8 +201,269 @@ lê a linha comentada. Imagine as barras duplas como uma placa de contra-mão, q
  fechado
  por: */
 
-				Setor B = Atributos;
+				Setor A.7 = Operações matemáticas
+
+ Uma das coisas que os computadores fazem em 100% do tempo são contas. Até mesmo nós, fazemos isso integralmente mas, é inevitá-
+vel que as máquinas são capazes de fazer isso de forma muito mais eficaz. Em C#, sinalizamos as operações matemáticas assim:
+
+ + : Soma		- : Subtração, ou sinalização de número negativo.
+ * : Multiplicação	/ : Divisão
+ 			% : Divisão inteira¹
+
+ ¹A divisão inteira nos dará apenas o resto da divisão como resultado. Por exemplo, façamos 5 / 2. 
+ No caso, com o símbolo de '%', será feita a divisão de 5 por 100, e então, o resultado será multiplicado por 2. Tudo isso é
+igual a 0,1, porém, com a divisão inteira, o resultado não será 0, mas sim 1, pois este é o objetivo da divisão inteira,
+apenas retornar o valor do resto.
+
+ C# também segue as regras padrão dda matemática. 4 + 2 * 3 é igual a 10, já que a multiplicação tem prioridade. Em C#, a coisa
+se repete:
+
+ Nível 1 = Parêntesis;
+ Nível 2 = Divisões;
+ Nível 3 = Multiplicações;
+ Nível 4 = Adição e Subtração.
+
+ Também é possível "incrementar" e "decrementar" em 1 o valor dos números.
+
+ int varExem = 6;
+ varExem++; //Incrementa em 1 a variável, ou seja, seu valor agora é 7!
+
+ int varExem = 6;
+ varExem--; //Decrementa em 1 a variável, ou seja, seu valor agora é 5!
+
+
+				Setor B = Métodos;
 
 	ATENÇÃO: ESTE TÓPICO ESTÁ ATUALMENTE INCOMPLETO E PODE SER ATUALIZADO CONSTANTEMENTE.
 
+ Métodos são formas mais simplificadas de mandar um computador realizar uma tarefa. A intenção aqui não é, e nuca será, exibir e documentar
+TODOS os métodos da linguagem, mas sim, alguns que nos auxiliam muito ao longo do cotidiano.
+
+	MÉTODOS QUE SÓ FUNCIONAM COM O TIPO STRING{
+
+	 	1_ .Length:
+
+ O método .Length conta quantos caracteres estão dentro de uma String. Isso vale tanto para variáveis, quanto para mensagens entre
+áspas. Por exemplo:
+
+	Console.WriteLine("Olá humano! Eu sou seu computador!".Length);
+
+ Caso executarmos esste código receberemos o número de caracteres presentes na frase (34). .Length também contabiliza os espaços
+como caracteres, então no caso, como texto temos apenas 29 caracteres. Também podemos usá-lo em variáveis, porém do tipo String:
+
+	string msg = "Olhe pra mim, sou uma linda borboleta!");
+
+	Console.WriteLine(msg.Length);
+	Console.ReadLine();
+
+ Teremos então imprimida no console, a contagem de 38 caracteres.
+
+ Isso é quase padrão para todos os métodos apresentados nesta seção de strings.
+
+ .Length SÓ FUNCIONA COM VARIÁVEIS DO TIPO STRING.
+
+ ==============================================================================================================================================
+
+		2_ .ToUpper() e .ToLower()
+
+ Altera o texto das variáveis e das mensagens para Caixa Alta. É utilizado da mesma forma que .Length.
+
+	Console.WriteLine("Mensagem aqui".ToUpper());
+
+ O resultado será mostrado no console (MENSAGEM AQUI).
+ Há outro método semelhante a este, o .ToLower(), que altera todos os caracteres para caixa padrão, é inserido e utilizado da mesma forma.
+
+ ==============================================================================================================================================
+
+		3_ .Contains("Alguma coisa");
+
+ O método .Contains(); nos dá um resultado em booleano de Verdadeiro ou falso, caso a variável ou a frase contenha o dado inserido nos
+parêntesis. Então:
+
+	string msg = "Uma mensagem";
+	Console.WriteLine(msg.Contains("mensagem");
+	Console.ReadLine();
+
+ Se rodarmos este código, perceberemos que haverá um valor True no console, isso se dá por realmente termos a "mensagem" dentro da variável
+msg. Caso não tivessemos, seriamos apresentados ao valor False.
+
+==============================================================================================================================================
+
+			4_ nomeVariavel[]
+
+ Bem, a sinalização deste método é um pouco mais difícil, já que são apenas duas chaves, mas seu uso é muito simples.
+ Estas duas chaves, recebem o número do caractere que será exibido no console, com base na variável que vem antes delas, ou seja,
+ O método conta, e recebe um número (inserido entre as chaves), e mostra uma das coisas digitadas na variável, com base no número de carac-
+teres presentes na mensagem, estes que são contados a partir de 0. exemplo:
+
+	string msg = "Olhe pra mim, sou uma linda borboleta!";
+
+	Console.WriteLine(msg[10]);
+
+ No caso, o console nos apresentará a letra I. A frase no total possui 38 caracteres, porém como dissemos, neste método eles são contados
+a partir de 0. Então se inserirmos 0 no lugar de 10, teremos a letra O no console.
+
+ 	string msg = "Olhe pra mim, sou uma linda borboleta!";
+		    //0123456789...
+	Console.WriteLine(msg[0]);
+
+==============================================================================================================================================
+
+		5_ .IndexOf()
+
+ .IndexOf é literalmente a junção de "[]" e .Contains. Ele nos mostra se algum determinado dado está presente na variável ou na frase, mas,
+isso só ocorre se o dado nos parentesis estiver presente na variável/frase, caso esteja, o método nos mmostra a posição do início
+do dado inserido nos parêntesis.
+
+	string msg = "Olhe pra mim, sou uma linda borboleta!";
+
+	Console.WriteLine(msg.IndexOf("borboleta"));
+
+ Caso o determinado caractere não esstiver presente na string, iremos receber um número negativo no console, sinalizando que "é false" a 
+presença do determinado dado.
+
+==============================================================================================================================================
+
+		6_ .Substring()
+
+ Esse é um pouco mais complexo de se entender... Por isso, usaremos algo mais "gráfico".
+
+ Substring nos permite misturar pedaços de uma mensagem, contida em uma string, e misturá-los, até mesmo deixando os restantes de fora, e 
+eliminando-os temporariamente. Pense da seguiinte maneira:
+
+	G i r a f a   d e    p  e  s  c  o  ç  o      p  e  q   u   e   n   o
+	1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  21  22  23  24  25
+
+ Muito bem, agora, se adicionarmos o número 10entre os parêntesis, receberemos apenas a frase "pescoço pequeno". Isso se deve
+por termos mandado o Substring imprimir apenas os caracteres da posição 10 em diante. Agora, se adicionarmos uma vírgula e outro número,
+estaremos indicando quatos caracteres queremos a partir do primeiro número. Isso é bem confuso... Vamos ver na prática:
+
+	Console.WriteLine(msg.Substring(0,6));
+				//Quero que a partir do caractere 0, sejam selecionados e exibidos 6 caracteres.
+
+ Para entender melhor, execute este código:
+
  
+            string msg = "Girafa de pescoço pequeno";
+
+            Console.WriteLine(msg.Substring(0,6)); //Girafa
+            Console.WriteLine(msg.Substring(7, 3));//De
+            Console.WriteLine(msg.Substring(11, 7));//Pescoço
+            Console.WriteLine(msg.Substring(18));//Pequeno
+
+
+	} //Fim dos métodos de String
+
+==============================================================================================================================================
+
+	MÉTODOS QUE SÓ FUNCIONAM COM TIPOS NUMÉRICOS{
+
+	1_ Math.
+
+ Math não é um método em si, mas sim um conjunto deles, o que chamamos de biblioteca. Ela foi feita apenas com o intuito de realizar operações
+matemáticas, como potenciação. Para utilizar os métodos da biblioteca Math, e de qualquer outra, devemos escrever o nome da biblioteca, adicionar
+um ponto na frente, e então adicionar o nome do atributo (Math.pow()), o mmesmo vale para todo e qualquer método de biblioteca.
+
+ Usaremos códigos como exemplo para explicar melhor alguns dos métodos:
+
+		1_ a) Potenciação:
+
+	double varGenerica = Math.pow (8,2);
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 64
+	Repare que, adicionamos dois números entre os parêntesis. O primeiro representa a base, e o segundo a potência.*/
+
+	1_ b) Raíz Quadrada:
+
+	double varGenerica = Math.Sqrt(4);
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 2
+	Calcula a raíz quadrada (square root = sqrt) do valor inserido nos parêntesis.*/
+
+	1_ c) Min e Max
+	
+		MIN:
+	double varGenerica = Math.Min(10,50);
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 10
+	Calcula e mostra qual dos números inseridos nos parêntesis é o menor. O maior dos valores não é mostrado.*/
+
+		MAX:
+	double varGenerica = Math.Max(10,50);
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 50
+	Calcula e mostra qual dos números inseridos nos parêntesis é o maior. O menor dos valores não é mostrado.*/
+
+	NENHUM DOS DOIS ATRIBUTOS ACIMA PODE RECCEBER MAIS DE DOIS VALORES.
+
+	1_ d) Ceiling e Floor
+
+		CEILING:
+	double varGenerica = Math.Ceiling(24.4789);
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 25
+	Arredonda o número decimal "para cima", e complementa seu valor até que chegue no mais próximo número innteiro.*/
+
+		FLOOR:
+	double varGenerica = Math.Floor(24.4789);
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 24
+	Arredonda o número "para baixo", para que chegue no mais próximo número inteiro anterior ao valor inserido.*/
+	
+	1 e) PI:
+
+	double varGenerica = Math.PI;
+	Console.WriteLine(varGenerica);
+	Console.ReadLine();
+
+	/*Resultado: 3.14159265358979
+	Calcula e exibe o valor de PI no console.*/
+
+	}//Fim dos métodos numéricos.
+
+==============================================================================================================================================
+
+			Setor C: Entrada de Dados:
+
+ Programas não foram feitos para responderem respostas deles mesmos! A interação com o usuário é um fator muito importante.
+ 
+ Veja, em praticamente todos os códigos que escrevemos neste documento, inserimos Console.ReadLine();. Esse comando é uma instrução, que manda
+com que o computador aguarde alguma entrada de dado vinda do usuário. 
+ E quando ela for inserida e enviada com a tecla ENTER, ou com alguma outra que interaja com o funcionamento do programa, ele simplesmente
+irá terminar de rodar. Isso se dá, por que o programa tecnicamente está "pausado", aguardando que algo seja inserido para que ele termine sua execução.
+
+ Para obtermos dados do usuário, precisamos determinar onde eles serão armazenados, e onde serão usados. Isso é simples, para isso precisamos atri-
+buir uma variável ao comando de ReadLine:
+
+	string resposta;
+
+	Console.Write("Olá humano! ");
+	resposta = Console.ReadLine();
+
+ Assim,  a resposta do usuário ficará armazenada na variável "resposta". 
+ PORÉM, só é possível atribuir dados do usuário em variáveis do tipo string.
+ Para realizarmos expressões matemáticas, por exemplo, precisamos realizar a chamada "Conversão de valores".
+
+ Converter de:				Para:				Como fazer:
+
+	string				int				
+
+ Podemos fazer operações matemáticas assim também:
+
+	int valor1, quoc;
+	Console.Write("Olá humano! Insira um número: ");
+	valor1 = Console.ReadLine();
+	quoc = valor1 - 10;
+	Console.WriteLine("5 - 10 = " + quoc);

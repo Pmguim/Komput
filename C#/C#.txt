@@ -1,179 +1,203 @@
 
-C#
+				C#
+ __________________________________________________________________________
+|									   |
+| C#, é uma linguagem de programação, criada pela Microsoft.		   |
+| É usada principalmente no desenvolvimento de softwares para Deskop,	   |
+|e apesar de não ser muito utilizada, entra em diversos conceitos e	   |
+|áreas da programaçã, inclusive no desenvolvimento web, como o de ASP.NET. |
+|__________________________________________________________________________|
 
- C#, é uma linguagem de programação, criada pela Microsoft.
-É usada principalmente no desenvolvimento de softwares para Deskop,
-e apesar de não ser muito utilizada, entra em diversos conceitos e
-áreas da programaçã, inclusive no desenvolvimento web, como o de ASP.NET.
+			__________________________
+ ______________________|Setor A: Criando_OProjeto;|_____________________________________________________________
+|														|
+| Em C#, e possível desenvolver programas por meio do Console, e por meio dos chamados "formulários", 		|
+|que são aplicativos com interfaces que podemos criar em praticamente todo editor que suporte a linguagem.	|
+|														|
+| Antes de começarmos, é necessário que você instale alguma IDE que te auxilie na edição dos códigos. 		|
+| É recomendado o uso do Viual Studio, com sua versão mais atualizada. Porém, devido ao seu alto consumo de 	|
+|Hardware, recomendo que faça a instalação do SharpDevelop, uma ferramenta muito parecida com o VisualStudio, 	|
+|porém com menos funções, contendo apenas o essencial.								|
+|														|
+| Para desenvolvermos um aplicativo em console, seguimos passos diferentes em cada aplicação mencionada acima.	|_______________
+| No SharpDevelop, vamos para a aba "arquivo", "novo" e em seguida "solução". Na nova janela, clique em "Aplicação console", e	|
+|defina o nome e a localização onde será salvo seu projeto. Assim, você receberá a tela de código em C#!			|
+|																|
+| Já nop VisualStudio, quando iniciado, clique em "Criar um Projeto", em seguida, pesquise por "Aplicativo do Console .NET", o	|
+| resultado que exibir "(.NET Framework)" é o correto. Clique nele, defina um nome e uma localização onde será salvo e 		|
+|está feito!															|
+|																|
+| Agora visto isso, foquemos no desenvolvimento no Console. Quando criamos algum projeto em C#,por padrão recebemos 		|
+|este código:															|
+|																|
+|	using System;														|
+|	using System.Collections.Generic;											|
+|	using System.Linq;													|
+|	using System.Text;													|
+|	using System.Threading.Tasks;												|
+|																|
+|	namespace nomeDoSeuProjetoAqui												|
+|	{															|
+|   	class Program														|
+|  	{															|
+|        	static void Main(string[] args)											|
+|        	{														|
+|																|
+|      	}															|
+|   	}															|
+|	}															|
+|																|
+|-------------------------------------------------------------------------------------------------------------------------------|_______________
+|																		|
+| Não se assuste! Isso são apenas informações básicas que o computador precisa entender para desenvolver o programa!				|
+| Essas informações são como a base do cérebro do computador.											|
+|																		|
+|	1: using: Vemos primeiro "using". Este comando se refere		2: namespace: Sinaliza qual programa está aberto no editor. 	|
+|	às bibliotecas que o computador está utilizando. para 											|
+|	entender o que está sendo escrito no código. Quase 			3: class: Informa qual o tipo do projeto.			|
+|	como um dicionário.															|
+|																		|
+|					4: static void blah blah blah: É onde escrevemos o código em si.					|
+|																		|
+|*É importante enfatizar de que NENHUM DOS CÓDIGOS QUE SÃO PRÉ ESCRITOS PELO EDITOR DEVE SER APAGADO.						|
+|_______________________________________________________________________________________________________________________________________________|
+|																		|
+| Observe que cada um desses métodos acima, recebe um par de chaves, qua abrem e fecham. Isso sinaliza onde o código se inicia, e onde termina.	|
+| No caso, para digitarmos qualquer código, devemos escrever dentro das chaves de "static void", isso inclui todo e qualquer comando que 	|
+|nese documento. Quando não for o caso, sinalizaremos.												|
+|																		|
+| Agora, com tudo isso em mente, iremos escrever a nossa primeira mensagem no console.								|
+|																		|
+| Usando os comandos:																|
+|																		|
+| "Console.WriteLine("Sua Mensagem aqui");", "Console.Write("Sua Mensagem aqui");",e "Console.ReadLine();"					|
+|																		|
+| Console.WriteLine(); - Manda o programa digitar uma mensagem e pular uma linha, caso o usuário deseje inserir outros dados no console.	|
+| Console.Write(); - A mesma função de WriteLine, porém, não pula linhas.									|
+| (É possível imprimir números no console sem a utilização de Aspas).										|
+|																		|
+| Console.ReadLine - Faz comque o programa espere uma entrada feita pelo usuário, ou seja, pausa o programa até ser pressionada a tecla ENTER.	|
+|																		|
+| No caso, o código ficaria assim:														|
+|																		|
+|using System;																	|
+|	using System.Collections.Generic;													|
+|	using System.Linq;															|
+|	using System.Text;															|
+|	using System.Threading.Tasks;														|
+|																		|
+|	namespace nomeDoSeuProjetoAqui														|
+|	{																	|
+|   	class Program																|
+|    	{																	|
+|      	static void Main(string[] args)														|
+|        	{																|
+|																		|
+|			Console.WriteLine("Olá humano!");											|
+|			Console.ReadLine();													|
+|																		|
+|      	}																	|
+|    	}																	|
+|	}																	|
+|																		|
+|-Repare que os códigos sempre recebem um ";" (ponto e vírgula) no fim. Este é um elemento vital para o programa em C#, por isso, sempre	|
+|confirme se foi inserido ou não.														|
+|																		|
+|+++-----------------------------------------------------------------------------------------------------------------------------------------+++|
+|_______________________________________________________________________________________________________________________________________________|
 
-			Setor A: Criando_OProjeto;
-
- Em C#, e possível desenvolver programas por meio do Console, e por meio
-dos chamados "formulários", que são aplicativos com interfaces que podemos criar em
-praticamente todo editor que suporte a linguagem.
-
- Antes de começarmos, é necessário que você instale alguma IDE que te auxilie na edição
-dos códigos. É recomendado o uso do Viual Studio, com sua versão mais atualizada. 
- Porém, devido ao seu alto consumo de Hardware e memória, recomendo que faça a instalação do
-SharpDevelop, uma ferramenta muito parecida com o VisualStudio, porém com menos funções, contendo
-apenas o essencial.
-
- Agora visto isso, primeiro focaremos no desenvolvimento no Console. Quando criamos algum projeto
-em C#,por padrão recebemos este código:
-
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	namespace nomeDoSeuProjetoAqui
-	{
-    	class Program
-    	{
-        	static void Main(string[] args)
-        	{
-
-        	}
-    	}
-	}
-
- Não se assuste! Isso são apenas informações básicas que o computador precisa entender para desenvolver o programa!
- Essas informações são como a base do cérebro do computador.
-	
-	1: using: Seguindo as linhas respectivamente, 			2: namespace: Sinaliza qual programa está
-	vemos primeiro "using". Este comando se refere			aberto no editor. Apesar de não ser tão relevante,
-	às bibliotecas que o computador está utilizando 		NÃO DEVE SER APAGADO.
-	para entender o que está sendo escrito no código. 
-	Quase como um dicionário.
-
-	3: class: Informa qual o tipo do projeto.			3: static void blah blah blah: É onde escrevemos o
-									código em si.
-
- Observe que cada um desses métodos acima, recebe um par de chaves, qua abrem e fecham. Isso sinaliza onde o código se inicia, e onde
-termina. No caso, para digitarmos qualquer código, devemos escrever dentro das chaves de "static void", isso inclui todo e qualquer
-comando que escrevermos nese documento. Quando não for o caso, sinalizaremos.
-
- Agora, com tudo isso em mente, iremos escrever a nossa primeira mensagem no console.
-
- Usando os comandos:
-
- "Console.WriteLine("Sua Mensagem aqui");", "Console.Write("Sua Mensagem aqui");",e "Console.ReadLine();"
-
- Console.WriteLine(); - Manda o programa digitar uma mensagem e pular uma linha, caso o usuário deseje inserir outros dados no console.
- Console.Write(); - A mesma função de WriteLine, porém, não pula linhas.
- (É possível imprimir números no console sem a utilização de Aspas).
-
- Console.ReadLine - Manda o programa não fechar a janela do console automaticamente. Sem isso, não conseguiremos nem ler a mensagem de
- Console.WriteLine.
-
- No caso, o código ficaria assim:
-
-using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	namespace nomeDoSeuProjetoAqui
-	{
-    	class Program
-    	{
-        	static void Main(string[] args)
-        	{
-
-			Console.WriteLine("Olá humano!");
-			Console.ReadLine();
-
-        	}
-    	}
-	}
-
--Repare que os códigos sempre recebem um ";" (ponto e vírgula) no fim. Este é um elemento vital para o programa em C#, por isso, sempre
-confirme se foi inserido ou não.
-
-			Seção A.3: Tipos de dados e visualização deles;
-
- Já sabemos como exibir algo no console. Agora, precisamos saber como determinar o tipo destes dados. Toda linguagem de programação
-determina o tipo de seus dados inseridos, seja texto, numérico (decimal  e inteiro), ou até valores booleanos, que recebem a resposta
-de Verdadeiro, ou Falso (True, False respectivamente).
-
- Em C#, os dados são denominados da seguinte forma:
-				     _________________________________________
- -----------------------------------[_________________________________________]----------------------------------------------------------------------
-
- int = Recebe apenas NÚMEROS INTEIROS.				   	 float/double/decimal = Recebe apenas NÚMEROS DECIMAIS, isto é, números 
-								   	 "com vírgula". A diferença é que, float armazena menos dados que double,
- string = Recebe APENAS TEXTO, este que, deve ser inserido	   	 e decimal é muito "mais preciso" com os dados inseridos nas variáveis.
- entre áspas ("").
- 								    	bool = Recebe apenas dois tipos de valores, True e False, 
- char = Também recebe APENAS TEXTO, porém, por exemplo,		    	como dito anteriormente. É muito usado para "validar" dados, por exemplo:
- "Se variável x receber o valor de 10, ela será capaz de	    	a variável "masculino" é True, se o usuário for feminino, caso contrário,
- armazenar um caractere, ou seja, apenas uma letra, ou um  	    	false.
- número. Ao contrário de string, deve receber seus dados
- em áspas simples ('').
-
-
- Variáveis devem sempre ser inicializadas, isso significa que, devem receber um valor quando forem declaradas. Declarar uma variável, é
-justamente denominar o tipo dela, e uma variável, é uma ferramenta com um nome dado por nós mesmos, que irá armazenar um determinado dado.
-
-	a)String:
-
- string nomeGenerico1 = "";
-
-	b)int
-
- int nomeGenerico2;
-
-	c)float
-
- float nomeGenerico3 = 20.74; / double nomeGenerico4 = 9.783;
-
-	d)bool
-
- bool nomeGenericoT = True,nomeGenericoF = False;
-
- Caso haja a declaração de outras variáveis do mesmo tipo, é só adicionar uma vírgula entre o dado e a nova variável, como vemos acima.
- O dado da variável não precisa obrigatóriamente ser atribuido na declaração. A variável pode receber o valor no meio do código do programa.
- Vejamos o exemplo da letra b) (int).
-
- nomeGenerico = 35;
-
-	E ATENÇÃO. SEMPRE QUE UM NÚMERO DECIMAL FOR ESCRITO NO CÓDIGO, ELE DEVE SER INSERIDO COM UM "." (ponto) NO LUGAR DE
-	UMA "," (vírgula). ISSO É UM PADRÃO QUE QUASE NENHUMA LINGUAGEM SEGUE, TODAS EXIGEM O PONTO NO LUGAR DA VÍRGULA.
-
- Lembrando que as mensagens escritas em Console.WriteLine também são consideradas como strings, mas não são armazenadas em nenhuma variável,
-são apenas campos temporários que o coputador preenche para eliminá-los em seguida, ao final da execução do programa.
-
- Ok, visto que já temos as variáveis, podemos imprimir seus dados no console com o comando que vimos antes, Console.WriteLine. No caso,
- usaremos nomeGenerico4.
-
- Console.WriteLine(nomeGenerico4);
-
- Caso tenha declarado as variáveis da mesma forma, o console deve imprimir o valor da variável (9.783)
- Podemos também misturar textos aos valores das variáveis:
-
- Console.WriteLine("O valor de nomeGenerico4, é " + nomeGenerico4);
-
- No caso, será impresso no console a soma das duas variáveis decimais. Lembre-se, sempre que formos adicionar elementos aos parêntesis,
- precisamos adicionar o sinal de + entre os elementos, que aqui, chamamos de "concatenação".
- Agora, perceba que o sinal de soma (+), não é usado para diretamente somar algo. Isso se deve por que o computador não identificou que
- o sinal está agregado a uma operação matemática.
-
- Caso esteja, será de fato realizada a soma:
-
- Console.WriteLine(5+8);
- Resultado da soma no consle = 13.
-
- Caso mudemos o valor das variáveis em sua declaração, o resultado que obtemos no console também é diferente,  mostrando
-os dados novos ao invés dos antigos. podemos mudar o valor das variáveis assim:
-
- string suaVarAqui = "Olá eu sou um texto!"
-
- suaVarAqui = "Eu estou com fome, me alimente humano!"; //Este novo valor atribuído é considerado absoluto, e é o novo valor da variável.
-
- Console.WriteLine(suaVarAqui); //Será exibida a nova mensagem atribuída à variável.
-
+				    	_________________________________________________
+ ______________________________________| Seção A.3: Tipos de dados e visualização deles; |______________________________________________________
+|																		|
+| Já sabemos como exibir algo no console. Agora, precisamos saber como determinar o tipo destes dados. Toda linguagem de programação determina	|
+|o tipo de seus dados inseridos, seja texto, numérico (decimal  e inteiro), ou até valores booleanos, que recebem a resposta de Verdadeiro,	|
+| ou Falso (True, False respectivamente).													|_______________
+|																				|
+| Em C#, os dados são denominados da seguinte forma:														|
+|						_________________________________________									|
+| ---------------------------------------------|_________________________________________]--------------------------------------------------------------------- |
+|																				|
+| int = Recebe apenas NÚMEROS INTEIROS.				   	 	float/double/decimal = Recebe apenas NÚMEROS DECIMAIS, isto é, números 		|
+|								   	 	"com vírgula". A diferença é que, float armazena menos dados que double,	|
+| string = Recebe APENAS TEXTO, este que, deve ser inserido	   	 	e decimal é muito "mais preciso" com os dados inseridos nas variáveis.		|
+| entre áspas ("").																		|
+| 								    		bool = Recebe apenas dois tipos de valores, True e False, 			|
+| char = Também recebe APENAS TEXTO, porém, por exemplo,		    	como dito anteriormente. É muito usado para "validar" dados, por exemplo:	|
+| "Se variável x receber o valor de 10, ela será capaz de	    		a variável "masculino" é True, se o usuário for feminino, caso contrário,	|
+| armazenar um caractere, ou seja, apenas uma letra, ou um  	    		false.										|
+| número". Ao contrário de string, deve receber seus dados													|
+| em áspas simples ('').																	|
+|																				|
+| =============================================================================================================================================================	|
+|																				|
+| Variáveis devem sempre ser inicializadas, isso significa que, devem receber um valor quando forem declaradas. Declarar uma variável, é justamente denominar	|
+|o tipo dela, e uma variável, é uma ferramenta com um nome dado por nós mesmos, que irá armazenar um determinado dado.						|
+|				 _______________________________________________________________________________________________________________________________|
+|	a)string:		|
+|				|
+| string nomeGenerico1 = "";	|
+|				|
+|	b) char:		|
+|				|
+| char nomeGenericoA = 'C';	|
+|				|
+|	c)int			|
+|				|
+| int nomeGenerico2;		|
+|				|
+|-------------------------------|
+|				|
+|	d)float			|_______________________________
+|								|
+| float nomeGenerico3 = 20.74; / double nomeGenerico4 = 9.783;	|
+|			 _______________________________________|
+|			|
+|	e)bool		|
+|			|_______________________________
+| bool nomeGenericoT = True,nomeGenericoF = False;	|
+|=======================================================|
+| Caso haja a declaração de outras variáveis do mesmo 	|_______________________________________________________________________________________________________
+| tipo, é só adicionar uma vírgula entre o dado e a nova variável, como vemos acima.  O dado da variável não precisa obrigatóriamente ser atribuido na		|
+|declaração. A variável pode receber o valor no meio do código do programa.											|
+|																				|
+| Vejamos o exemplo da letra b) (int).																|
+|																				|
+| nomeGenerico = 35;																		|
+|																				|
+|	E ATENÇÃO. SEMPRE QUE UM NÚMERO DECIMAL FOR ESCRITO NO CÓDIGO, ELE DEVE SER INSERIDO COM UM "." (ponto) NO LUGAR DE					|
+|	UMA "," (vírgula). ISSO É UM PADRÃO QUE QUASE NENHUMA LINGUAGEM SEGUE, TODAS EXIGEM O PONTO NO LUGAR DA VÍRGULA.					|
+|																				|
+| Lembrando que as mensagens escritas em Console.WriteLine também são consideradas como strings, mas não são armazenadas em nenhuma variável, são apenas campos	|
+|temporários que o coputador preenche para eliminá-los em seguida, ao final da execução do programa.								|
+|																				|
+| Ok, visto que já temos as variáveis, podemos imprimir seus dados no console com o comando que vimos antes, Console.WriteLine. No caso, usaremos nomeGenerico4.|
+|																				|
+| Console.WriteLine(nomeGenerico4);																|
+|																				|
+| Caso tenha declarado as variáveis da mesma forma, o console deve imprimir o valor da variável (9.783)								|
+| Podemos também misturar textos aos valores das variáveis:													|
+|																				|
+| Console.WriteLine("O valor de nomeGenerico4, é " + nomeGenerico4);												|
+|																				|
+| No caso, será impresso no console a soma das duas variáveis decimais. Lembre-se, sempre que formos adicionar elementos aos parêntesis,precisamos adicionar o	|
+|sinal de + entre os elementos, que aqui, chamamos de "concatenação". Agora, perceba que o sinal de soma (+), não é usado para diretamente somar algo.		|
+| Isso se deve por que o computador não identificou que o sinal está agregado a uma operação matemática.							|
+|																				|
+| Caso esteja, será de fato realizada a soma:															|
+|																				|
+| Console.WriteLine(5+8);																	|
+| Resultado da soma no consle = 13.																|
+|																				|
+| Caso mudemos o valor das variáveis em sua declaração, o resultado que obtemos no console também é diferente,  mostrando os dados novos ao invés dos antigos.	|
+|podemos mudar o valor das variáveis assim:															|
+|																				|
+| string suaVarAqui = "Olá eu sou um texto!"															|
+|																				|
+| suaVarAqui = "Eu estou com fome, me alimente humano!"; //Este novo valor atribuído é considerado absoluto, e é o novo valor da variável.			|
+|																				|
+| Console.WriteLine(suaVarAqui); //Será exibida a nova mensagem atribuída à variável.										|
+|																				|
+|_______________________________________________________________________________________________________________________________________________________________|
 
 				Setor A.5 = Comentários
 

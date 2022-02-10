@@ -342,117 +342,117 @@
 |determinado dado.																		|
 |																				|
 | +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ |
-
-		6_ .Substring()
-
- Esse é um pouco mais complexo de se entender... Por isso, usaremos algo mais "gráfico".
-
- Substring nos permite misturar pedaços de uma mensagem, contida em uma string, e misturá-los, até mesmo deixando os restantes de fora, e 
-eliminando-os temporariamente. Pense da seguiinte maneira:
-
-	G i r a f a   d e    p  e  s  c  o  ç  o      p  e  q   u   e   n   o
-	1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  21  22  23  24  25
-
- Muito bem, agora, se adicionarmos o número 10entre os parêntesis, receberemos apenas a frase "pescoço pequeno". Isso se deve
-por termos mandado o Substring imprimir apenas os caracteres da posição 10 em diante. Agora, se adicionarmos uma vírgula e outro número,
-estaremos indicando quatos caracteres queremos a partir do primeiro número. Isso é bem confuso... Vamos ver na prática:
-
-	Console.WriteLine(msg.Substring(0,6));
-				//Quero que a partir do caractere 0, sejam selecionados e exibidos 6 caracteres.
-
- Para entender melhor, execute este código:
-
- 
-            string msg = "Girafa de pescoço pequeno";
-
-            Console.WriteLine(msg.Substring(0,6)); //Girafa
-            Console.WriteLine(msg.Substring(7, 3));//De
-            Console.WriteLine(msg.Substring(11, 7));//Pescoço
-            Console.WriteLine(msg.Substring(18));//Pequeno
-
-
-	} //Fim dos métodos de String
-
-==============================================================================================================================================
-
-	MÉTODOS QUE SÓ FUNCIONAM COM TIPOS NUMÉRICOS{
-
-	1_ Math.
-
- Math não é um método em si, mas sim um conjunto deles, o que chamamos de biblioteca. Ela foi feita apenas com o intuito de realizar operações
-matemáticas, como potenciação. Para utilizar os métodos da biblioteca Math, e de qualquer outra, devemos escrever o nome da biblioteca, adicionar
-um ponto na frente, e então adicionar o nome do atributo (Math.pow()), o mmesmo vale para todo e qualquer método de biblioteca.
-
- Usaremos códigos como exemplo para explicar melhor alguns dos métodos:
-
-		1_ a) Potenciação:
-
-	double varGenerica = Math.pow (8,2);
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 64
-	Repare que, adicionamos dois números entre os parêntesis. O primeiro representa a base, e o segundo a potência.*/
-
-	1_ b) Raíz Quadrada:
-
-	double varGenerica = Math.Sqrt(4);
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 2
-	Calcula a raíz quadrada (square root = sqrt) do valor inserido nos parêntesis.*/
-
-	1_ c) Min e Max
-	
-		MIN:
-	double varGenerica = Math.Min(10,50);
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 10
-	Calcula e mostra qual dos números inseridos nos parêntesis é o menor. O maior dos valores não é mostrado.*/
-
-		MAX:
-	double varGenerica = Math.Max(10,50);
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 50
-	Calcula e mostra qual dos números inseridos nos parêntesis é o maior. O menor dos valores não é mostrado.*/
-
-	NENHUM DOS DOIS ATRIBUTOS ACIMA PODE RECCEBER MAIS DE DOIS VALORES.
-
-	1_ d) Ceiling e Floor
-
-		CEILING:
-	double varGenerica = Math.Ceiling(24.4789);
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 25
-	Arredonda o número decimal "para cima", e complementa seu valor até que chegue no mais próximo número innteiro.*/
-
-		FLOOR:
-	double varGenerica = Math.Floor(24.4789);
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 24
-	Arredonda o número "para baixo", para que chegue no mais próximo número inteiro anterior ao valor inserido.*/
-	
-	1 e) PI:
-
-	double varGenerica = Math.PI;
-	Console.WriteLine(varGenerica);
-	Console.ReadLine();
-
-	/*Resultado: 3.14159265358979
-	Calcula e exibe o valor de PI no console.*/
-
-	}//Fim dos métodos numéricos.
-
-==============================================================================================================================================
+|																				|
+|		6_ .Substring()																	|
+|																				|
+| Esse é um pouco mais complexo de se entender... Por isso, usaremos algo mais "gráfico".									|
+|																				|
+| Substring nos permite misturar pedaços de uma mensagem, contida em uma string, e misturá-los, até mesmo deixando os restantes de fora, e 			|
+|eliminando-os temporariamente. Pense da seguiinte maneira:													|
+|																				|
+|	G i r a f a   d e    p  e  s  c  o  ç  o      p  e  q   u   e   n   o											|
+|	1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  21  22  23  24  25											|
+|																				|
+| Muito bem, agora, se adicionarmos o número 10entre os parêntesis, receberemos apenas a frase "pescoço pequeno". Isso se deve por termos mandado o Substring 	|
+|imprimir apenas os caracteres da posição 10 em diante. Agora, se adicionarmos uma vírgula e outro número, estaremos indicando quatos caracteres queremos a 	|
+|partir do primeiro número. Isso é bem confuso... Vamos ver na prática:												|
+|																				|
+|	Console.WriteLine(msg.Substring(0,6));															|
+|				//Quero que a partir do caractere 0, sejam selecionados e exibidos 6 caracteres.						|
+|																				|
+| Para entender melhor, execute este código:															|
+|																				|
+| 																				|
+|            string msg = "Girafa de pescoço pequeno";														|
+|																				|
+|            Console.WriteLine(msg.Substring(0,6)); //Girafa													|
+|            Console.WriteLine(msg.Substring(7, 3));//De													|
+|            Console.WriteLine(msg.Substring(11, 7));//Pescoço													|
+|            Console.WriteLine(msg.Substring(18));//Pequeno													|
+|																				|
+|																				|
+|	} //Fim dos métodos de String																|
+|																				|
+| =============================================================================================================================================================	|
+|																				|
+|	MÉTODOS QUE SÓ FUNCIONAM COM TIPOS NUMÉRICOS{														|
+|																				|
+|	1_ Math.																		|
+|																				|
+| Math não é um método em si, mas sim um conjunto deles, o que chamamos de biblioteca. Ela foi feita apenas com o intuito de realizar operações matemáticas, 	|
+|como potenciação. Para utilizar os métodos da biblioteca Math, e de qualquer outra, devemos escrever o nome da biblioteca, adicionar um ponto na 		|
+|frente, e então adicionar o nome do atributo (Math.pow()), o mesmo vale para todo e qualquer método de biblioteca.						|
+|																				|
+| Usaremos códigos como exemplo para explicar melhor alguns dos métodos:											|
+|																				|
+|		1_ a) Potenciação:																|
+|																				|
+|	double varGenerica = Math.pow (8,2);															|
+|	Console.WriteLine(varGenerica);																|
+|	Console.ReadLine();																	|
+|																				|
+|	/*Resultado: 64																		|
+|	Repare que, adicionamos dois números entre os parêntesis. O primeiro representa a base, e o segundo a potência.*/					|
+|																				|
+|	1_ b) Raíz Quadrada:																	|
+|																				|
+|	double varGenerica = Math.Sqrt(4);															|
+|	Console.WriteLine(varGenerica);																|
+|	Console.ReadLine();																	|
+|																				|
+|	/*Resultado: 2																		|
+|	Calcula a raíz quadrada (square root = sqrt) do valor inserido nos parêntesis.*/									|
+|																				|
+|	1_ c) Min e Max																		|
+|																				|
+|		MIN:																		|
+|	double varGenerica = Math.Min(10,50);															|
+|	Console.WriteLine(varGenerica);																|
+|	Console.ReadLine();																	|
+|																				|
+|	/*Resultado: 10																		|
+|	Calcula e mostra qual dos números inseridos nos parêntesis é o menor. O maior dos valores não é mostrado.*/						|
+|																				|
+|		MAX:																		|
+|	double varGenerica = Math.Max(10,50);															|
+|	Console.WriteLine(varGenerica);																|
+|	Console.ReadLine();																	|
+|																				|
+|	/*Resultado: 50																		|
+|	Calcula e mostra qual dos números inseridos nos parêntesis é o maior. O menor dos valores não é mostrado.*/				 _______________|
+|																		|
+|	NENHUM DOS DOIS ATRIBUTOS ACIMA PODE RECCEBER MAIS DE DOIS VALORES.									|
+|																		|
+|	1_ d) Ceiling e Floor															|
+|																		|
+|		CEILING:															|
+|	double varGenerica = Math.Ceiling(24.4789);												|
+|	Console.WriteLine(varGenerica);														|
+|	Console.ReadLine();															|
+|																		|
+|	/*Resultado: 25																|
+|	Arredonda o número decimal "para cima", e complementa seu valor até que chegue no mais próximo número inteiro.*/			|
+|																		|
+|		FLOOR:																|
+|	double varGenerica = Math.Floor(24.4789);												|
+|	Console.WriteLine(varGenerica);														|
+|	Console.ReadLine();															|
+|																		|
+|	/*Resultado: 24																|
+|	Arredonda o número "para baixo", para que chegue no mais próximo número inteiro anterior ao valor inserido.*/				|
+|																		|
+|	1 e) PI:																|
+|																		|
+|	double varGenerica = Math.PI;														|
+|	Console.WriteLine(varGenerica);														|
+|	Console.ReadLine();															|
+|																		|
+|	/*Resultado: 3.14159265358979														|
+|	Calcula e exibe o valor de PI no console.*/												|
+|																		|
+|	}//Fim dos métodos numéricos.														|
+|																		|
+| =============================================================================================================================================	|
 
 			Setor C: Entrada de Dados:
 

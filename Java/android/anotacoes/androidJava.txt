@@ -1,0 +1,226 @@
+
+		Android
+
+			Introdução:.
+
+ Android é um sistema operacional, que roda em cima da linguagem JAVA, que também é 
+usada para o  desenvolvimento de aplicativos e ferramentas para o sistema. É 
+geralmente usado em celulares, e a linguagem JAVA é utilizada de forma um pouco 
+"diferente" da forma comum.
+
+ Para programarmos em Android, precisamos de uma IDE específica, que contenha os
+atributos necessários para a contrução de um APP Android. Como padrão, recomendo
+a utilização do Android Studio, que apesar de seu alto uso de hardware, é uma das
+mais úteis e completas ferramentas para o desenvolvimento em Android. Porém, se quiser,
+também é possível utilizar uma versão da IDE "Eclipse" para desenvolver em Android.
+
+
+			CAP1 = CRIANDO UM PROJETO ANDROID:
+
+ Realize a instalação de uma das ferramentas e crie um novo projeto Android, com uma 
+"Empty Activity", insira o nome e a localização do projeto, ambos a gosto.
+
+ Com o projeto criado, precisamos criar uma AVD (Android Virtual Machine). A AVD irá
+emular o android para nós, e assim, rodar nosso(s) aplicativos em uma máquina Android virtual.
+
+ Após isso, será adicionado um arquivo chamado "activity_main.xml" ao menu de Abas acima. Aqui é
+onde iremos Desenhar nosso aplicativo Android. No lado esquerdo, temos os elementos que podemos
+adicionar à tela como botões, caixas de texto e etc.
+
+ Quando adicionamos um elemento à tela, precisamos definir um ID para ele. Como sempre, não adicio-
+namos "caracteres especiais" (espaços, parêntesis, ç, ° etc.). Além disso, também especificamos o
+tipo de elemento quando o adicionamos à tela. Por exemplo:
+
+	btnBotaoGenerico
+
+	edtPrimeiroNome
+
+			
+					1-A = TIPOS DE ELEMENTOS:
+
+	ATENÇÃO - ESTE TÓPICO AINDA SERÁ ATUALIZADO MAIS À FRENTE.
+
+ Ao contrário dos formulários em C#, as coisas aqui tem um nome diferente:
+
+
+	Edit Text = Referente á todo e qualquer tipo		Button = Referente à qualquer tipo
+	de caixa de texto.						de botão.
+
+	Text View = Exibe um texto como resultado
+
+
+ Para adicionar elementos, basta arrastá-los da esquerda para o retângulo branco (tela android).
+ No caso das caixas de texto, para "textos genéricos", utilizamos o elemento "PlainText".
+
+ Abaixo da caixa de elementos, temos outro campo que mostra o que está inserido na tela. É MUITO
+IMPORTANTE, QUE A ORDEM DOS ELEMENTOS NESTA CAIXA SEJA IGUAL À ORDEM DOS ELEMENTOS NA TELA.
+
+	Exemplo:
+
+				ERRADO:
+
+
+		Tela:					"Component Tree"
+
+
+	-Edit Text					-Text View
+
+
+	-Button					-Edit Text
+
+
+	-Text View					-Button
+
+			
+
+				CORRETO:
+
+
+		Tela:					"Component Tree"
+
+
+	-Edit Text					-Edit Text
+
+
+	-Button					-Button
+
+
+	-Text View					-Text View
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+ Já à direita, temos o campo onde mudamos os atributos do elemento que selecionamos com o Mouse. No topo, há uma
+caixa de texto, que é onde mudamos o nome do elemento, sendo que:
+
+
+	btn = Button
+
+	edt = Edit Text
+
+	tv = Text View
+
+
+ Geralmente, adicionamos estes nomes ao nome e junto deles, sem espaços, a função do elemento na tela. É quase
+como se estivessemos declarando o tipo de uma variável. Então no fim, teriamos algo assim: 
+
+
+	-Edit Text pedindo Nome		 =		"edtNome"
+
+	-Button fechar app		 =		"btnClose"
+
+	-Text View exibir nome		 =		"tvResult"
+
+
+ Também podemos alterar cor da fonte, do fundo, altura e largura, texto e várias outras coisas dentro de cada elementos.
+ Porém especificamente em "Edit Text", precisamos ir até o campo "text" na direita, e deletar qualquer coisa escrita lá
+dentro. Depois disso, devemos seguir para o campo "hint", e escrever o que exatamente deve ser inserido pelo usuário na
+caixa de texto.
+
+====================================================================================================================
+
+
+						1-B = CODIFICANDO ELEMENTOS NA TELA: 
+
+
+ Com os elementos adicionados na tela, agora precisamos inseri-los no código. Siga para o arquivo "Main Activity" nas guias
+abertas. Lá, encontraremos um código parecido com este: 
+
+package com.example.primeiraaplicacao;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+	protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+	}
+
+}
+
+
+
+ Os elementos que colocamos na tela do android, devem ser inserdos ANTES DO "@Override". Fazemos isso os declarando como
+variáveis:
+
+
+	EditText edtNome;
+	Button btnVisualizar;
+	TextView tvResult;
+
+ Depois de declarados, devemos mandar o editor procurar estes elementos na tela android, e se eles existirem, ligá-los ao código.
+Por isso, É IMPORTANTE QUE O NOME DADO AOS ELEMENTOS NA TELA ANDROID SEJA IDÊNTICO AO DOS ELEMENTOS DECLARADOS NO CÓDIGO.
+
+ Ligamos o código à tela assim:
+
+ edtNome = findViewById(R.id.edtNome); //Encontre na View, pelo ID "edtNome", o elemento "edtNome"
+ btnVisualizar = findViewById(R.id.btnVisualizar);
+ tvResult = findViewById(R.id.tvResult);
+
+
+ Chamamos de "View" a tela Android onde inserimos os elementos.
+ Agora que adicionados, podemos fazer uso dos elementos como quisermos!
+
+								
+										1-C = CRIANDO UM PROGRAMA:
+
+ 
+ Suponhamos que iremos criar um programa que tem como objetivo exibir o nome inserido pelo usuário no Edit Text, com os elementos
+já adicionados à "View".
+
+ Teriamos algo assim:
+
+
+package com.example.primeiraaplicacao;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+	EditText edtPrimeiroNome;
+	TextView tvResult;
+	Button btnVisualizar;
+
+    @Override
+	protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+		edtPrimeiroNome = findViewById(R.id.edtPrimeiroNome);
+		tvResult = findViewById(R.id.edtPrimeiroNome);
+		btnVisualizar = findViewById(R.id.btnVisualizar);
+
+	btnVisualizar.setOnClickListener(new View.OnClickListener {
+	@Override
+	public void onClick(View view) {
+
+		tvResult.setText("Seu nome é " + edtPrimeiroNome.getText());
+
+	}
+
+	});
+
+	}
+
+}
+
+
+
+ Perceba que tivemos que criar um método para ativar a função do Text View. Isso na verdade é normal, é como
+se fosse o gatilho para a ativação da função. Vamos destrinchar este método abaixo:
+
+
+-btnVisualizar.setOnClickListener(new View.OnClickListener { }); = Indica o início do método para o botão
+
+-tvResult.setText(); = Indica o que será exibido no Text View, denominado antes de ".setText".
+
+-edtPrimeiroNome.getText() = Pega o texto/dado inserido dentro do Edit Text. Deve ser inserido dentro de
+".setText();"
+
+ Com isso, temos nosso primeiro programa Android criado.
+
+

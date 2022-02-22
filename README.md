@@ -21,3 +21,15 @@ Abaixo, seguirão notícias sobre o desenvolvimento do repositório.
 ​	Espero que estejam bem, desejo saúde a todos!
 
 ### 	<i><u>Pmguim</u></i>
+
+<hr></hr>
+
+<u>21/02/2022</u>
+
+​	Ok, eu sei o que eu prometi, e apesar de não ser um resultado imediato, aos poucos estamos caminhando! Como prometi, atualizei o diretório com informações novas sobre as linguagens, porém, devido a elementos externos, daremos uma pausa no desenvolvimento do documento da linguagem C#, e daremos inicio ao desenvolvimento do documento de JAVA para Android!
+
+ Isso vai demorar um pouco mais de tempo para finalizar, já que o android tem a questão das telas que são muito gráficas e um pouco difiíceis de descrever apenas com palavras, porém vou fazer o possível!
+
+​	Enfim, espero que estejam bem, desejo saúde a todos!
+
+<u><b><i>Pmguim</i></b></u>
